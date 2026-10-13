@@ -140,7 +140,7 @@ See [SQL Server setup](docs/SQL_SERVER_SETUP.md).
 - **Screenshots** of each page, captured from Power BI Desktop, are in [`powerbi/screenshots/`](powerbi/screenshots/).
 - **Accessibility:** all 49 data visuals have alt text saying what they show and whether the data is official or simulated.
 
-> **Remaining manual step:** saving a `.pbix` needs Power BI Desktop's *File > Save as* dialog, which can't be automated with the tooling available here. Open the `.pbip`, refresh, and save as `powerbi\AutoRetailAnalytics.pbix` ([build guide, section 6](powerbi/POWERBI_BUILD_GUIDE.md#6-remaining-manual-step-save-as-pbix)).
+> **Quick look:** download [`powerbi/AutoRetailAnalytics.pbix`](powerbi/AutoRetailAnalytics.pbix) and open it in Power BI Desktop. It includes the data, so no SQL Server is needed. It was saved from the validated project and passed the same 574 checks against its stored data ([build guide, section 6](powerbi/POWERBI_BUILD_GUIDE.md#6-the-pbix-file)).
 
 ## Testing
 
@@ -169,7 +169,7 @@ Tests that need SQL Server, the source PDFs or the optional app dependency are *
 | Dealership simulation, KPIs, action triggers | Done (simulated) |
 | SQL Server schema, load, validation, views, reconciliation | Done and executed on SQL Server 2025 Express |
 | Power BI project (`.pbip`): model, measures, 5 report pages | Done; opened, refreshed and validated in Power BI Desktop (574/574) |
-| Power BI `.pbix` file | **Manual step outstanding**: File > Save as in Power BI Desktop |
+| Power BI `.pbix` file | Done; saved from Power BI Desktop and verified (574/574 against its stored data) |
 | Streamlit viewer  | Done |
 
 ## Limitations
@@ -179,5 +179,5 @@ Tests that need SQL Server, the source PDFs or the optional app dependency are *
 - OEM-level comparisons exclude OEMs below FADA's listing threshold in some months.
 - EV units are estimates (published EV % × total). Ather's share of 2W EV retail assumes Ather sells only EVs.
 - Layer B is synthetic. Its patterns come from configured assumptions, and none of it is evidence about real dealerships.
-- The `.pbix` must be saved manually from the validated `.pbip`, and the report hasn't been published to the Power BI Service.
+- The `.pbix` is a snapshot: after changing the project it must be re-saved manually in Power BI Desktop. The report hasn't been published to the Power BI Service.
 - Licensing: FADA grants no licence to redistribute its PDFs, so they are not included. They're downloaded and checksum-verified locally, and the repository publishes only provenance and the extracted figures, attributed to FADA. See [Data sources](docs/DATA_SOURCES.md#redistribution).

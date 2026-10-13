@@ -8,9 +8,9 @@
 | Opens in Power BI Desktop 2.158.1304.0 (Microsoft Store) | **Verified** | The model loads 16 tables. Page screenshots are in `screenshots/` |
 | Refresh from SQL Server (`.\SQLEXPRESS`, `AutoRetailAnalytics`, Windows auth) | **Verified** | Full refresh through Desktop's engine; every partition is Ready |
 | 92 measures evaluate in Desktop's engine and match Python and SQL | **Verified: 574 of 574 checks** | `reports/powerbi_validation.csv` |
-| `AutoRetailAnalytics.pbix` | **Not created: one manual step** | See section 6. No supported command-line route to *Save As .pbix* is available here |
+| `AutoRetailAnalytics.pbix` (572,632 bytes, data included) | **Saved and verified (2026-10-13)** | Saved with *File > Save as* in Power BI Desktop. Reopened without refresh: 574 of 574 checks passed against its stored data; file checksum unchanged by opening |
 
-Nothing in this folder was hand-assembled into a `.pbix`. The project is Power BI's own text format (PBIP), which Power BI Desktop opens directly.
+The `.pbix` was saved by Power BI Desktop itself, not assembled by a script. The PBIP folders remain the reviewable, generated source; the `.pbix` is a convenience copy that opens without SQL Server.
 
 ## 2. Files
 
@@ -76,14 +76,21 @@ Defects found and fixed by this validation (none were visible to the earlier sta
 4. **`Is Coverage Complete`.** It excluded FADA's residual "Others" rows, unlike the Python analysis. Ranking visuals now filter residual rows explicitly instead.
 5. **Layout and readability**, found from the screenshots rather than by the engine: cards abbreviated 43,837 to "44K"; axis and legend titles showed raw field names; age buckets sorted ">90" first; long text was clipped in tables. Each is fixed in the generator. The age-bucket order now comes from a `AgeingBucketOrder` sort column added in SQL.
 
-## 6. Remaining manual step: save as .pbix
+## 6. The .pbix file
+
+`powerbi/AutoRetailAnalytics.pbix` opens directly in Power BI Desktop and contains the imported data (official FADA figures and labelled SIMULATED dealership data), so viewers don't need SQL Server. Select **Refresh** only if you have built the SQL Server database.
+
+Verification on 2026-10-13: the file is a valid Power BI package with all 5 pages, 66 visuals (alt text included) and the data model. Opened without refresh, it passed all 574 engine checks against its stored data, and opening it did not change the file.
+
+To recreate it after regenerating the project:
 
 1. Open `powerbi\AutoRetailAnalytics.pbip` in Power BI Desktop and select **Refresh**.
    Use **Save as**, not Save: Save writes back into the project folders instead of creating a `.pbix`.
 2. **File > Save as**, choose the file type **Power BI file (*.pbix)**, and save it as `powerbi\AutoRetailAnalytics.pbix`.
-3. Check the file opens again (File > Open). To repeat the engine checks against the open file, run `python python\validate_powerbi.py --steps validate --port <port>`. The port is in `%USERPROFILE%\Microsoft\Power BI Desktop Store App\AnalysisServicesWorkspaces\*\Data\msmdsrv.port.txt`.
+3. Re-run the checks against the open file: `python python\validate_powerbi.py --steps validate --port <port>`. The port is in `%USERPROFILE%\Microsoft\Power BI Desktop Store App\AnalysisServicesWorkspaces\*\Data\msmdsrv.port.txt`.
+4. If a plain Save rewrote the project folders, restore them with `git checkout -- powerbi/AutoRetailAnalytics.pbip powerbi/AutoRetailAnalytics.Report powerbi/AutoRetailAnalytics.SemanticModel` (or re-run the generator).
 
-A `.pbix` saved after refresh contains the imported data; check its size before deciding whether to commit it. The PBIP is the reviewable source.
+The `.pbix` also contains Power BI's standard `SecurityBindings` section, which is encrypted to the saving Windows account and cannot be used by anyone else.
 
 ## 7. Report pages
 
@@ -119,7 +126,7 @@ These match the Python report and the SQL views.
 
 ## 9. Known limitations
 
-- **Report source.** The `.pbix` must be saved manually (section 6). The PBIP is the version-controlled source.
+- **Report source.** The PBIP is the generated, reviewable source. The `.pbix` is a binary snapshot and must be re-saved manually after the project changes (section 6).
 - **Visual checks.** Visual layout was checked by eye from screenshots of each page, captured by `validate_powerbi.py --screenshots`. The script opens a separate copy of the project per page and captures only that Power BI window once two consecutive captures are identical, so don't interact with those windows while it runs. There is no automated pixel test.
 - **Alt text.** Every chart, card, table and the slicer (49 visuals) has alt text, set by the generator and checked by `tests/test_powerbi_project.py`. It describes what the visual shows and whether the data is official or SIMULATED, in at most 250 characters, Power BI's limit. It contains no numbers, so it can't go stale. Screen-reader users get the values through *Show as a table* (Alt+Shift+F11). Text boxes have no alt text because screen readers read their text directly.
 - **Slicer default.** The page 5 dealership slicer starts with nothing selected, which means all simulated dealerships.
