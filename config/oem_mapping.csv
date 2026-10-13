@@ -1,0 +1,39 @@
+segment,oem_raw,oem_canonical,portfolio_brand,mapping_note
+2W,HERO MOTOCORP LTD,Hero MotoCorp,,
+2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,Honda Motorcycle & Scooter India,,Two-wheeler entity; NOT the Honda Cars portfolio brand
+2W,TVS MOTOR COMPANY LTD,TVS Motor,,
+2W,BAJAJ AUTO LTD,Bajaj Auto,,Single top-level row in some releases; a member of BAJAJ AUTO GROUP in others
+2W,BAJAJ AUTO GROUP,Bajaj Auto,,Group row (Bajaj Auto Ltd + Chetak Technology); members are not added again
+2W,SUZUKI MOTORCYCLE INDIA PVT LTD,Suzuki Motorcycle India,,
+2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),Royal Enfield,,
+2W,INDIA YAMAHA MOTOR PVT LTD,India Yamaha Motor,,
+2W,ATHER ENERGY LTD,Ather Energy,Ather,Portfolio two-wheeler brand; benchmarked against total 2W
+2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,Ola Electric,,
+2W,GREAVES ELECTRIC MOBILITY LTD,Greaves Electric Mobility,,Name printed with and without PVT
+2W,GREAVES ELECTRIC MOBILITY PVT LTD,Greaves Electric Mobility,,Name printed with and without PVT
+2W,CLASSIC LEGENDS PVT LTD,Classic Legends,,
+2W,PIAGGIO VEHICLES PVT LTD,Piaggio Vehicles,,
+2W,BGAUSS AUTO PRIVATE LIMITED,BGauss Auto,,
+2W,RIVER MOBILITY PVT LTD,River Mobility,,
+2W,BOUNCE ELECTRIC 1 PVT LTD,Bounce Electric,,Listed only in months above FADA's 0.1% threshold; otherwise inside Others
+2W,E-SPRINTO GREEN ENERGY PVT LTD,E-Sprinto Green Energy,,Listed only in months above FADA's 0.1% threshold; otherwise inside Others
+2W,Others Including EV,Others (2W),,FADA residual row; composition changes month to month
+PV,MARUTI SUZUKI INDIA LTD,Maruti Suzuki,,
+PV,TATA MOTORS LTD,Tata Motors,,
+PV,MAHINDRA & MAHINDRA LIMITED,Mahindra & Mahindra,,
+PV,HYUNDAI MOTOR INDIA LTD,Hyundai Motor India,,
+PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,Toyota Kirloskar Motor,Toyota,Portfolio car brand
+PV,KIA INDIA PRIVATE LIMITED,Kia India,,
+PV,SKODA AUTO VOLKSWAGEN GROUP,Skoda Auto Volkswagen Group,,Group row (incl. Audi AG); members are not added again
+PV,JSW MG MOTOR INDIA PVT LTD,JSW MG Motor,JSW MG Motor,Portfolio car brand
+PV,HONDA CARS INDIA LTD,Honda Cars India,Honda Cars,Portfolio car brand; NOT the HMSI two-wheeler entity
+PV,RENAULT INDIA PVT LTD,Renault India,,
+PV,NISSAN MOTOR INDIA PVT LTD,Nissan Motor India,,
+PV,MERCEDES -BENZ GROUP,Mercedes-Benz Group,Mercedes-Benz,Portfolio car brand; group row = Mercedes-Benz India + Mercedes-Benz AG + Daimler AG + 'Mercedes Benz' registrations
+PV,BMW INDIA PVT LTD,BMW India,,
+PV,STELLANTIS GROUP,Stellantis Group,,Group row; members are not added again
+PV,FORCE MOTORS LIMITED,Force Motors,,
+PV,VINFAST AUTO INDIA PVT LTD,VinFast Auto India,,
+PV,BYD INDIA PRIVATE LIMITED,BYD India,,
+PV,JAGUAR LAND ROVER INDIA LIMITED,Jaguar Land Rover India,,
+PV,Others,Others (PV),,FADA residual row; composition changes month to month

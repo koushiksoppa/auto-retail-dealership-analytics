@@ -1,0 +1,8 @@
+# Python 3.11 target. Install with: python -m pip install -r requirements.txt
+pandas>=2.2,<3
+numpy>=1.26,<3
+pdfplumber>=0.11,<0.12      # FADA PDF extraction
+matplotlib>=3.8,<4          # report charts
+PyYAML>=6,<7                # configuration files
+pytest>=8,<9                # automated tests
+pyodbc>=5.1,<6              # optional: SQL Server load/reconciliation (python/sql_server_load.py)

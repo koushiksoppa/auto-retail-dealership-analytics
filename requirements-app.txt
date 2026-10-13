@@ -1,0 +1,3 @@
+# Optional local viewer (app/streamlit_app.py). Core pipeline does not need this.
+-r requirements.txt
+streamlit>=1.40,<2

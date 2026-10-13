@@ -1,0 +1,549 @@
+segment,period_month,oem_canonical,units,portfolio_brand,is_residual,segment_units,period,month_num,share_pct
+2W,2025-02,Hero MotoCorp,386703,,False,1360155,prior,2,28.430804
+2W,2025-02,Honda Motorcycle & Scooter India,329857,,False,1360155,prior,2,24.251427
+2W,2025-02,TVS Motor,254599,,False,1360155,prior,2,18.718381
+2W,2025-02,Bajaj Auto,154205,,False,1360155,prior,2,11.337311
+2W,2025-02,Suzuki Motorcycle India,77292,,False,1360155,prior,2,5.682588
+2W,2025-02,Royal Enfield,71974,,False,1360155,prior,2,5.291603
+2W,2025-02,India Yamaha Motor,46327,,False,1360155,prior,2,3.406009
+2W,2025-02,Ather Energy,11978,Ather,False,1360155,prior,2,0.880635
+2W,2025-02,Ola Electric,8675,,False,1360155,prior,2,0.637795
+2W,2025-02,Others (2W),8301,,True,1360155,prior,2,0.610298
+2W,2025-02,Greaves Electric Mobility,3704,,False,1360155,prior,2,0.272322
+2W,2025-02,Piaggio Vehicles,2358,,False,1360155,prior,2,0.173363
+2W,2025-02,Classic Legends,2350,,False,1360155,prior,2,0.172774
+2W,2025-02,BGauss Auto,1219,,False,1360155,prior,2,0.089622
+2W,2025-02,River Mobility,613,,False,1360155,prior,2,0.045068
+2W,2025-03,Hero MotoCorp,436598,,False,1516150,prior,3,28.796491
+2W,2025-03,Honda Motorcycle & Scooter India,357548,,False,1516150,prior,3,23.582627
+2W,2025-03,TVS Motor,276276,,False,1516150,prior,3,18.222208
+2W,2025-03,Bajaj Auto,171866,,False,1516150,prior,3,11.335686
+2W,2025-03,Suzuki Motorcycle India,84955,,False,1516150,prior,3,5.603337
+2W,2025-03,Royal Enfield,77560,,False,1516150,prior,3,5.115589
+2W,2025-03,India Yamaha Motor,48320,,False,1516150,prior,3,3.187020
+2W,2025-03,Ola Electric,23634,,False,1516150,prior,3,1.558817
+2W,2025-03,Ather Energy,15650,Ather,False,1516150,prior,3,1.032220
+2W,2025-03,Others (2W),10045,,True,1516150,prior,3,0.662533
+2W,2025-03,Greaves Electric Mobility,5648,,False,1516150,prior,3,0.372523
+2W,2025-03,BGauss Auto,2591,,False,1516150,prior,3,0.170893
+2W,2025-03,Piaggio Vehicles,2333,,False,1516150,prior,3,0.153877
+2W,2025-03,Classic Legends,2324,,False,1516150,prior,3,0.153283
+2W,2025-03,River Mobility,802,,False,1516150,prior,3,0.052897
+2W,2025-04,Hero MotoCorp,512520,,False,1695638,prior,4,30.225791
+2W,2025-04,Honda Motorcycle & Scooter India,407791,,False,1695638,prior,4,24.049414
+2W,2025-04,TVS Motor,310734,,False,1695638,prior,4,18.325492
+2W,2025-04,Bajaj Auto,183808,,False,1695638,prior,4,10.840050
+2W,2025-04,Suzuki Motorcycle India,92517,,False,1695638,prior,4,5.456176
+2W,2025-04,Royal Enfield,82593,,False,1695638,prior,4,4.870910
+2W,2025-04,India Yamaha Motor,52595,,False,1695638,prior,4,3.101782
+2W,2025-04,Ola Electric,19824,,False,1695638,prior,4,1.169117
+2W,2025-04,Ather Energy,13332,Ather,False,1695638,prior,4,0.786253
+2W,2025-04,Others (2W),8706,,True,1695638,prior,4,0.513435
+2W,2025-04,Greaves Electric Mobility,4003,,False,1695638,prior,4,0.236076
+2W,2025-04,Piaggio Vehicles,2629,,False,1695638,prior,4,0.155045
+2W,2025-04,Classic Legends,2477,,False,1695638,prior,4,0.146081
+2W,2025-04,BGauss Auto,1313,,False,1695638,prior,4,0.077434
+2W,2025-04,River Mobility,796,,False,1695638,prior,4,0.046944
+2W,2025-05,Hero MotoCorp,507323,,False,1715581,prior,5,29.571498
+2W,2025-05,Honda Motorcycle & Scooter India,413597,,False,1715581,prior,5,24.108276
+2W,2025-05,TVS Motor,319518,,False,1715581,prior,5,18.624478
+2W,2025-05,Bajaj Auto,193944,,False,1715581,prior,5,11.304858
+2W,2025-05,Suzuki Motorcycle India,93114,,False,1715581,prior,5,5.427549
+2W,2025-05,Royal Enfield,81672,,False,1715581,prior,5,4.760603
+2W,2025-05,India Yamaha Motor,52041,,False,1715581,prior,5,3.033433
+2W,2025-05,Ola Electric,18967,,False,1715581,prior,5,1.105573
+2W,2025-05,Ather Energy,14101,Ather,False,1715581,prior,5,0.821937
+2W,2025-05,Others (2W),10065,,True,1715581,prior,5,0.586682
+2W,2025-05,Greaves Electric Mobility,4325,,False,1715581,prior,5,0.252101
+2W,2025-05,Piaggio Vehicles,2564,,False,1715581,prior,5,0.149454
+2W,2025-05,Classic Legends,2190,,False,1715581,prior,5,0.127654
+2W,2025-05,BGauss Auto,1082,,False,1715581,prior,5,0.063069
+2W,2025-05,River Mobility,1078,,False,1715581,prior,5,0.062836
+2W,2025-06,Hero MotoCorp,401803,,False,1508378,prior,6,26.638084
+2W,2025-06,Honda Motorcycle & Scooter India,374971,,False,1508378,prior,6,24.859220
+2W,2025-06,TVS Motor,292639,,False,1508378,prior,6,19.400906
+2W,2025-06,Bajaj Auto,165733,,False,1508378,prior,6,10.987498
+2W,2025-06,Suzuki Motorcycle India,90429,,False,1508378,prior,6,5.995115
+2W,2025-06,Royal Enfield,75386,,False,1508378,prior,6,4.997819
+2W,2025-06,India Yamaha Motor,50234,,False,1508378,prior,6,3.330332
+2W,2025-06,Ola Electric,20697,,False,1508378,prior,6,1.372136
+2W,2025-06,Ather Energy,16015,Ather,False,1508378,prior,6,1.061737
+2W,2025-06,Others (2W),8206,,True,1508378,prior,6,0.544028
+2W,2025-06,Greaves Electric Mobility,4310,,False,1508378,prior,6,0.285737
+2W,2025-06,Piaggio Vehicles,2475,,False,1508378,prior,6,0.164084
+2W,2025-06,Classic Legends,2106,,False,1508378,prior,6,0.139620
+2W,2025-06,BGauss Auto,1975,,False,1508378,prior,6,0.130935
+2W,2025-06,River Mobility,1399,,False,1508378,prior,6,0.092749
+2W,2025-07,Honda Motorcycle & Scooter India,365395,,False,1417767,prior,7,25.772571
+2W,2025-07,Hero MotoCorp,347398,,False,1417767,prior,7,24.503180
+2W,2025-07,TVS Motor,280337,,False,1417767,prior,7,19.773136
+2W,2025-07,Bajaj Auto,146667,,False,1417767,prior,7,10.344930
+2W,2025-07,Suzuki Motorcycle India,93984,,False,1417767,prior,7,6.629016
+2W,2025-07,Royal Enfield,72207,,False,1417767,prior,7,5.093009
+2W,2025-07,India Yamaha Motor,52486,,False,1417767,prior,7,3.702019
+2W,2025-07,Ola Electric,18450,,False,1417767,prior,7,1.301342
+2W,2025-07,Ather Energy,17834,Ather,False,1417767,prior,7,1.257894
+2W,2025-07,Others (2W),10081,,True,1417767,prior,7,0.711048
+2W,2025-07,Greaves Electric Mobility,4266,,False,1417767,prior,7,0.300896
+2W,2025-07,Piaggio Vehicles,2754,,False,1417767,prior,7,0.194249
+2W,2025-07,Classic Legends,2465,,False,1417767,prior,7,0.173865
+2W,2025-07,BGauss Auto,1763,,False,1417767,prior,7,0.124350
+2W,2025-07,River Mobility,1680,,False,1417767,prior,7,0.118496
+2W,2025-08,Honda Motorcycle & Scooter India,372867,,False,1432537,prior,8,26.028438
+2W,2025-08,Hero MotoCorp,349039,,False,1432537,prior,8,24.365095
+2W,2025-08,TVS Motor,282347,,False,1432537,prior,8,19.709578
+2W,2025-08,Bajaj Auto,136335,,False,1432537,prior,8,9.517032
+2W,2025-08,Suzuki Motorcycle India,96184,,False,1432537,prior,8,6.714242
+2W,2025-08,Royal Enfield,76505,,False,1432537,prior,8,5.340525
+2W,2025-08,India Yamaha Motor,55172,,False,1432537,prior,8,3.851349
+2W,2025-08,Ola Electric,19464,,False,1432537,prior,8,1.358708
+2W,2025-08,Ather Energy,19210,Ather,False,1432537,prior,8,1.340978
+2W,2025-08,Others (2W),11666,,True,1432537,prior,8,0.814359
+2W,2025-08,Greaves Electric Mobility,4567,,False,1432537,prior,8,0.318805
+2W,2025-08,Piaggio Vehicles,2900,,False,1432537,prior,8,0.202438
+2W,2025-08,Classic Legends,2649,,False,1432537,prior,8,0.184917
+2W,2025-08,River Mobility,1903,,False,1432537,prior,8,0.132841
+2W,2025-08,BGauss Auto,1729,,False,1432537,prior,8,0.120695
+2W,2025-09,Honda Motorcycle & Scooter India,339537,,False,1345153,prior,9,25.241515
+2W,2025-09,Hero MotoCorp,330500,,False,1345153,prior,9,24.569696
+2W,2025-09,TVS Motor,256042,,False,1345153,prior,9,19.034415
+2W,2025-09,Bajaj Auto,144214,,False,1345153,prior,9,10.721011
+2W,2025-09,Royal Enfield,83494,,False,1345153,prior,9,6.207026
+2W,2025-09,Suzuki Motorcycle India,82443,,False,1345153,prior,9,6.128894
+2W,2025-09,India Yamaha Motor,49614,,False,1345153,prior,9,3.688354
+2W,2025-09,Ather Energy,19620,Ather,False,1345153,prior,9,1.458570
+2W,2025-09,Ola Electric,13862,,False,1345153,prior,9,1.030515
+2W,2025-09,Others (2W),9261,,True,1345153,prior,9,0.688472
+2W,2025-09,Greaves Electric Mobility,4352,,False,1345153,prior,9,0.323532
+2W,2025-09,Classic Legends,3192,,False,1345153,prior,9,0.237296
+2W,2025-09,Piaggio Vehicles,2751,,False,1345153,prior,9,0.204512
+2W,2025-09,BGauss Auto,2524,,False,1345153,prior,9,0.187637
+2W,2025-09,River Mobility,1895,,False,1345153,prior,9,0.140876
+2W,2025-09,E-Sprinto Green Energy,957,,False,1345153,prior,9,0.071144
+2W,2025-09,Bounce Electric,895,,False,1345153,prior,9,0.066535
+2W,2026-02,Hero MotoCorp,457826,,False,1700505,current,2,26.922943
+2W,2026-02,Honda Motorcycle & Scooter India,431253,,False,1700505,current,2,25.360290
+2W,2026-02,TVS Motor,333935,,False,1700505,current,2,19.637402
+2W,2026-02,Bajaj Auto,180846,,False,1700505,current,2,10.634841
+2W,2026-02,Suzuki Motorcycle India,94398,,False,1700505,current,2,5.551175
+2W,2026-02,Royal Enfield,91216,,False,1700505,current,2,5.364054
+2W,2026-02,India Yamaha Motor,60967,,False,1700505,current,2,3.585229
+2W,2026-02,Ather Energy,20584,Ather,False,1700505,current,2,1.210464
+2W,2026-02,Others (2W),8787,,True,1700505,current,2,0.516729
+2W,2026-02,Greaves Electric Mobility,4724,,False,1700505,current,2,0.277800
+2W,2026-02,Classic Legends,4468,,False,1700505,current,2,0.262745
+2W,2026-02,Ola Electric,3968,,False,1700505,current,2,0.233342
+2W,2026-02,Piaggio Vehicles,2867,,False,1700505,current,2,0.168597
+2W,2026-02,BGauss Auto,2411,,False,1700505,current,2,0.141781
+2W,2026-02,River Mobility,2255,,False,1700505,current,2,0.132608
+2W,2026-03,Hero MotoCorp,541857,,False,1951006,current,3,27.773210
+2W,2026-03,Honda Motorcycle & Scooter India,475313,,False,1951006,current,3,24.362457
+2W,2026-03,TVS Motor,374602,,False,1951006,current,3,19.200454
+2W,2026-03,Bajaj Auto,216253,,False,1951006,current,3,11.084179
+2W,2026-03,Suzuki Motorcycle India,98412,,False,1951006,current,3,5.044167
+2W,2026-03,Royal Enfield,96510,,False,1951006,current,3,4.946679
+2W,2026-03,India Yamaha Motor,65705,,False,1951006,current,3,3.367750
+2W,2026-03,Ather Energy,35736,Ather,False,1951006,current,3,1.831670
+2W,2026-03,Others (2W),12967,,True,1951006,current,3,0.664631
+2W,2026-03,Ola Electric,10118,,False,1951006,current,3,0.518604
+2W,2026-03,Greaves Electric Mobility,7965,,False,1951006,current,3,0.408251
+2W,2026-03,Classic Legends,4617,,False,1951006,current,3,0.236647
+2W,2026-03,River Mobility,4149,,False,1951006,current,3,0.212660
+2W,2026-03,BGauss Auto,3680,,False,1951006,current,3,0.188621
+2W,2026-03,Piaggio Vehicles,3122,,False,1951006,current,3,0.160020
+2W,2026-04,Hero MotoCorp,552145,,False,1916258,current,4,28.813709
+2W,2026-04,Honda Motorcycle & Scooter India,472289,,False,1916258,current,4,24.646420
+2W,2026-04,TVS Motor,368853,,False,1916258,current,4,19.248608
+2W,2026-04,Bajaj Auto,201777,,False,1916258,current,4,10.529741
+2W,2026-04,Royal Enfield,96798,,False,1916258,current,4,5.051407
+2W,2026-04,Suzuki Motorcycle India,90401,,False,1916258,current,4,4.717580
+2W,2026-04,India Yamaha Motor,63433,,False,1916258,current,4,3.310254
+2W,2026-04,Ather Energy,27034,Ather,False,1916258,current,4,1.410770
+2W,2026-04,Ola Electric,12171,,False,1916258,current,4,0.635144
+2W,2026-04,Others (2W),10762,,True,1916258,current,4,0.561615
+2W,2026-04,Greaves Electric Mobility,6884,,False,1916258,current,4,0.359242
+2W,2026-04,Classic Legends,4520,,False,1916258,current,4,0.235876
+2W,2026-04,River Mobility,3199,,False,1916258,current,4,0.166940
+2W,2026-04,BGauss Auto,3066,,False,1916258,current,4,0.159999
+2W,2026-04,Piaggio Vehicles,2926,,False,1916258,current,4,0.152693
+2W,2026-05,Hero MotoCorp,517951,,False,1844947,current,5,28.074031
+2W,2026-05,Honda Motorcycle & Scooter India,452420,,False,1844947,current,5,24.522114
+2W,2026-05,TVS Motor,356352,,False,1844947,current,5,19.315026
+2W,2026-05,Bajaj Auto,197738,,False,1844947,current,5,10.717815
+2W,2026-05,Suzuki Motorcycle India,97885,,False,1844947,current,5,5.305572
+2W,2026-05,Royal Enfield,84480,,False,1844947,current,5,4.578993
+2W,2026-05,India Yamaha Motor,60625,,False,1844947,current,5,3.286002
+2W,2026-05,Ather Energy,28240,Ather,False,1844947,current,5,1.530667
+2W,2026-05,Ola Electric,15141,,False,1844947,current,5,0.820674
+2W,2026-05,Others (2W),11900,,True,1844947,current,5,0.645005
+2W,2026-05,Greaves Electric Mobility,7695,,False,1844947,current,5,0.417085
+2W,2026-05,Classic Legends,4447,,False,1844947,current,5,0.241037
+2W,2026-05,River Mobility,3720,,False,1844947,current,5,0.201632
+2W,2026-05,BGauss Auto,3297,,False,1844947,current,5,0.178704
+2W,2026-05,Piaggio Vehicles,3056,,False,1844947,current,5,0.165642
+2W,2026-06,Hero MotoCorp,472144,,False,1828458,current,6,25.821977
+2W,2026-06,Honda Motorcycle & Scooter India,452754,,False,1828458,current,6,24.761520
+2W,2026-06,TVS Motor,359243,,False,1828458,current,6,19.647320
+2W,2026-06,Bajaj Auto,188145,,False,1828458,current,6,10.289818
+2W,2026-06,Suzuki Motorcycle India,105057,,False,1828458,current,6,5.745661
+2W,2026-06,Royal Enfield,94548,,False,1828458,current,6,5.170915
+2W,2026-06,India Yamaha Motor,67696,,False,1828458,current,6,3.702355
+2W,2026-06,Ather Energy,31230,Ather,False,1828458,current,6,1.707997
+2W,2026-06,Ola Electric,16150,,False,1828458,current,6,0.883258
+2W,2026-06,Others (2W),14467,,True,1828458,current,6,0.791213
+2W,2026-06,Greaves Electric Mobility,10930,,False,1828458,current,6,0.597771
+2W,2026-06,Classic Legends,4515,,False,1828458,current,6,0.246929
+2W,2026-06,River Mobility,4399,,False,1828458,current,6,0.240585
+2W,2026-06,BGauss Auto,3917,,False,1828458,current,6,0.214224
+2W,2026-06,Piaggio Vehicles,3263,,False,1828458,current,6,0.178456
+2W,2026-07,Honda Motorcycle & Scooter India,469687,,False,1818289,current,7,25.831262
+2W,2026-07,Hero MotoCorp,440662,,False,1818289,current,7,24.234981
+2W,2026-07,TVS Motor,374113,,False,1818289,current,7,20.575002
+2W,2026-07,Bajaj Auto,180183,,False,1818289,current,7,9.909481
+2W,2026-07,Suzuki Motorcycle India,102668,,False,1818289,current,7,5.646407
+2W,2026-07,Royal Enfield,95080,,False,1818289,current,7,5.229092
+2W,2026-07,India Yamaha Motor,67781,,False,1818289,current,7,3.727735
+2W,2026-07,Ather Energy,30357,Ather,False,1818289,current,7,1.669537
+2W,2026-07,Ola Electric,14106,,False,1818289,current,7,0.775784
+2W,2026-07,Others (2W),13830,,True,1818289,current,7,0.760605
+2W,2026-07,Greaves Electric Mobility,10125,,False,1818289,current,7,0.556842
+2W,2026-07,River Mobility,5954,,False,1818289,current,7,0.327451
+2W,2026-07,BGauss Auto,5518,,False,1818289,current,7,0.303472
+2W,2026-07,Classic Legends,4541,,False,1818289,current,7,0.249740
+2W,2026-07,Piaggio Vehicles,3684,,False,1818289,current,7,0.202608
+2W,2026-08,Honda Motorcycle & Scooter India,447342,,False,1714610,current,8,26.090015
+2W,2026-08,Hero MotoCorp,413996,,False,1714610,current,8,24.145199
+2W,2026-08,TVS Motor,353746,,False,1714610,current,8,20.631281
+2W,2026-08,Bajaj Auto,157149,,False,1714610,current,8,9.165291
+2W,2026-08,Suzuki Motorcycle India,104217,,False,1714610,current,8,6.078175
+2W,2026-08,Royal Enfield,94448,,False,1714610,current,8,5.508425
+2W,2026-08,India Yamaha Motor,62375,,False,1714610,current,8,3.637854
+2W,2026-08,Ather Energy,28757,Ather,False,1714610,current,8,1.677174
+2W,2026-08,Ola Electric,13852,,False,1714610,current,8,0.807881
+2W,2026-08,Others (2W),12278,,True,1714610,current,8,0.716081
+2W,2026-08,Greaves Electric Mobility,8613,,False,1714610,current,8,0.502330
+2W,2026-08,River Mobility,5141,,False,1714610,current,8,0.299835
+2W,2026-08,BGauss Auto,4845,,False,1714610,current,8,0.282572
+2W,2026-08,Classic Legends,4256,,False,1714610,current,8,0.248220
+2W,2026-08,Piaggio Vehicles,3595,,False,1714610,current,8,0.209669
+2W,2026-09,Honda Motorcycle & Scooter India,468789,,False,1790188,current,9,26.186579
+2W,2026-09,Hero MotoCorp,434280,,False,1790188,current,9,24.258905
+2W,2026-09,TVS Motor,364640,,False,1790188,current,9,20.368810
+2W,2026-09,Bajaj Auto,166112,,False,1790188,current,9,9.279025
+2W,2026-09,Royal Enfield,102226,,False,1790188,current,9,5.710350
+2W,2026-09,Suzuki Motorcycle India,101926,,False,1790188,current,9,5.693592
+2W,2026-09,India Yamaha Motor,64292,,False,1790188,current,9,3.591355
+2W,2026-09,Ather Energy,30533,Ather,False,1790188,current,9,1.705575
+2W,2026-09,Ola Electric,13451,,False,1790188,current,9,0.751374
+2W,2026-09,Others (2W),10627,,True,1790188,current,9,0.593625
+2W,2026-09,Greaves Electric Mobility,9316,,False,1790188,current,9,0.520392
+2W,2026-09,River Mobility,5556,,False,1790188,current,9,0.310358
+2W,2026-09,BGauss Auto,5023,,False,1790188,current,9,0.280585
+2W,2026-09,Classic Legends,4573,,False,1790188,current,9,0.255448
+2W,2026-09,Piaggio Vehicles,3778,,False,1790188,current,9,0.211039
+2W,2026-09,Bounce Electric,3069,,False,1790188,current,9,0.171435
+2W,2026-09,E-Sprinto Green Energy,1997,,False,1790188,current,9,0.111553
+PV,2025-02,Maruti Suzuki,120010,,False,313015,prior,2,38.340016
+PV,2025-02,Mahindra & Mahindra,42414,,False,313015,prior,2,13.550149
+PV,2025-02,Tata Motors,39502,,False,313015,prior,2,12.619842
+PV,2025-02,Hyundai Motor India,39368,,False,313015,prior,2,12.577033
+PV,2025-02,Toyota Kirloskar Motor,23283,Toyota,False,313015,prior,2,7.438302
+PV,2025-02,Kia India,19479,,False,313015,prior,2,6.223024
+PV,2025-02,Skoda Auto Volkswagen Group,6777,,False,313015,prior,2,2.165072
+PV,2025-02,Honda Cars India,5354,Honda Cars,False,313015,prior,2,1.710461
+PV,2025-02,JSW MG Motor,4846,JSW MG Motor,False,313015,prior,2,1.548169
+PV,2025-02,Others (PV),3052,,True,313015,prior,2,0.975033
+PV,2025-02,Renault India,2547,,False,313015,prior,2,0.813699
+PV,2025-02,Nissan Motor India,1747,,False,313015,prior,2,0.558120
+PV,2025-02,Mercedes-Benz Group,1306,Mercedes-Benz,False,313015,prior,2,0.417232
+PV,2025-02,BMW India,1208,,False,313015,prior,2,0.385924
+PV,2025-02,Stellantis Group,764,,False,313015,prior,2,0.244078
+PV,2025-02,Force Motors,565,,False,313015,prior,2,0.180503
+PV,2025-02,Jaguar Land Rover India,515,,False,313015,prior,2,0.164529
+PV,2025-02,BYD India,278,,False,313015,prior,2,0.088814
+PV,2025-02,VinFast Auto India,0,,False,313015,prior,2,0.000000
+PV,2025-03,Maruti Suzuki,134406,,False,362304,prior,3,37.097576
+PV,2025-03,Tata Motors,49721,,False,362304,prior,3,13.723558
+PV,2025-03,Mahindra & Mahindra,49211,,False,362304,prior,3,13.582792
+PV,2025-03,Hyundai Motor India,44007,,False,362304,prior,3,12.146430
+PV,2025-03,Toyota Kirloskar Motor,25348,Toyota,False,362304,prior,3,6.996335
+PV,2025-03,Kia India,22833,,False,362304,prior,3,6.302166
+PV,2025-03,Skoda Auto Volkswagen Group,9504,,False,362304,prior,3,2.623211
+PV,2025-03,Others (PV),6800,,True,362304,prior,3,1.876877
+PV,2025-03,JSW MG Motor,5567,JSW MG Motor,False,362304,prior,3,1.536555
+PV,2025-03,Honda Cars India,5146,Honda Cars,False,362304,prior,3,1.420354
+PV,2025-03,Renault India,2652,,False,362304,prior,3,0.731982
+PV,2025-03,Nissan Motor India,1806,,False,362304,prior,3,0.498476
+PV,2025-03,Mercedes-Benz Group,1644,Mercedes-Benz,False,362304,prior,3,0.453763
+PV,2025-03,BMW India,1384,,False,362304,prior,3,0.382000
+PV,2025-03,Stellantis Group,663,,False,362304,prior,3,0.182995
+PV,2025-03,Force Motors,593,,False,362304,prior,3,0.163675
+PV,2025-03,Jaguar Land Rover India,567,,False,362304,prior,3,0.156498
+PV,2025-03,BYD India,452,,False,362304,prior,3,0.124757
+PV,2025-03,VinFast Auto India,0,,False,362304,prior,3,0.000000
+PV,2025-04,Maruti Suzuki,140971,,False,363028,prior,4,38.831991
+PV,2025-04,Mahindra & Mahindra,51574,,False,363028,prior,4,14.206618
+PV,2025-04,Hyundai Motor India,45203,,False,363028,prior,4,12.451657
+PV,2025-04,Tata Motors,45130,,False,363028,prior,4,12.431548
+PV,2025-04,Toyota Kirloskar Motor,25609,Toyota,False,363028,prior,4,7.054277
+PV,2025-04,Kia India,22368,,False,363028,prior,4,6.161508
+PV,2025-04,Skoda Auto Volkswagen Group,10070,,False,363028,prior,4,2.773891
+PV,2025-04,JSW MG Motor,5284,JSW MG Motor,False,363028,prior,4,1.455535
+PV,2025-04,Honda Cars India,5057,Honda Cars,False,363028,prior,4,1.393005
+PV,2025-04,Renault India,2870,,False,363028,prior,4,0.790573
+PV,2025-04,Others (PV),2118,,True,363028,prior,4,0.583426
+PV,2025-04,Nissan Motor India,1914,,False,363028,prior,4,0.527232
+PV,2025-04,Mercedes-Benz Group,1416,Mercedes-Benz,False,363028,prior,4,0.390053
+PV,2025-04,BMW India,1333,,False,363028,prior,4,0.367189
+PV,2025-04,Stellantis Group,714,,False,363028,prior,4,0.196679
+PV,2025-04,Force Motors,541,,False,363028,prior,4,0.149024
+PV,2025-04,Jaguar Land Rover India,458,,False,363028,prior,4,0.126161
+PV,2025-04,BYD India,398,,False,363028,prior,4,0.109633
+PV,2025-04,VinFast Auto India,0,,False,363028,prior,4,0.000000
+PV,2025-05,Maruti Suzuki,123714,,False,326656,prior,5,37.872869
+PV,2025-05,Mahindra & Mahindra,46464,,False,326656,prior,5,14.224138
+PV,2025-05,Hyundai Motor India,40979,,False,326656,prior,5,12.545001
+PV,2025-05,Tata Motors,39888,,False,326656,prior,5,12.211011
+PV,2025-05,Toyota Kirloskar Motor,24726,Toyota,False,326656,prior,5,7.569431
+PV,2025-05,Kia India,18450,,False,326656,prior,5,5.648144
+PV,2025-05,Skoda Auto Volkswagen Group,9374,,False,326656,prior,5,2.869686
+PV,2025-05,JSW MG Motor,5966,JSW MG Motor,False,326656,prior,5,1.826386
+PV,2025-05,Honda Cars India,4529,Honda Cars,False,326656,prior,5,1.386474
+PV,2025-05,Others (PV),3563,,True,326656,prior,5,1.090750
+PV,2025-05,Renault India,2472,,False,326656,prior,5,0.756759
+PV,2025-05,Nissan Motor India,1605,,False,326656,prior,5,0.491343
+PV,2025-05,Mercedes-Benz Group,1519,Mercedes-Benz,False,326656,prior,5,0.465015
+PV,2025-05,BMW India,1173,,False,326656,prior,5,0.359093
+PV,2025-05,Stellantis Group,732,,False,326656,prior,5,0.224089
+PV,2025-05,BYD India,621,,False,326656,prior,5,0.190108
+PV,2025-05,Force Motors,472,,False,326656,prior,5,0.144495
+PV,2025-05,Jaguar Land Rover India,409,,False,326656,prior,5,0.125208
+PV,2025-05,VinFast Auto India,0,,False,326656,prior,5,0.000000
+PV,2025-06,Maruti Suzuki,122775,,False,319412,prior,6,38.437817
+PV,2025-06,Mahindra & Mahindra,44249,,False,319412,prior,6,13.853268
+PV,2025-06,Hyundai Motor India,40743,,False,319412,prior,6,12.755626
+PV,2025-06,Tata Motors,37731,,False,319412,prior,6,11.812643
+PV,2025-06,Toyota Kirloskar Motor,25031,Toyota,False,319412,prior,6,7.836587
+PV,2025-06,Kia India,19485,,False,319412,prior,6,6.100272
+PV,2025-06,Skoda Auto Volkswagen Group,8564,,False,319412,prior,6,2.681177
+PV,2025-06,JSW MG Motor,5768,JSW MG Motor,False,319412,prior,6,1.805818
+PV,2025-06,Honda Cars India,4230,Honda Cars,False,319412,prior,6,1.324308
+PV,2025-06,Renault India,2578,,False,319412,prior,6,0.807108
+PV,2025-06,Others (PV),1793,,True,319412,prior,6,0.561344
+PV,2025-06,Mercedes-Benz Group,1513,Mercedes-Benz,False,319412,prior,6,0.473683
+PV,2025-06,Nissan Motor India,1398,,False,319412,prior,6,0.437679
+PV,2025-06,BMW India,1327,,False,319412,prior,6,0.415451
+PV,2025-06,Stellantis Group,769,,False,319412,prior,6,0.240755
+PV,2025-06,Jaguar Land Rover India,540,,False,319412,prior,6,0.169061
+PV,2025-06,BYD India,508,,False,319412,prior,6,0.159042
+PV,2025-06,Force Motors,410,,False,319412,prior,6,0.128361
+PV,2025-06,VinFast Auto India,0,,False,319412,prior,6,0.000000
+PV,2025-07,Maruti Suzuki,135232,,False,349674,prior,7,38.673736
+PV,2025-07,Mahindra & Mahindra,45451,,False,349674,prior,7,12.998107
+PV,2025-07,Hyundai Motor India,45278,,False,349674,prior,7,12.948632
+PV,2025-07,Tata Motors,42950,,False,349674,prior,7,12.282869
+PV,2025-07,Toyota Kirloskar Motor,27733,Toyota,False,349674,prior,7,7.931102
+PV,2025-07,Kia India,20971,,False,349674,prior,7,5.997300
+PV,2025-07,Skoda Auto Volkswagen Group,8902,,False,349674,prior,7,2.545800
+PV,2025-07,JSW MG Motor,6927,JSW MG Motor,False,349674,prior,7,1.980988
+PV,2025-07,Honda Cars India,4827,Honda Cars,False,349674,prior,7,1.380429
+PV,2025-07,Renault India,2313,,False,349674,prior,7,0.661473
+PV,2025-07,Others (PV),2048,,True,349674,prior,7,0.585688
+PV,2025-07,Nissan Motor India,1555,,False,349674,prior,7,0.444700
+PV,2025-07,Mercedes-Benz Group,1466,Mercedes-Benz,False,349674,prior,7,0.419248
+PV,2025-07,BMW India,1427,,False,349674,prior,7,0.408094
+PV,2025-07,Stellantis Group,874,,False,349674,prior,7,0.249947
+PV,2025-07,BYD India,613,,False,349674,prior,7,0.175306
+PV,2025-07,Force Motors,581,,False,349674,prior,7,0.166155
+PV,2025-07,Jaguar Land Rover India,526,,False,349674,prior,7,0.150426
+PV,2025-07,VinFast Auto India,0,,False,349674,prior,7,0.000000
+PV,2025-08,Maruti Suzuki,134494,,False,346468,prior,8,38.818592
+PV,2025-08,Mahindra & Mahindra,47220,,False,346468,prior,8,13.628964
+PV,2025-08,Hyundai Motor India,44818,,False,346468,prior,8,12.935682
+PV,2025-08,Tata Motors,41170,,False,346468,prior,8,11.882771
+PV,2025-08,Toyota Kirloskar Motor,27600,Toyota,False,346468,prior,8,7.966104
+PV,2025-08,Kia India,19873,,False,346468,prior,8,5.735883
+PV,2025-08,Skoda Auto Volkswagen Group,9069,,False,346468,prior,8,2.617558
+PV,2025-08,JSW MG Motor,6649,JSW MG Motor,False,346468,prior,8,1.919081
+PV,2025-08,Honda Cars India,4421,Honda Cars,False,346468,prior,8,1.276020
+PV,2025-08,Renault India,2618,,False,346468,prior,8,0.755625
+PV,2025-08,Others (PV),1729,,True,346468,prior,8,0.499036
+PV,2025-08,Nissan Motor India,1502,,False,346468,prior,8,0.433518
+PV,2025-08,Mercedes-Benz Group,1469,Mercedes-Benz,False,346468,prior,8,0.423993
+PV,2025-08,BMW India,1448,,False,346468,prior,8,0.417932
+PV,2025-08,Stellantis Group,719,,False,346468,prior,8,0.207523
+PV,2025-08,Force Motors,585,,False,346468,prior,8,0.168847
+PV,2025-08,BYD India,581,,False,346468,prior,8,0.167692
+PV,2025-08,Jaguar Land Rover India,503,,False,346468,prior,8,0.145179
+PV,2025-08,VinFast Auto India,0,,False,346468,prior,8,0.000000
+PV,2025-09,Maruti Suzuki,130049,,False,323391,prior,9,40.214168
+PV,2025-09,Tata Motors,44499,,False,323391,prior,9,13.760123
+PV,2025-09,Mahindra & Mahindra,41275,,False,323391,prior,9,12.763188
+PV,2025-09,Hyundai Motor India,38187,,False,323391,prior,9,11.808306
+PV,2025-09,Toyota Kirloskar Motor,23075,Toyota,False,323391,prior,9,7.135325
+PV,2025-09,Kia India,18274,,False,323391,prior,9,5.650745
+PV,2025-09,Skoda Auto Volkswagen Group,7470,,False,323391,prior,9,2.309897
+PV,2025-09,JSW MG Motor,5698,JSW MG Motor,False,323391,prior,9,1.761954
+PV,2025-09,Honda Cars India,3707,Honda Cars,False,323391,prior,9,1.146290
+PV,2025-09,Renault India,2562,,False,323391,prior,9,0.792230
+PV,2025-09,Others (PV),2022,,True,323391,prior,9,0.625249
+PV,2025-09,Mercedes-Benz Group,1396,Mercedes-Benz,False,323391,prior,9,0.431676
+PV,2025-09,Nissan Motor India,1379,,False,323391,prior,9,0.426419
+PV,2025-09,BMW India,1357,,False,323391,prior,9,0.419616
+PV,2025-09,BYD India,732,,False,323391,prior,9,0.226351
+PV,2025-09,Stellantis Group,641,,False,323391,prior,9,0.198212
+PV,2025-09,Jaguar Land Rover India,551,,False,323391,prior,9,0.170382
+PV,2025-09,Force Motors,511,,False,323391,prior,9,0.158013
+PV,2025-09,VinFast Auto India,6,,False,323391,prior,9,0.001855
+PV,2026-02,Maruti Suzuki,154095,,False,394768,current,2,39.034319
+PV,2026-02,Tata Motors,56447,,False,394768,current,2,14.298778
+PV,2026-02,Mahindra & Mahindra,53281,,False,394768,current,2,13.496788
+PV,2026-02,Hyundai Motor India,45615,,False,394768,current,2,11.554888
+PV,2026-02,Toyota Kirloskar Motor,26392,Toyota,False,394768,current,2,6.685446
+PV,2026-02,Kia India,25031,,False,394768,current,2,6.340686
+PV,2026-02,Skoda Auto Volkswagen Group,7615,,False,394768,current,2,1.928981
+PV,2026-02,Others (PV),5921,,True,394768,current,2,1.499868
+PV,2026-02,Honda Cars India,4774,Honda Cars,False,394768,current,2,1.209318
+PV,2026-02,JSW MG Motor,4548,JSW MG Motor,False,394768,current,2,1.152069
+PV,2026-02,Renault India,3248,,False,394768,current,2,0.822762
+PV,2026-02,Nissan Motor India,1622,,False,394768,current,2,0.410874
+PV,2026-02,Force Motors,1415,,False,394768,current,2,0.358438
+PV,2026-02,Mercedes-Benz Group,1371,Mercedes-Benz,False,394768,current,2,0.347293
+PV,2026-02,BMW India,1216,,False,394768,current,2,0.308029
+PV,2026-02,Stellantis Group,1009,,False,394768,current,2,0.255593
+PV,2026-02,Jaguar Land Rover India,478,,False,394768,current,2,0.121084
+PV,2026-02,VinFast Auto India,384,,False,394768,current,2,0.097272
+PV,2026-02,BYD India,306,,False,394768,current,2,0.077514
+PV,2026-03,Maruti Suzuki,172814,,False,440144,current,3,39.263059
+PV,2026-03,Tata Motors,65784,,False,440144,current,3,14.946018
+PV,2026-03,Mahindra & Mahindra,61029,,False,440144,current,3,13.865689
+PV,2026-03,Hyundai Motor India,48791,,False,440144,current,3,11.085236
+PV,2026-03,Kia India,28108,,False,440144,current,3,6.386092
+PV,2026-03,Toyota Kirloskar Motor,27533,Toyota,False,440144,current,3,6.255453
+PV,2026-03,Skoda Auto Volkswagen Group,8765,,False,440144,current,3,1.991394
+PV,2026-03,JSW MG Motor,6269,JSW MG Motor,False,440144,current,3,1.424307
+PV,2026-03,Honda Cars India,5528,Honda Cars,False,440144,current,3,1.255953
+PV,2026-03,Renault India,3594,,False,440144,current,3,0.816551
+PV,2026-03,Nissan Motor India,2544,,False,440144,current,3,0.577993
+PV,2026-03,Others (PV),2530,,True,440144,current,3,0.574812
+PV,2026-03,BMW India,1580,,False,440144,current,3,0.358973
+PV,2026-03,Mercedes-Benz Group,1448,Mercedes-Benz,False,440144,current,3,0.328983
+PV,2026-03,Force Motors,1312,,False,440144,current,3,0.298084
+PV,2026-03,Stellantis Group,971,,False,440144,current,3,0.220610
+PV,2026-03,VinFast Auto India,691,,False,440144,current,3,0.156994
+PV,2026-03,Jaguar Land Rover India,439,,False,440144,current,3,0.099740
+PV,2026-03,BYD India,414,,False,440144,current,3,0.094060
+PV,2026-04,Maruti Suzuki,158509,,False,407355,current,4,38.911760
+PV,2026-04,Tata Motors,57688,,False,407355,current,4,14.161604
+PV,2026-04,Mahindra & Mahindra,55236,,False,407355,current,4,13.559672
+PV,2026-04,Hyundai Motor India,47449,,False,407355,current,4,11.648071
+PV,2026-04,Toyota Kirloskar Motor,27006,Toyota,False,407355,current,4,6.629598
+PV,2026-04,Kia India,25226,,False,407355,current,4,6.192633
+PV,2026-04,Skoda Auto Volkswagen Group,8913,,False,407355,current,4,2.188018
+PV,2026-04,JSW MG Motor,6064,JSW MG Motor,False,407355,current,4,1.488628
+PV,2026-04,Honda Cars India,5346,Honda Cars,False,407355,current,4,1.312369
+PV,2026-04,Renault India,4087,,False,407355,current,4,1.003302
+PV,2026-04,Nissan Motor India,3047,,False,407355,current,4,0.747996
+PV,2026-04,Others (PV),1719,,True,407355,current,4,0.421991
+PV,2026-04,BMW India,1448,,False,407355,current,4,0.355464
+PV,2026-04,Mercedes-Benz Group,1330,Mercedes-Benz,False,407355,current,4,0.326497
+PV,2026-04,VinFast Auto India,1232,,False,407355,current,4,0.302439
+PV,2026-04,Force Motors,1166,,False,407355,current,4,0.286237
+PV,2026-04,Stellantis Group,970,,False,407355,current,4,0.238122
+PV,2026-04,BYD India,469,,False,407355,current,4,0.115133
+PV,2026-04,Jaguar Land Rover India,450,,False,407355,current,4,0.110469
+PV,2026-05,Maruti Suzuki,164925,,False,402591,current,5,40.965893
+PV,2026-05,Tata Motors,55544,,False,402591,current,5,13.796632
+PV,2026-05,Mahindra & Mahindra,51311,,False,402591,current,5,12.745193
+PV,2026-05,Hyundai Motor India,46223,,False,402591,current,5,11.481379
+PV,2026-05,Toyota Kirloskar Motor,26294,Toyota,False,402591,current,5,6.531194
+PV,2026-05,Kia India,24644,,False,402591,current,5,6.121349
+PV,2026-05,Skoda Auto Volkswagen Group,8380,,False,402591,current,5,2.081517
+PV,2026-05,JSW MG Motor,5861,JSW MG Motor,False,402591,current,5,1.455820
+PV,2026-05,Honda Cars India,4489,Honda Cars,False,402591,current,5,1.115027
+PV,2026-05,Renault India,4217,,False,402591,current,5,1.047465
+PV,2026-05,Nissan Motor India,2959,,False,402591,current,5,0.734989
+PV,2026-05,BMW India,1371,,False,402591,current,5,0.340544
+PV,2026-05,Mercedes-Benz Group,1327,Mercedes-Benz,False,402591,current,5,0.329615
+PV,2026-05,VinFast Auto India,1238,,False,402591,current,5,0.307508
+PV,2026-05,Others (PV),1182,,True,402591,current,5,0.293598
+PV,2026-05,Stellantis Group,851,,False,402591,current,5,0.211381
+PV,2026-05,Force Motors,726,,False,402591,current,5,0.180332
+PV,2026-05,BYD India,686,,False,402591,current,5,0.170396
+PV,2026-05,Jaguar Land Rover India,363,,False,402591,current,5,0.090166
+PV,2026-06,Maruti Suzuki,167834,,False,410853,current,6,40.850134
+PV,2026-06,Tata Motors,57009,,False,410853,current,6,13.875766
+PV,2026-06,Mahindra & Mahindra,54099,,False,410853,current,6,13.167483
+PV,2026-06,Hyundai Motor India,44163,,False,410853,current,6,10.749100
+PV,2026-06,Toyota Kirloskar Motor,28818,Toyota,False,410853,current,6,7.014188
+PV,2026-06,Kia India,23166,,False,410853,current,6,5.638513
+PV,2026-06,Skoda Auto Volkswagen Group,8098,,False,410853,current,6,1.971021
+PV,2026-06,JSW MG Motor,6997,JSW MG Motor,False,410853,current,6,1.703042
+PV,2026-06,Honda Cars India,4833,Honda Cars,False,410853,current,6,1.176333
+PV,2026-06,Renault India,3858,,False,410853,current,6,0.939022
+PV,2026-06,Nissan Motor India,2749,,False,410853,current,6,0.669096
+PV,2026-06,BMW India,1699,,False,410853,current,6,0.413530
+PV,2026-06,Mercedes-Benz Group,1608,Mercedes-Benz,False,410853,current,6,0.391381
+PV,2026-06,VinFast Auto India,1404,,False,410853,current,6,0.341728
+PV,2026-06,Others (PV),1189,,True,410853,current,6,0.289398
+PV,2026-06,Stellantis Group,999,,False,410853,current,6,0.243153
+PV,2026-06,BYD India,873,,False,410853,current,6,0.212485
+PV,2026-06,Force Motors,870,,False,410853,current,6,0.211755
+PV,2026-06,Jaguar Land Rover India,587,,False,410853,current,6,0.142873
+PV,2026-07,Maruti Suzuki,161873,,False,416555,current,7,38.859934
+PV,2026-07,Tata Motors,58774,,False,416555,current,7,14.109541
+PV,2026-07,Mahindra & Mahindra,56219,,False,416555,current,7,13.496177
+PV,2026-07,Hyundai Motor India,47853,,False,416555,current,7,11.487799
+PV,2026-07,Toyota Kirloskar Motor,29443,Toyota,False,416555,current,7,7.068214
+PV,2026-07,Kia India,25551,,False,416555,current,7,6.133884
+PV,2026-07,Skoda Auto Volkswagen Group,8221,,False,416555,current,7,1.973569
+PV,2026-07,JSW MG Motor,7030,JSW MG Motor,False,416555,current,7,1.687652
+PV,2026-07,Honda Cars India,5822,Honda Cars,False,416555,current,7,1.397655
+PV,2026-07,Renault India,3505,,False,416555,current,7,0.841426
+PV,2026-07,Nissan Motor India,2698,,False,416555,current,7,0.647694
+PV,2026-07,BMW India,1702,,False,416555,current,7,0.408590
+PV,2026-07,Mercedes-Benz Group,1527,Mercedes-Benz,False,416555,current,7,0.366578
+PV,2026-07,VinFast Auto India,1482,,False,416555,current,7,0.355775
+PV,2026-07,Force Motors,1193,,False,416555,current,7,0.286397
+PV,2026-07,Stellantis Group,1168,,False,416555,current,7,0.280395
+PV,2026-07,Others (PV),1142,,True,416555,current,7,0.274153
+PV,2026-07,BYD India,749,,False,416555,current,7,0.179808
+PV,2026-07,Jaguar Land Rover India,603,,False,416555,current,7,0.144759
+PV,2026-08,Maruti Suzuki,165200,,False,402398,current,8,41.053882
+PV,2026-08,Tata Motors,57841,,False,402398,current,8,14.374077
+PV,2026-08,Mahindra & Mahindra,50245,,False,402398,current,8,12.486394
+PV,2026-08,Hyundai Motor India,46987,,False,402398,current,8,11.676748
+PV,2026-08,Toyota Kirloskar Motor,24856,Toyota,False,402398,current,8,6.176969
+PV,2026-08,Kia India,23371,,False,402398,current,8,5.807931
+PV,2026-08,Skoda Auto Volkswagen Group,7469,,False,402398,current,8,1.856123
+PV,2026-08,JSW MG Motor,5784,JSW MG Motor,False,402398,current,8,1.437383
+PV,2026-08,Honda Cars India,4968,Honda Cars,False,402398,current,8,1.234599
+PV,2026-08,Renault India,3275,,False,402398,current,8,0.813871
+PV,2026-08,Nissan Motor India,2758,,False,402398,current,8,0.685391
+PV,2026-08,VinFast Auto India,2199,,False,402398,current,8,0.546474
+PV,2026-08,Others (PV),1475,,True,402398,current,8,0.366553
+PV,2026-08,BMW India,1402,,False,402398,current,8,0.348411
+PV,2026-08,Mercedes-Benz Group,1353,Mercedes-Benz,False,402398,current,8,0.336234
+PV,2026-08,Force Motors,1111,,False,402398,current,8,0.276095
+PV,2026-08,Stellantis Group,998,,False,402398,current,8,0.248013
+PV,2026-08,Jaguar Land Rover India,563,,False,402398,current,8,0.139911
+PV,2026-08,BYD India,543,,False,402398,current,8,0.134941
+PV,2026-09,Maruti Suzuki,169132,,False,427213,current,9,39.589619
+PV,2026-09,Mahindra & Mahindra,57343,,False,427213,current,9,13.422578
+PV,2026-09,Tata Motors,57254,,False,427213,current,9,13.401746
+PV,2026-09,Hyundai Motor India,50201,,False,427213,current,9,11.750813
+PV,2026-09,Toyota Kirloskar Motor,28050,Toyota,False,427213,current,9,6.565811
+PV,2026-09,Kia India,26663,,False,427213,current,9,6.241149
+PV,2026-09,Skoda Auto Volkswagen Group,8479,,False,427213,current,9,1.984724
+PV,2026-09,JSW MG Motor,6475,JSW MG Motor,False,427213,current,9,1.515637
+PV,2026-09,Honda Cars India,5283,Honda Cars,False,427213,current,9,1.236620
+PV,2026-09,Renault India,3410,,False,427213,current,9,0.798197
+PV,2026-09,Nissan Motor India,2967,,False,427213,current,9,0.694501
+PV,2026-09,VinFast Auto India,2964,,False,427213,current,9,0.693799
+PV,2026-09,BMW India,1970,,False,427213,current,9,0.461128
+PV,2026-09,Mercedes-Benz Group,1768,Mercedes-Benz,False,427213,current,9,0.413845
+PV,2026-09,Others (PV),1429,,True,427213,current,9,0.334494
+PV,2026-09,Force Motors,1332,,False,427213,current,9,0.311788
+PV,2026-09,Stellantis Group,1076,,False,427213,current,9,0.251865
+PV,2026-09,BYD India,836,,False,427213,current,9,0.195687
+PV,2026-09,Jaguar Land Rover India,581,,False,427213,current,9,0.135998

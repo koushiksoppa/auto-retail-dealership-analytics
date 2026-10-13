@@ -1,0 +1,54 @@
+/// SIMULATED: SIMULATED generic vehicle models.
+table DimVehicleModel
+
+	column ModelId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ModelId
+
+	column Brand
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Brand
+
+	column ModelName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ModelName
+
+	column VehicleCategory
+		dataType: string
+		summarizeBy: none
+		sourceColumn: VehicleCategory
+
+	column Powertrain
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Powertrain
+
+	column SegmentKey
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column ExShowroomPriceINR
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: ExShowroomPriceINR
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition DimVehicleModel = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="DimVehicleModel"]}[Data]
+				in
+				    Data
+

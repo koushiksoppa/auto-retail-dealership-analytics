@@ -1,0 +1,101 @@
+/// SIMULATED: SIMULATED deliveries.
+table FactVehicleDelivery
+
+	column DeliveryId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DeliveryId
+
+	column BookingId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: BookingId
+
+	column LeadId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: LeadId
+
+	column Vin
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Vin
+
+	column DealershipId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipId
+
+	column ModelId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ModelId
+
+	column SalespersonId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SalespersonId
+
+	column DeliveryDateKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: DeliveryDateKey
+
+	column DeliveryDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: DeliveryDate
+
+	column DaysFromBooking
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: DaysFromBooking
+
+	column DaysInInventory
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: DaysInInventory
+
+	column ExShowroomPriceINR
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: ExShowroomPriceINR
+
+	column DiscountPct
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: DiscountPct
+
+	column InvoiceAmountINR
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: InvoiceAmountINR
+
+	column PurchaseCostINR
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: PurchaseCostINR
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition FactVehicleDelivery = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="FactVehicleDelivery"]}[Data]
+				in
+				    Data
+

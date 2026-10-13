@@ -1,0 +1,61 @@
+/// DERIVED: Portfolio attention flags computed by python/auto_retail_analysis.py.
+table MarketAttention
+
+	column Brand
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Brand
+
+	column SegmentCode
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SegmentCode
+
+	column AttentionStatus
+		dataType: string
+		summarizeBy: none
+		sourceColumn: AttentionStatus
+
+	column Triggers
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Triggers
+
+	column YoYGrowthPct
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: YoYGrowthPct
+
+	column SegmentGrowthPct
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: SegmentGrowthPct
+
+	column ShareChangeBps
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: ShareChangeBps
+
+	column RegistrationGapUnits
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: RegistrationGapUnits
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition MarketAttention = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="MarketAttention"]}[Data]
+				in
+				    Data
+

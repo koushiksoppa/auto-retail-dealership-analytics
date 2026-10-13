@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+
+	annotation __PBI_TimeIntelligenceEnabled = 0
+
+ref table _Measures
+ref table DimDate
+ref table DimVehicleSegment
+ref table DimOEM
+ref table AnalysisPeriod
+ref table FactMarketRegistrations
+ref table FactMarketSegmentMonth
+ref table MarketAttention
+ref table DimDealership
+ref table DimSalesperson
+ref table DimVehicleModel
+ref table FactLeadFunnel
+ref table FactVehicleDelivery
+ref table FactVehicleInventory
+ref table FactInventorySnapshot
+ref table FactActionTrigger

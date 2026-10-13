@@ -1,0 +1,158 @@
+/// SIMULATED: SIMULATED leads with stage dates (lead cohort).
+table FactLeadFunnel
+
+	column LeadId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: LeadId
+
+	column DealershipId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipId
+
+	column SalespersonId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SalespersonId
+
+	column ModelId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ModelId
+
+	column LeadDateKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: LeadDateKey
+
+	column LeadSource
+		dataType: string
+		summarizeBy: none
+		sourceColumn: LeadSource
+
+	column LeadDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: LeadDate
+
+	column FirstContactHours
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: FirstContactHours
+
+	column FirstContactWithinSLA
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: FirstContactWithinSLA
+
+	column QualifiedDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: QualifiedDate
+
+	column TestDriveDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: TestDriveDate
+
+	column BookingId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: BookingId
+
+	column BookingDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: BookingDate
+
+	column RequestedDeliveryDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: RequestedDeliveryDate
+
+	column BookingCancelledDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: BookingCancelledDate
+
+	column LeadStatus
+		dataType: string
+		summarizeBy: none
+		sourceColumn: LeadStatus
+
+	column LostStage
+		dataType: string
+		summarizeBy: none
+		sourceColumn: LostStage
+
+	column LostReason
+		dataType: string
+		summarizeBy: none
+		sourceColumn: LostReason
+
+	column LostDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: LostDate
+
+	column DeliveryId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DeliveryId
+
+	column DeliveryDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: DeliveryDate
+
+	column Vin
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Vin
+
+	column IsQualified
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsQualified
+
+	column IsTestDrive
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsTestDrive
+
+	column IsBooked
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsBooked
+
+	column IsDelivered
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsDelivered
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition FactLeadFunnel = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="FactLeadFunnel"]}[Data]
+				in
+				    Data
+

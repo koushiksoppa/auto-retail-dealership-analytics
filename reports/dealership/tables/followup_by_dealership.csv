@@ -1,0 +1,7 @@
+dealership_id,first_contact_sla_pct,median_first_contact_hours,p90_first_contact_hours
+DLR01,73.1846,2.3000,7.3400
+DLR02,79.2666,1.8000,6.1000
+DLR03,74.3500,2.3000,6.3000
+DLR04,76.2737,2.0000,6.7700
+DLR05,70.2407,2.4000,8.1200
+DLR06,81.0905,1.7000,5.7000

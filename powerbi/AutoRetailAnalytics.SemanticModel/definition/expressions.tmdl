@@ -1,0 +1,5 @@
+/// SQL Server instance. Change in Power BI Desktop: Transform data > Edit parameters.
+expression SqlServer = ".\SQLEXPRESS" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+
+/// Database built by python/sql_server_pipeline.py.
+expression SqlDatabase = "AutoRetailAnalytics" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]

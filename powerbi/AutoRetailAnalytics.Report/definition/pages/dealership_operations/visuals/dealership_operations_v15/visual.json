@@ -1,0 +1,310 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "dealership_operations_v15",
+  "position": {
+    "x": 20,
+    "y": 460,
+    "z": 15000,
+    "width": 1240,
+    "height": 248,
+    "tabOrder": 15000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "DealershipId"
+                }
+              },
+              "queryRef": "FactActionTrigger.DealershipId",
+              "nativeQueryRef": "DealershipId",
+              "displayName": "Dealer"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "Kpi"
+                }
+              },
+              "queryRef": "FactActionTrigger.Kpi",
+              "nativeQueryRef": "Kpi",
+              "displayName": "KPI"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "ActualValue"
+                }
+              },
+              "queryRef": "FactActionTrigger.ActualValue",
+              "nativeQueryRef": "ActualValue",
+              "displayName": "Actual"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "Comparator"
+                }
+              },
+              "queryRef": "FactActionTrigger.Comparator",
+              "nativeQueryRef": "Comparator",
+              "displayName": "Rule"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "Threshold"
+                }
+              },
+              "queryRef": "FactActionTrigger.Threshold",
+              "nativeQueryRef": "Threshold",
+              "displayName": "Threshold"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "ResponsibleRole"
+                }
+              },
+              "queryRef": "FactActionTrigger.ResponsibleRole",
+              "nativeQueryRef": "ResponsibleRole",
+              "displayName": "Owner"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "ReviewCadence"
+                }
+              },
+              "queryRef": "FactActionTrigger.ReviewCadence",
+              "nativeQueryRef": "ReviewCadence",
+              "displayName": "Cadence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "RecommendedAction"
+                }
+              },
+              "queryRef": "FactActionTrigger.RecommendedAction",
+              "nativeQueryRef": "RecommendedAction",
+              "displayName": "Recommended action"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactActionTrigger"
+                    }
+                  },
+                  "Property": "ThresholdBasis"
+                }
+              },
+              "queryRef": "FactActionTrigger.ThresholdBasis",
+              "nativeQueryRef": "ThresholdBasis",
+              "displayName": "Threshold basis"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Management actions triggered (SIMULATED; thresholds illustrative unless a basis is cited)'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFF4E0'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "dealership_operations_v15_f0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FactActionTrigger"
+              }
+            },
+            "Property": "Breached"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "FactActionTrigger",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "Breached"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "true"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

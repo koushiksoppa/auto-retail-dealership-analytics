@@ -1,0 +1,17 @@
+lost_stage,lost_reason,lost_leads,share_of_lost_pct
+Booking,Booking cancelled - delivery wait,26,0.2928
+Booking,Booking cancelled - changed mind,19,0.2140
+Booking,Booking cancelled - finance,19,0.2140
+Lead,Only researching,1095,12.3311
+Lead,Duplicate enquiry,1067,12.0158
+Lead,Not reachable,1041,11.7230
+Lead,Budget mismatch,1038,11.6892
+Qualified,No test drive slot accepted,591,6.6554
+Qualified,Purchase postponed,545,6.1374
+Qualified,Finance not approved,540,6.0811
+Qualified,Bought competitor brand,511,5.7545
+Test drive,Product fit concerns,501,5.6419
+Test drive,Bought competitor brand,489,5.5068
+Test drive,Purchase postponed,485,5.4617
+Test drive,Finance not approved,466,5.2477
+Test drive,Price / discount expectation,447,5.0338

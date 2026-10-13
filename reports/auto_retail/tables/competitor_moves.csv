@@ -1,0 +1,20 @@
+segment,list,oem_canonical,units_prior,units_current,share_prior_pct,share_current_pct,share_change_bps,yoy_growth_pct,portfolio_brand
+2W,Top share gainers,TVS Motor,2272492,2885484,18.951080,19.812087,86.100690,26.974440,
+2W,Top share gainers,Ather Energy,127740,232471,1.065267,1.596174,53.090728,81.987631,Ather
+2W,Top share gainers,Honda Motorcycle & Scooter India,2961563,3669847,24.697476,25.197619,50.014311,23.915885,
+2W,Top share gainers,Greaves Electric Mobility,35175,66252,0.293336,0.454894,16.155812,88.349680,
+2W,Top share gainers,River Mobility,10166,34373,0.084778,0.236009,15.123151,238.117254,
+2W,Top share losers,Hero MotoCorp,3271884,3830861,27.285348,26.303161,-98.218686,17.084255,
+2W,Top share losers,Bajaj Auto,1296772,1488203,10.814220,10.218184,-59.603639,14.762117,
+2W,Top share losers,Ola Electric,143573,98957,1.197304,0.679451,-51.785294,-31.075481,
+2W,Top share losers,Suzuki Motorcycle India,710918,794964,5.928586,5.458320,-47.026554,11.822179,
+PV,Top share gainers,Tata Motors,340591,466341,12.596063,14.123512,152.744893,36.921117,
+PV,Top share gainers,Maruti Suzuki,1041651,1314382,38.523337,39.807116,128.377878,26.182570,
+PV,Top share gainers,VinFast Auto India,6,11594,0.000222,0.351134,35.091172,,
+PV,Top share gainers,Nissan Motor India,12906,21344,0.477302,0.646420,16.911812,65.380443,
+PV,Top share gainers,Kia India,161733,201760,5.981365,6.110464,12.909881,24.748814,
+PV,Top share losers,Hyundai Motor India,338583,377282,12.521801,11.426289,-109.551271,11.429694,
+PV,Top share losers,Toyota Kirloskar Motor,202405,218392,7.485536,6.614177,-87.135863,7.898520,Toyota
+PV,Top share losers,Skoda Auto Volkswagen Group,69730,65940,2.578822,1.997046,-58.177586,-5.435250,
+PV,Top share losers,Mahindra & Mahindra,367858,438763,13.604478,13.288290,-31.618733,19.275101,
+PV,Top share losers,JSW MG Motor,46705,49028,1.727289,1.484852,-24.243673,4.973772,JSW MG Motor

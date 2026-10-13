@@ -1,0 +1,381 @@
+area,key,metric,python,sql,abs_diff,passed
+segment growth,2W,units_prior,11991359.000000,11991359.000000,0.000000,True
+segment growth,2W,units_current,14564261.000000,14564261.000000,0.000000,True
+segment growth,2W,yoy_growth_pct,21.456300,21.456300,0.000000,True
+segment growth,PV,units_prior,2703948.000000,2703948.000000,0.000000,True
+segment growth,PV,units_current,3301877.000000,3301877.000000,0.000000,True
+segment growth,PV,yoy_growth_pct,22.113184,22.113184,0.000000,True
+portfolio brands,2W|Ather,units_prior,127740.000000,127740.000000,0.000000,True
+portfolio brands,2W|Ather,units_current,232471.000000,232471.000000,0.000000,True
+portfolio brands,2W|Ather,yoy_growth_pct,81.987631,81.987631,0.000000,True
+portfolio brands,2W|Ather,segment_growth_pct,21.456300,21.456300,0.000000,True
+portfolio brands,2W|Ather,growth_gap_pp,60.531331,60.531331,0.000000,True
+portfolio brands,2W|Ather,share_prior_pct,1.065267,1.065267,0.000000,True
+portfolio brands,2W|Ather,share_current_pct,1.596174,1.596174,0.000000,True
+portfolio brands,2W|Ather,share_change_bps,53.090728,53.090728,0.000000,True
+portfolio brands,2W|Ather,constant_share_units,155148.278034,155148.278000,0.000034,True
+portfolio brands,2W|Ather,registration_gap_units,-77322.721966,-77322.722000,0.000034,True
+portfolio brands,PV|Honda Cars,units_prior,37271.000000,37271.000000,0.000000,True
+portfolio brands,PV|Honda Cars,units_current,41043.000000,41043.000000,0.000000,True
+portfolio brands,PV|Honda Cars,yoy_growth_pct,10.120469,10.120469,0.000000,True
+portfolio brands,PV|Honda Cars,segment_growth_pct,22.113184,22.113184,0.000000,True
+portfolio brands,PV|Honda Cars,growth_gap_pp,-11.992715,-11.992715,0.000000,True
+portfolio brands,PV|Honda Cars,share_prior_pct,1.378392,1.378392,0.000000,True
+portfolio brands,PV|Honda Cars,share_current_pct,1.243020,1.243020,0.000000,True
+portfolio brands,PV|Honda Cars,share_change_bps,-13.537163,-13.537163,0.000000,True
+portfolio brands,PV|Honda Cars,constant_share_units,45512.804857,45512.804900,0.000043,True
+portfolio brands,PV|Honda Cars,registration_gap_units,4469.804857,4469.804900,0.000043,True
+portfolio brands,PV|JSW MG Motor,units_prior,46705.000000,46705.000000,0.000000,True
+portfolio brands,PV|JSW MG Motor,units_current,49028.000000,49028.000000,0.000000,True
+portfolio brands,PV|JSW MG Motor,yoy_growth_pct,4.973772,4.973772,0.000000,True
+portfolio brands,PV|JSW MG Motor,segment_growth_pct,22.113184,22.113184,0.000000,True
+portfolio brands,PV|JSW MG Motor,growth_gap_pp,-17.139413,-17.139413,0.000000,True
+portfolio brands,PV|JSW MG Motor,share_prior_pct,1.727289,1.727289,0.000000,True
+portfolio brands,PV|JSW MG Motor,share_current_pct,1.484852,1.484852,0.000000,True
+portfolio brands,PV|JSW MG Motor,share_change_bps,-24.243673,-24.243673,0.000000,True
+portfolio brands,PV|JSW MG Motor,constant_share_units,57032.962648,57032.962600,0.000048,True
+portfolio brands,PV|JSW MG Motor,registration_gap_units,8004.962648,8004.962600,0.000048,True
+portfolio brands,PV|Mercedes-Benz,units_prior,11729.000000,11729.000000,0.000000,True
+portfolio brands,PV|Mercedes-Benz,units_current,11732.000000,11732.000000,0.000000,True
+portfolio brands,PV|Mercedes-Benz,yoy_growth_pct,0.025578,0.025578,0.000000,True
+portfolio brands,PV|Mercedes-Benz,segment_growth_pct,22.113184,22.113184,0.000000,True
+portfolio brands,PV|Mercedes-Benz,growth_gap_pp,-22.087607,-22.087607,0.000000,True
+portfolio brands,PV|Mercedes-Benz,share_prior_pct,0.433773,0.433773,0.000000,True
+portfolio brands,PV|Mercedes-Benz,share_current_pct,0.355313,0.355313,0.000000,True
+portfolio brands,PV|Mercedes-Benz,share_change_bps,-7.846008,-7.846008,0.000000,True
+portfolio brands,PV|Mercedes-Benz,constant_share_units,14322.655367,14322.655400,0.000033,True
+portfolio brands,PV|Mercedes-Benz,registration_gap_units,2590.655367,2590.655400,0.000033,True
+portfolio brands,PV|Portfolio car brands,units_prior,298110.000000,298110.000000,0.000000,True
+portfolio brands,PV|Portfolio car brands,units_current,320195.000000,320195.000000,0.000000,True
+portfolio brands,PV|Portfolio car brands,yoy_growth_pct,7.408339,7.408339,0.000000,True
+portfolio brands,PV|Portfolio car brands,segment_growth_pct,22.113184,22.113184,0.000000,True
+portfolio brands,PV|Portfolio car brands,growth_gap_pp,-14.704845,-14.704845,0.000000,True
+portfolio brands,PV|Portfolio car brands,share_prior_pct,11.024990,11.024990,0.000000,True
+portfolio brands,PV|Portfolio car brands,share_current_pct,9.697363,9.697363,0.000000,True
+portfolio brands,PV|Portfolio car brands,share_change_bps,-132.762708,-132.762708,0.000000,True
+portfolio brands,PV|Portfolio car brands,constant_share_units,364031.613208,364031.613200,0.000008,True
+portfolio brands,PV|Portfolio car brands,registration_gap_units,43836.613208,43836.613200,0.000008,True
+portfolio brands,PV|Toyota,units_prior,202405.000000,202405.000000,0.000000,True
+portfolio brands,PV|Toyota,units_current,218392.000000,218392.000000,0.000000,True
+portfolio brands,PV|Toyota,yoy_growth_pct,7.898520,7.898520,0.000000,True
+portfolio brands,PV|Toyota,segment_growth_pct,22.113184,22.113184,0.000000,True
+portfolio brands,PV|Toyota,growth_gap_pp,-14.214664,-14.214664,0.000000,True
+portfolio brands,PV|Toyota,share_prior_pct,7.485536,7.485536,0.000000,True
+portfolio brands,PV|Toyota,share_current_pct,6.614177,6.614177,0.000000,True
+portfolio brands,PV|Toyota,share_change_bps,-87.135863,-87.135863,0.000000,True
+portfolio brands,PV|Toyota,constant_share_units,247163.190337,247163.190300,0.000037,True
+portfolio brands,PV|Toyota,registration_gap_units,28771.190337,28771.190300,0.000037,True
+OEM share,2W|Ather Energy,units_prior,127740.000000,127740.000000,0.000000,True
+OEM share,2W|Ather Energy,units_current,232471.000000,232471.000000,0.000000,True
+OEM share,2W|Ather Energy,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Ather Energy,share_prior_pct,1.065267,1.065267,0.000000,True
+OEM share,2W|Ather Energy,share_current_pct,1.596174,1.596174,0.000000,True
+OEM share,2W|Ather Energy,share_change_bps,53.090728,53.090728,0.000000,True
+OEM share,2W|BGauss Auto,units_prior,14196.000000,14196.000000,0.000000,True
+OEM share,2W|BGauss Auto,units_current,31757.000000,31757.000000,0.000000,True
+OEM share,2W|BGauss Auto,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|BGauss Auto,share_prior_pct,0.118385,0.118385,0.000000,True
+OEM share,2W|BGauss Auto,share_current_pct,0.218047,0.218047,0.000000,True
+OEM share,2W|BGauss Auto,share_change_bps,9.966220,9.966220,0.000000,True
+OEM share,2W|Bajaj Auto,units_prior,1296772.000000,1296772.000000,0.000000,True
+OEM share,2W|Bajaj Auto,units_current,1488203.000000,1488203.000000,0.000000,True
+OEM share,2W|Bajaj Auto,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Bajaj Auto,share_prior_pct,10.814220,10.814220,0.000000,True
+OEM share,2W|Bajaj Auto,share_current_pct,10.218184,10.218184,0.000000,True
+OEM share,2W|Bajaj Auto,share_change_bps,-59.603639,-59.603639,0.000000,True
+OEM share,2W|Bounce Electric,units_prior,895.000000,895.000000,0.000000,True
+OEM share,2W|Bounce Electric,units_current,3069.000000,3069.000000,0.000000,True
+OEM share,2W|Bounce Electric,coverage_complete,0.000000,0.000000,0.000000,True
+OEM share,2W|Bounce Electric,share_prior_pct,,,0.000000,True
+OEM share,2W|Bounce Electric,share_current_pct,,,0.000000,True
+OEM share,2W|Bounce Electric,share_change_bps,,,0.000000,True
+OEM share,2W|Classic Legends,units_prior,19753.000000,19753.000000,0.000000,True
+OEM share,2W|Classic Legends,units_current,35937.000000,35937.000000,0.000000,True
+OEM share,2W|Classic Legends,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Classic Legends,share_prior_pct,0.164727,0.164727,0.000000,True
+OEM share,2W|Classic Legends,share_current_pct,0.246748,0.246748,0.000000,True
+OEM share,2W|Classic Legends,share_change_bps,8.202089,8.202089,0.000000,True
+OEM share,2W|E-Sprinto Green Energy,units_prior,957.000000,957.000000,0.000000,True
+OEM share,2W|E-Sprinto Green Energy,units_current,1997.000000,1997.000000,0.000000,True
+OEM share,2W|E-Sprinto Green Energy,coverage_complete,0.000000,0.000000,0.000000,True
+OEM share,2W|E-Sprinto Green Energy,share_prior_pct,,,0.000000,True
+OEM share,2W|E-Sprinto Green Energy,share_current_pct,,,0.000000,True
+OEM share,2W|E-Sprinto Green Energy,share_change_bps,,,0.000000,True
+OEM share,2W|Greaves Electric Mobility,units_prior,35175.000000,35175.000000,0.000000,True
+OEM share,2W|Greaves Electric Mobility,units_current,66252.000000,66252.000000,0.000000,True
+OEM share,2W|Greaves Electric Mobility,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Greaves Electric Mobility,share_prior_pct,0.293336,0.293336,0.000000,True
+OEM share,2W|Greaves Electric Mobility,share_current_pct,0.454894,0.454894,0.000000,True
+OEM share,2W|Greaves Electric Mobility,share_change_bps,16.155812,16.155812,0.000000,True
+OEM share,2W|Hero MotoCorp,units_prior,3271884.000000,3271884.000000,0.000000,True
+OEM share,2W|Hero MotoCorp,units_current,3830861.000000,3830861.000000,0.000000,True
+OEM share,2W|Hero MotoCorp,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Hero MotoCorp,share_prior_pct,27.285348,27.285348,0.000000,True
+OEM share,2W|Hero MotoCorp,share_current_pct,26.303161,26.303161,0.000000,True
+OEM share,2W|Hero MotoCorp,share_change_bps,-98.218686,-98.218686,0.000000,True
+OEM share,2W|Honda Motorcycle & Scooter India,units_prior,2961563.000000,2961563.000000,0.000000,True
+OEM share,2W|Honda Motorcycle & Scooter India,units_current,3669847.000000,3669847.000000,0.000000,True
+OEM share,2W|Honda Motorcycle & Scooter India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Honda Motorcycle & Scooter India,share_prior_pct,24.697476,24.697476,0.000000,True
+OEM share,2W|Honda Motorcycle & Scooter India,share_current_pct,25.197619,25.197619,0.000000,True
+OEM share,2W|Honda Motorcycle & Scooter India,share_change_bps,50.014311,50.014311,0.000000,True
+OEM share,2W|India Yamaha Motor,units_prior,406789.000000,406789.000000,0.000000,True
+OEM share,2W|India Yamaha Motor,units_current,512874.000000,512874.000000,0.000000,True
+OEM share,2W|India Yamaha Motor,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|India Yamaha Motor,share_prior_pct,3.392351,3.392351,0.000000,True
+OEM share,2W|India Yamaha Motor,share_current_pct,3.521456,3.521456,0.000000,True
+OEM share,2W|India Yamaha Motor,share_change_bps,12.910460,12.910460,0.000000,True
+OEM share,2W|Ola Electric,units_prior,143573.000000,143573.000000,0.000000,True
+OEM share,2W|Ola Electric,units_current,98957.000000,98957.000000,0.000000,True
+OEM share,2W|Ola Electric,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Ola Electric,share_prior_pct,1.197304,1.197304,0.000000,True
+OEM share,2W|Ola Electric,share_current_pct,0.679451,0.679451,0.000000,True
+OEM share,2W|Ola Electric,share_change_bps,-51.785294,-51.785294,0.000000,True
+OEM share,2W|Others (2W),units_prior,76331.000000,76331.000000,0.000000,True
+OEM share,2W|Others (2W),units_current,95618.000000,95618.000000,0.000000,True
+OEM share,2W|Others (2W),coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Others (2W),share_prior_pct,0.636550,0.636550,0.000000,True
+OEM share,2W|Others (2W),share_current_pct,0.656525,0.656525,0.000000,True
+OEM share,2W|Others (2W),share_change_bps,1.997486,1.997486,0.000000,True
+OEM share,2W|Piaggio Vehicles,units_prior,20764.000000,20764.000000,0.000000,True
+OEM share,2W|Piaggio Vehicles,units_current,26291.000000,26291.000000,0.000000,True
+OEM share,2W|Piaggio Vehicles,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Piaggio Vehicles,share_prior_pct,0.173158,0.173158,0.000000,True
+OEM share,2W|Piaggio Vehicles,share_current_pct,0.180517,0.180517,0.000000,True
+OEM share,2W|Piaggio Vehicles,share_change_bps,0.735920,0.735920,0.000000,True
+OEM share,2W|River Mobility,units_prior,10166.000000,10166.000000,0.000000,True
+OEM share,2W|River Mobility,units_current,34373.000000,34373.000000,0.000000,True
+OEM share,2W|River Mobility,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|River Mobility,share_prior_pct,0.084778,0.084778,0.000000,True
+OEM share,2W|River Mobility,share_current_pct,0.236009,0.236009,0.000000,True
+OEM share,2W|River Mobility,share_change_bps,15.123151,15.123151,0.000000,True
+OEM share,2W|Royal Enfield,units_prior,621391.000000,621391.000000,0.000000,True
+OEM share,2W|Royal Enfield,units_current,755306.000000,755306.000000,0.000000,True
+OEM share,2W|Royal Enfield,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Royal Enfield,share_prior_pct,5.181990,5.181990,0.000000,True
+OEM share,2W|Royal Enfield,share_current_pct,5.186024,5.186024,0.000000,True
+OEM share,2W|Royal Enfield,share_change_bps,0.403372,0.403372,0.000000,True
+OEM share,2W|Suzuki Motorcycle India,units_prior,710918.000000,710918.000000,0.000000,True
+OEM share,2W|Suzuki Motorcycle India,units_current,794964.000000,794964.000000,0.000000,True
+OEM share,2W|Suzuki Motorcycle India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|Suzuki Motorcycle India,share_prior_pct,5.928586,5.928586,0.000000,True
+OEM share,2W|Suzuki Motorcycle India,share_current_pct,5.458320,5.458320,0.000000,True
+OEM share,2W|Suzuki Motorcycle India,share_change_bps,-47.026554,-47.026554,0.000000,True
+OEM share,2W|TVS Motor,units_prior,2272492.000000,2272492.000000,0.000000,True
+OEM share,2W|TVS Motor,units_current,2885484.000000,2885484.000000,0.000000,True
+OEM share,2W|TVS Motor,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,2W|TVS Motor,share_prior_pct,18.951080,18.951080,0.000000,True
+OEM share,2W|TVS Motor,share_current_pct,19.812087,19.812087,0.000000,True
+OEM share,2W|TVS Motor,share_change_bps,86.100690,86.100690,0.000000,True
+OEM share,PV|BMW India,units_prior,10657.000000,10657.000000,0.000000,True
+OEM share,PV|BMW India,units_current,12388.000000,12388.000000,0.000000,True
+OEM share,PV|BMW India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|BMW India,share_prior_pct,0.394127,0.394127,0.000000,True
+OEM share,PV|BMW India,share_current_pct,0.375181,0.375181,0.000000,True
+OEM share,PV|BMW India,share_change_bps,-1.894686,-1.894686,0.000000,True
+OEM share,PV|BYD India,units_prior,4183.000000,4183.000000,0.000000,True
+OEM share,PV|BYD India,units_current,4876.000000,4876.000000,0.000000,True
+OEM share,PV|BYD India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|BYD India,share_prior_pct,0.154700,0.154700,0.000000,True
+OEM share,PV|BYD India,share_current_pct,0.147674,0.147674,0.000000,True
+OEM share,PV|BYD India,share_change_bps,-0.702614,-0.702614,0.000000,True
+OEM share,PV|Force Motors,units_prior,4258.000000,4258.000000,0.000000,True
+OEM share,PV|Force Motors,units_current,9125.000000,9125.000000,0.000000,True
+OEM share,PV|Force Motors,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Force Motors,share_prior_pct,0.157473,0.157473,0.000000,True
+OEM share,PV|Force Motors,share_current_pct,0.276358,0.276358,0.000000,True
+OEM share,PV|Force Motors,share_change_bps,11.888452,11.888452,0.000000,True
+OEM share,PV|Honda Cars India,units_prior,37271.000000,37271.000000,0.000000,True
+OEM share,PV|Honda Cars India,units_current,41043.000000,41043.000000,0.000000,True
+OEM share,PV|Honda Cars India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Honda Cars India,share_prior_pct,1.378392,1.378392,0.000000,True
+OEM share,PV|Honda Cars India,share_current_pct,1.243020,1.243020,0.000000,True
+OEM share,PV|Honda Cars India,share_change_bps,-13.537163,-13.537163,0.000000,True
+OEM share,PV|Hyundai Motor India,units_prior,338583.000000,338583.000000,0.000000,True
+OEM share,PV|Hyundai Motor India,units_current,377282.000000,377282.000000,0.000000,True
+OEM share,PV|Hyundai Motor India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Hyundai Motor India,share_prior_pct,12.521801,12.521801,0.000000,True
+OEM share,PV|Hyundai Motor India,share_current_pct,11.426289,11.426289,0.000000,True
+OEM share,PV|Hyundai Motor India,share_change_bps,-109.551271,-109.551271,0.000000,True
+OEM share,PV|JSW MG Motor,units_prior,46705.000000,46705.000000,0.000000,True
+OEM share,PV|JSW MG Motor,units_current,49028.000000,49028.000000,0.000000,True
+OEM share,PV|JSW MG Motor,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|JSW MG Motor,share_prior_pct,1.727289,1.727289,0.000000,True
+OEM share,PV|JSW MG Motor,share_current_pct,1.484852,1.484852,0.000000,True
+OEM share,PV|JSW MG Motor,share_change_bps,-24.243673,-24.243673,0.000000,True
+OEM share,PV|Jaguar Land Rover India,units_prior,4069.000000,4069.000000,0.000000,True
+OEM share,PV|Jaguar Land Rover India,units_current,4064.000000,4064.000000,0.000000,True
+OEM share,PV|Jaguar Land Rover India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Jaguar Land Rover India,share_prior_pct,0.150484,0.150484,0.000000,True
+OEM share,PV|Jaguar Land Rover India,share_current_pct,0.123082,0.123082,0.000000,True
+OEM share,PV|Jaguar Land Rover India,share_change_bps,-2.740216,-2.740216,0.000000,True
+OEM share,PV|Kia India,units_prior,161733.000000,161733.000000,0.000000,True
+OEM share,PV|Kia India,units_current,201760.000000,201760.000000,0.000000,True
+OEM share,PV|Kia India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Kia India,share_prior_pct,5.981365,5.981365,0.000000,True
+OEM share,PV|Kia India,share_current_pct,6.110464,6.110464,0.000000,True
+OEM share,PV|Kia India,share_change_bps,12.909881,12.909881,0.000000,True
+OEM share,PV|Mahindra & Mahindra,units_prior,367858.000000,367858.000000,0.000000,True
+OEM share,PV|Mahindra & Mahindra,units_current,438763.000000,438763.000000,0.000000,True
+OEM share,PV|Mahindra & Mahindra,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Mahindra & Mahindra,share_prior_pct,13.604478,13.604478,0.000000,True
+OEM share,PV|Mahindra & Mahindra,share_current_pct,13.288290,13.288290,0.000000,True
+OEM share,PV|Mahindra & Mahindra,share_change_bps,-31.618733,-31.618733,0.000000,True
+OEM share,PV|Maruti Suzuki,units_prior,1041651.000000,1041651.000000,0.000000,True
+OEM share,PV|Maruti Suzuki,units_current,1314382.000000,1314382.000000,0.000000,True
+OEM share,PV|Maruti Suzuki,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Maruti Suzuki,share_prior_pct,38.523337,38.523337,0.000000,True
+OEM share,PV|Maruti Suzuki,share_current_pct,39.807116,39.807116,0.000000,True
+OEM share,PV|Maruti Suzuki,share_change_bps,128.377878,128.377878,0.000000,True
+OEM share,PV|Mercedes-Benz Group,units_prior,11729.000000,11729.000000,0.000000,True
+OEM share,PV|Mercedes-Benz Group,units_current,11732.000000,11732.000000,0.000000,True
+OEM share,PV|Mercedes-Benz Group,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Mercedes-Benz Group,share_prior_pct,0.433773,0.433773,0.000000,True
+OEM share,PV|Mercedes-Benz Group,share_current_pct,0.355313,0.355313,0.000000,True
+OEM share,PV|Mercedes-Benz Group,share_change_bps,-7.846008,-7.846008,0.000000,True
+OEM share,PV|Nissan Motor India,units_prior,12906.000000,12906.000000,0.000000,True
+OEM share,PV|Nissan Motor India,units_current,21344.000000,21344.000000,0.000000,True
+OEM share,PV|Nissan Motor India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Nissan Motor India,share_prior_pct,0.477302,0.477302,0.000000,True
+OEM share,PV|Nissan Motor India,share_current_pct,0.646420,0.646420,0.000000,True
+OEM share,PV|Nissan Motor India,share_change_bps,16.911812,16.911812,0.000000,True
+OEM share,PV|Others (PV),units_prior,23125.000000,23125.000000,0.000000,True
+OEM share,PV|Others (PV),units_current,16587.000000,16587.000000,0.000000,True
+OEM share,PV|Others (PV),coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Others (PV),share_prior_pct,0.855231,0.855231,0.000000,True
+OEM share,PV|Others (PV),share_current_pct,0.502351,0.502351,0.000000,True
+OEM share,PV|Others (PV),share_change_bps,-35.288031,-35.288031,0.000000,True
+OEM share,PV|Renault India,units_prior,20612.000000,20612.000000,0.000000,True
+OEM share,PV|Renault India,units_current,29194.000000,29194.000000,0.000000,True
+OEM share,PV|Renault India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Renault India,share_prior_pct,0.762293,0.762293,0.000000,True
+OEM share,PV|Renault India,share_current_pct,0.884164,0.884164,0.000000,True
+OEM share,PV|Renault India,share_change_bps,12.187100,12.187100,0.000000,True
+OEM share,PV|Skoda Auto Volkswagen Group,units_prior,69730.000000,69730.000000,0.000000,True
+OEM share,PV|Skoda Auto Volkswagen Group,units_current,65940.000000,65940.000000,0.000000,True
+OEM share,PV|Skoda Auto Volkswagen Group,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Skoda Auto Volkswagen Group,share_prior_pct,2.578822,2.578822,0.000000,True
+OEM share,PV|Skoda Auto Volkswagen Group,share_current_pct,1.997046,1.997046,0.000000,True
+OEM share,PV|Skoda Auto Volkswagen Group,share_change_bps,-58.177586,-58.177586,0.000000,True
+OEM share,PV|Stellantis Group,units_prior,5876.000000,5876.000000,0.000000,True
+OEM share,PV|Stellantis Group,units_current,8042.000000,8042.000000,0.000000,True
+OEM share,PV|Stellantis Group,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Stellantis Group,share_prior_pct,0.217312,0.217312,0.000000,True
+OEM share,PV|Stellantis Group,share_current_pct,0.243558,0.243558,0.000000,True
+OEM share,PV|Stellantis Group,share_change_bps,2.624657,2.624657,0.000000,True
+OEM share,PV|Tata Motors,units_prior,340591.000000,340591.000000,0.000000,True
+OEM share,PV|Tata Motors,units_current,466341.000000,466341.000000,0.000000,True
+OEM share,PV|Tata Motors,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Tata Motors,share_prior_pct,12.596063,12.596063,0.000000,True
+OEM share,PV|Tata Motors,share_current_pct,14.123512,14.123512,0.000000,True
+OEM share,PV|Tata Motors,share_change_bps,152.744893,152.744893,0.000000,True
+OEM share,PV|Toyota Kirloskar Motor,units_prior,202405.000000,202405.000000,0.000000,True
+OEM share,PV|Toyota Kirloskar Motor,units_current,218392.000000,218392.000000,0.000000,True
+OEM share,PV|Toyota Kirloskar Motor,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|Toyota Kirloskar Motor,share_prior_pct,7.485536,7.485536,0.000000,True
+OEM share,PV|Toyota Kirloskar Motor,share_current_pct,6.614177,6.614177,0.000000,True
+OEM share,PV|Toyota Kirloskar Motor,share_change_bps,-87.135863,-87.135863,0.000000,True
+OEM share,PV|VinFast Auto India,units_prior,6.000000,6.000000,0.000000,True
+OEM share,PV|VinFast Auto India,units_current,11594.000000,11594.000000,0.000000,True
+OEM share,PV|VinFast Auto India,coverage_complete,1.000000,1.000000,0.000000,True
+OEM share,PV|VinFast Auto India,share_prior_pct,0.000222,0.000222,0.000000,True
+OEM share,PV|VinFast Auto India,share_current_pct,0.351134,0.351134,0.000000,True
+OEM share,PV|VinFast Auto India,share_change_bps,35.091172,35.091172,0.000000,True
+EV adoption,2W,ev_units_est_prior,844372.235900,844372.235900,0.000000,True
+EV adoption,2W,ev_units_est_current,1410702.234200,1410702.234200,0.000000,True
+EV adoption,2W,ev_share_prior_pct,7.041506,7.041506,0.000000,True
+EV adoption,2W,ev_share_current_pct,9.686054,9.686054,0.000000,True
+EV adoption,PV,ev_units_est_prior,123115.642600,123115.642600,0.000000,True
+EV adoption,PV,ev_units_est_current,217976.870000,217976.870000,0.000000,True
+EV adoption,PV,ev_share_prior_pct,4.553181,4.553181,0.000000,True
+EV adoption,PV,ev_share_current_pct,6.601605,6.601605,0.000000,True
+SIMULATED funnel,DLR01,leads,2107.000000,2107.000000,0.000000,True
+SIMULATED funnel,DLR01,qualified,1216.000000,1216.000000,0.000000,True
+SIMULATED funnel,DLR01,test_drives,740.000000,740.000000,0.000000,True
+SIMULATED funnel,DLR01,bookings,277.000000,277.000000,0.000000,True
+SIMULATED funnel,DLR01,deliveries,250.000000,250.000000,0.000000,True
+SIMULATED funnel,DLR01,test_drive_to_booking_pct,37.432400,37.432400,0.000000,True
+SIMULATED funnel,DLR01,lead_to_delivery_pct,11.865200,11.865200,0.000000,True
+SIMULATED funnel,DLR02,leads,2127.000000,2127.000000,0.000000,True
+SIMULATED funnel,DLR02,qualified,1266.000000,1266.000000,0.000000,True
+SIMULATED funnel,DLR02,test_drives,807.000000,807.000000,0.000000,True
+SIMULATED funnel,DLR02,bookings,314.000000,314.000000,0.000000,True
+SIMULATED funnel,DLR02,deliveries,274.000000,274.000000,0.000000,True
+SIMULATED funnel,DLR02,test_drive_to_booking_pct,38.909500,38.909500,0.000000,True
+SIMULATED funnel,DLR02,lead_to_delivery_pct,12.882000,12.882000,0.000000,True
+SIMULATED funnel,DLR03,leads,1423.000000,1423.000000,0.000000,True
+SIMULATED funnel,DLR03,qualified,831.000000,831.000000,0.000000,True
+SIMULATED funnel,DLR03,test_drives,504.000000,504.000000,0.000000,True
+SIMULATED funnel,DLR03,bookings,149.000000,149.000000,0.000000,True
+SIMULATED funnel,DLR03,deliveries,132.000000,132.000000,0.000000,True
+SIMULATED funnel,DLR03,test_drive_to_booking_pct,29.563500,29.563500,0.000000,True
+SIMULATED funnel,DLR03,lead_to_delivery_pct,9.276200,9.276200,0.000000,True
+SIMULATED funnel,DLR04,leads,1374.000000,1374.000000,0.000000,True
+SIMULATED funnel,DLR04,qualified,817.000000,817.000000,0.000000,True
+SIMULATED funnel,DLR04,test_drives,441.000000,441.000000,0.000000,True
+SIMULATED funnel,DLR04,bookings,117.000000,117.000000,0.000000,True
+SIMULATED funnel,DLR04,deliveries,101.000000,101.000000,0.000000,True
+SIMULATED funnel,DLR04,test_drive_to_booking_pct,26.530600,26.530600,0.000000,True
+SIMULATED funnel,DLR04,lead_to_delivery_pct,7.350800,7.350800,0.000000,True
+SIMULATED funnel,DLR05,leads,457.000000,457.000000,0.000000,True
+SIMULATED funnel,DLR05,qualified,274.000000,274.000000,0.000000,True
+SIMULATED funnel,DLR05,test_drives,181.000000,181.000000,0.000000,True
+SIMULATED funnel,DLR05,bookings,52.000000,52.000000,0.000000,True
+SIMULATED funnel,DLR05,deliveries,39.000000,39.000000,0.000000,True
+SIMULATED funnel,DLR05,test_drive_to_booking_pct,28.729300,28.729300,0.000000,True
+SIMULATED funnel,DLR05,lead_to_delivery_pct,8.533900,8.533900,0.000000,True
+SIMULATED funnel,DLR06,leads,3448.000000,3448.000000,0.000000,True
+SIMULATED funnel,DLR06,qualified,2063.000000,2063.000000,0.000000,True
+SIMULATED funnel,DLR06,test_drives,1437.000000,1437.000000,0.000000,True
+SIMULATED funnel,DLR06,bookings,668.000000,668.000000,0.000000,True
+SIMULATED funnel,DLR06,deliveries,626.000000,626.000000,0.000000,True
+SIMULATED funnel,DLR06,test_drive_to_booking_pct,46.485700,46.485700,0.000000,True
+SIMULATED funnel,DLR06,lead_to_delivery_pct,18.155500,18.155500,0.000000,True
+SIMULATED inventory,DLR01,closing_stock_units,77.000000,77.000000,0.000000,True
+SIMULATED inventory,DLR01,stock_0-30_days,32.000000,32.000000,0.000000,True
+SIMULATED inventory,DLR01,stock_31-60_days,29.000000,29.000000,0.000000,True
+SIMULATED inventory,DLR01,stock_61-90_days,14.000000,14.000000,0.000000,True
+SIMULATED inventory,DLR01,stock_>90_days,2.000000,2.000000,0.000000,True
+SIMULATED inventory,DLR01,aged_units,16.000000,16.000000,0.000000,True
+SIMULATED inventory,DLR01,aged_inventory_share_pct,20.779200,20.779200,0.000000,True
+SIMULATED inventory,DLR01,avg_stock_age_days,39.740300,39.740300,0.000000,True
+SIMULATED inventory,DLR02,closing_stock_units,78.000000,78.000000,0.000000,True
+SIMULATED inventory,DLR02,stock_0-30_days,30.000000,30.000000,0.000000,True
+SIMULATED inventory,DLR02,stock_31-60_days,27.000000,27.000000,0.000000,True
+SIMULATED inventory,DLR02,stock_61-90_days,11.000000,11.000000,0.000000,True
+SIMULATED inventory,DLR02,stock_>90_days,10.000000,10.000000,0.000000,True
+SIMULATED inventory,DLR02,aged_units,21.000000,21.000000,0.000000,True
+SIMULATED inventory,DLR02,aged_inventory_share_pct,26.923100,26.923100,0.000000,True
+SIMULATED inventory,DLR02,avg_stock_age_days,47.089700,47.089700,0.000000,True
+SIMULATED inventory,DLR03,closing_stock_units,23.000000,23.000000,0.000000,True
+SIMULATED inventory,DLR03,stock_0-30_days,13.000000,13.000000,0.000000,True
+SIMULATED inventory,DLR03,stock_31-60_days,10.000000,10.000000,0.000000,True
+SIMULATED inventory,DLR03,stock_61-90_days,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR03,stock_>90_days,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR03,aged_units,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR03,aged_inventory_share_pct,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR03,avg_stock_age_days,27.478300,27.478300,0.000000,True
+SIMULATED inventory,DLR04,closing_stock_units,34.000000,34.000000,0.000000,True
+SIMULATED inventory,DLR04,stock_0-30_days,17.000000,17.000000,0.000000,True
+SIMULATED inventory,DLR04,stock_31-60_days,11.000000,11.000000,0.000000,True
+SIMULATED inventory,DLR04,stock_61-90_days,3.000000,3.000000,0.000000,True
+SIMULATED inventory,DLR04,stock_>90_days,3.000000,3.000000,0.000000,True
+SIMULATED inventory,DLR04,aged_units,6.000000,6.000000,0.000000,True
+SIMULATED inventory,DLR04,aged_inventory_share_pct,17.647100,17.647100,0.000000,True
+SIMULATED inventory,DLR04,avg_stock_age_days,40.470600,40.470600,0.000000,True
+SIMULATED inventory,DLR05,closing_stock_units,23.000000,23.000000,0.000000,True
+SIMULATED inventory,DLR05,stock_0-30_days,4.000000,4.000000,0.000000,True
+SIMULATED inventory,DLR05,stock_31-60_days,6.000000,6.000000,0.000000,True
+SIMULATED inventory,DLR05,stock_61-90_days,6.000000,6.000000,0.000000,True
+SIMULATED inventory,DLR05,stock_>90_days,7.000000,7.000000,0.000000,True
+SIMULATED inventory,DLR05,aged_units,13.000000,13.000000,0.000000,True
+SIMULATED inventory,DLR05,aged_inventory_share_pct,56.521700,56.521700,0.000000,True
+SIMULATED inventory,DLR05,avg_stock_age_days,70.956500,70.956500,0.000000,True
+SIMULATED inventory,DLR06,closing_stock_units,113.000000,113.000000,0.000000,True
+SIMULATED inventory,DLR06,stock_0-30_days,94.000000,94.000000,0.000000,True
+SIMULATED inventory,DLR06,stock_31-60_days,19.000000,19.000000,0.000000,True
+SIMULATED inventory,DLR06,stock_61-90_days,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR06,stock_>90_days,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR06,aged_units,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR06,aged_inventory_share_pct,0.000000,0.000000,0.000000,True
+SIMULATED inventory,DLR06,avg_stock_age_days,18.486700,18.486700,0.000000,True

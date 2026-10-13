@@ -1,0 +1,8 @@
+# Keep LF line endings in every checkout (including Windows with core.autocrlf=true):
+# generated outputs and the Power BI project are verified byte-for-byte by the tests.
+* text=auto eol=lf
+
+*.png binary
+*.pdf binary
+*.pbix binary
+*.abf binary

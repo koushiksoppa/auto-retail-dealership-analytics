@@ -1,0 +1,55 @@
+/// OFFICIAL: FADA retail registrations, month x OEM (top-level and Others rows).
+table FactMarketRegistrations
+
+	column MonthDateKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: MonthDateKey
+
+	column SegmentKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column OEMKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: OEMKey
+
+	column Units
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: Units
+
+	column ReleaseMonth
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ReleaseMonth
+
+	column SourceFile
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SourceFile
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition FactMarketRegistrations = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="FactMarketRegistrations"]}[Data]
+				in
+				    Data
+

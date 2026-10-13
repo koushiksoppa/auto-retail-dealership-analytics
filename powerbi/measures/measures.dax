@@ -1,0 +1,402 @@
+// =====================================================================================
+// Power BI measures for the Auto Retail & Dealership Analytics model.
+// Paste into a dedicated measure table named _Measures (Modeling > New table:  _Measures = {BLANK()} )
+// or apply with Tabular Editor. Display folders and formats are given in each header comment
+// and in powerbi/MEASURE_CATALOG.md, which documents definition, numerator/denominator,
+// filter-context assumptions and data classification for every measure.
+//
+// Tables (imported from SQL Server database AutoRetailAnalytics, schema dw):
+//   OFFICIAL : FactMarketRegistrations, FactMarketSegmentMonth, DimOEM, DimVehicleSegment, AnalysisPeriod
+//   SIMULATED: FactLeadFunnel, FactVehicleDelivery, FactVehicleInventory, FactInventorySnapshot,
+//              DimDealership, DimSalesperson, DimVehicleModel, FactActionTrigger
+//   DERIVED  : MarketAttention (portfolio attention flags computed by the Python analysis)
+//   SHARED   : DimDate (marked as date table on DimDate[CalendarDate])
+// Shares are returned as fractions (format as %); "pp" and "bps" measures return numbers.
+// =====================================================================================
+
+// ---------------------------------------------------------------- Period helpers  [Folder: 0 Period]
+// Format: 0 (whole number). Reads the comparison periods loaded from config/market_analysis.yaml.
+Current Period Start Key = LOOKUPVALUE ( AnalysisPeriod[StartDateKey], AnalysisPeriod[PeriodName], "current" )
+Current Period End Key   = LOOKUPVALUE ( AnalysisPeriod[EndDateKey],   AnalysisPeriod[PeriodName], "current" )
+Prior Period Start Key   = LOOKUPVALUE ( AnalysisPeriod[StartDateKey], AnalysisPeriod[PeriodName], "prior" )
+Prior Period End Key     = LOOKUPVALUE ( AnalysisPeriod[EndDateKey],   AnalysisPeriod[PeriodName], "prior" )
+Current Period Label     = LOOKUPVALUE ( AnalysisPeriod[PeriodLabel],  AnalysisPeriod[PeriodName], "current" )
+Prior Period Label       = LOOKUPVALUE ( AnalysisPeriod[PeriodLabel],  AnalysisPeriod[PeriodName], "prior" )
+
+// ---------------------------------------------------------------- Market: base  [Folder: 1 Market]  OFFICIAL
+// Format: #,0
+Registrations =
+SUM ( FactMarketRegistrations[Units] )
+
+// Denominator for share: the published total of the segment(s) present in the current
+// FactMarketRegistrations context. Returns BLANK when the context spans more than one
+// segment, so PV and 2W are never combined in one denominator.  Format: #,0
+Segment Registrations =
+VAR _segments = VALUES ( FactMarketRegistrations[SegmentKey] )
+RETURN
+    IF (
+        COUNTROWS ( _segments ) = 1,
+        CALCULATE (
+            SUM ( FactMarketSegmentMonth[PublishedTotalUnits] ),
+            TREATAS ( _segments, DimVehicleSegment[SegmentKey] )
+        )
+    )
+
+// Published segment total for segment-level visuals (no OEM on the axis).  Format: #,0
+Market Registrations =
+IF ( HASONEVALUE ( DimVehicleSegment[SegmentCode] ), SUM ( FactMarketSegmentMonth[PublishedTotalUnits] ) )
+
+// Format: 0.00%
+Market Share % =
+DIVIDE ( [Registrations], [Segment Registrations] )
+
+// ---------------------------------------------------------------- Market: monthly YoY  [Folder: 1 Market]
+// Same month one year earlier via the date table (use on monthly trend visuals).  Format: #,0
+Registrations PY =
+CALCULATE ( [Registrations], SAMEPERIODLASTYEAR ( DimDate[CalendarDate] ) )
+
+Market Registrations PY =
+CALCULATE ( [Market Registrations], SAMEPERIODLASTYEAR ( DimDate[CalendarDate] ) )
+
+// BLANK (not -100%) when the prior value is zero or missing.  Format: +0.0%;-0.0%;0.0%
+YoY Growth % (Monthly) =
+VAR _ratio = DIVIDE ( [Registrations], [Registrations PY] )
+RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+
+Market YoY Growth % (Monthly) =
+VAR _ratio = DIVIDE ( [Market Registrations], [Market Registrations PY] )
+RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+
+// ---------------------------------------------------------------- Market: configured periods  [Folder: 2 Market Periods]
+// These ignore date slicers (REMOVEFILTERS(DimDate)) and use the configured comparison periods.
+// Format: #,0
+Registrations CP =
+VAR _s = [Current Period Start Key]
+VAR _e = [Current Period End Key]
+RETURN CALCULATE ( [Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+Registrations PP =
+VAR _s = [Prior Period Start Key]
+VAR _e = [Prior Period End Key]
+RETURN CALCULATE ( [Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+Segment Registrations CP =
+VAR _s = [Current Period Start Key]
+VAR _e = [Current Period End Key]
+RETURN CALCULATE ( [Segment Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+Segment Registrations PP =
+VAR _s = [Prior Period Start Key]
+VAR _e = [Prior Period End Key]
+RETURN CALCULATE ( [Segment Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+Market Registrations CP =
+VAR _s = [Current Period Start Key]
+VAR _e = [Current Period End Key]
+RETURN CALCULATE ( [Market Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+Market Registrations PP =
+VAR _s = [Prior Period Start Key]
+VAR _e = [Prior Period End Key]
+RETURN CALCULATE ( [Market Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+// Format: +0.0%;-0.0%;0.0%
+YoY Growth % (Period) =
+VAR _ratio = DIVIDE ( [Registrations CP], [Registrations PP] )
+RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+
+Segment YoY Growth % (Period) =
+VAR _ratio = DIVIDE ( [Segment Registrations CP], [Segment Registrations PP] )
+RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+
+Market YoY Growth % (Period) =
+VAR _ratio = DIVIDE ( [Market Registrations CP], [Market Registrations PP] )
+RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+
+// Weighted period shares (summed units / summed segment units).  Format: 0.00%
+Market Share CP % = DIVIDE ( [Registrations CP], [Segment Registrations CP] )
+Market Share PP % = DIVIDE ( [Registrations PP], [Segment Registrations PP] )
+
+// Format: +0.00 "pp";-0.00 "pp"
+Share Change pp =
+IF (
+    NOT ISBLANK ( [Market Share CP %] ) && NOT ISBLANK ( [Market Share PP %] ),
+    ( [Market Share CP %] - [Market Share PP %] ) * 100
+)
+
+// Format: +0 "bps";-0 "bps"
+Share Change bps =
+IF (
+    NOT ISBLANK ( [Market Share CP %] ) && NOT ISBLANK ( [Market Share PP %] ),
+    ( [Market Share CP %] - [Market Share PP %] ) * 10000
+)
+
+// Brand growth minus own-segment growth.  Format: +0.0 "pp";-0.0 "pp"
+Growth Gap vs Segment pp =
+IF (
+    NOT ISBLANK ( [YoY Growth % (Period)] ) && NOT ISBLANK ( [Segment YoY Growth % (Period)] ),
+    ( [YoY Growth % (Period)] - [Segment YoY Growth % (Period)] ) * 100
+)
+
+// Registrations at the prior-period share of the current-period segment.  Format: #,0
+Constant-Share Registrations =
+[Segment Registrations CP] * [Market Share PP %]
+
+// Positive = registrations forgone; negative = share gained.  Format: +#,0;-#,0
+Registration Gap =
+IF ( NOT ISBLANK ( [Constant-Share Registrations] ), [Constant-Share Registrations] - [Registrations CP] )
+
+// ---------------------------------------------------------------- Portfolio  [Folder: 3 Portfolio]  OFFICIAL
+// Car portfolio = Toyota + Honda Cars + JSW MG Motor + Mercedes-Benz, against PV only. Ather is
+// analysed with the brand-level measures above in a 2W context.  Format: #,0 / 0.00% / +0 "bps"
+Portfolio Car Registrations CP =
+CALCULATE ( [Registrations CP], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car Registrations PP =
+CALCULATE ( [Registrations PP], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car Share CP % =
+CALCULATE ( [Market Share CP %], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car Share PP % =
+CALCULATE ( [Market Share PP %], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car Share Change bps =
+CALCULATE ( [Share Change bps], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car YoY Growth % =
+CALCULATE ( [YoY Growth % (Period)], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car Growth Gap vs PV pp =
+CALCULATE ( [Growth Gap vs Segment pp], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car Constant-Share Registrations =
+CALCULATE ( [Constant-Share Registrations], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+Portfolio Car Registration Gap =
+CALCULATE ( [Registration Gap], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+
+// ---------------------------------------------------------------- EV  [Folder: 4 EV]  OFFICIAL (EV units derived)
+// EV units = published EV share (2 dp) x published segment total. BLANK if any month in context
+// lacks a published EV share, or if more than one segment is in context.  Format: #,0 / 0.00%
+EV Registrations (Est.) =
+IF (
+    HASONEVALUE ( DimVehicleSegment[SegmentCode] )
+        && CALCULATE ( COUNTROWS ( FactMarketSegmentMonth ), ISBLANK ( FactMarketSegmentMonth[EVSharePct] ) ) = 0,
+    SUM ( FactMarketSegmentMonth[EVUnitsEstimated] )
+)
+
+EV Share % =
+DIVIDE ( [EV Registrations (Est.)], [Market Registrations] )
+
+EV Share CP % =
+VAR _s = [Current Period Start Key]
+VAR _e = [Current Period End Key]
+RETURN CALCULATE ( [EV Share %], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+EV Share PP % =
+VAR _s = [Prior Period Start Key]
+VAR _e = [Prior Period End Key]
+RETURN CALCULATE ( [EV Share %], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+// Format: +0 "bps";-0 "bps"
+EV Share Change bps =
+IF ( NOT ISBLANK ( [EV Share CP %] ) && NOT ISBLANK ( [EV Share PP %] ), ( [EV Share CP %] - [EV Share PP %] ) * 10000 )
+
+// ---------------------------------------------------------------- Dealership funnel  [Folder: 5 Funnel]  SIMULATED
+// Lead-cohort measures: stages are counted on the lead row, filtered by lead date (DimDate via LeadDateKey).
+// Format: #,0
+Leads = COUNTROWS ( FactLeadFunnel )
+Qualified Leads = CALCULATE ( [Leads], FactLeadFunnel[IsQualified] = TRUE () )
+Test Drives = CALCULATE ( [Leads], FactLeadFunnel[IsTestDrive] = TRUE () )
+Bookings = CALCULATE ( [Leads], FactLeadFunnel[IsBooked] = TRUE () )
+Deliveries (Lead Cohort) = CALCULATE ( [Leads], FactLeadFunnel[IsDelivered] = TRUE () )
+Lost Leads = CALCULATE ( [Leads], FactLeadFunnel[LeadStatus] = "Lost" )
+Open Leads = CALCULATE ( [Leads], FactLeadFunnel[LeadStatus] = "Open" )
+
+// Deliveries dated in the selected period (DimDate via DeliveryDateKey); differs from the cohort view.
+Deliveries (Delivery Date) = COUNTROWS ( FactVehicleDelivery )
+
+// Format: 0.0%
+Lead to Qualified % = DIVIDE ( [Qualified Leads], [Leads] )
+Qualified to Test Drive % = DIVIDE ( [Test Drives], [Qualified Leads] )
+Test Drive to Booking % = DIVIDE ( [Bookings], [Test Drives] )
+Booking to Delivery % = DIVIDE ( [Deliveries (Lead Cohort)], [Bookings] )
+Lead to Booking % = DIVIDE ( [Bookings], [Leads] )
+Lead to Delivery % = DIVIDE ( [Deliveries (Lead Cohort)], [Leads] )
+Lost Lead Share % = DIVIDE ( [Lost Leads], [Leads] )
+
+First Contact SLA % =
+DIVIDE ( CALCULATE ( [Leads], FactLeadFunnel[FirstContactWithinSLA] = TRUE () ), [Leads] )
+
+// Format: 0.0
+Median First Contact Hours = MEDIAN ( FactLeadFunnel[FirstContactHours] )
+
+// Format: "₹"#,0 / 0.0%
+Invoiced Revenue = SUM ( FactVehicleDelivery[InvoiceAmountINR] )
+Average Discount % = DIVIDE ( AVERAGE ( FactVehicleDelivery[DiscountPct] ), 100 )
+
+// ---------------------------------------------------------------- Inventory  [Folder: 6 Inventory]  SIMULATED
+// Snapshot measures are semi-additive: they return the latest month-end snapshot in the DATE
+// context, never a sum across snapshots. The snapshot date ignores dealership, model and bucket
+// filters, so an age bucket that is empty at the latest month-end shows blank, not an older count.
+// Format: 0
+Latest Snapshot Key =
+CALCULATE (
+    MAX ( FactInventorySnapshot[SnapshotDateKey] ),
+    REMOVEFILTERS ( FactInventorySnapshot ),
+    REMOVEFILTERS ( DimDealership ),
+    REMOVEFILTERS ( DimVehicleModel )
+)
+
+Current Inventory Units =
+VAR _k = [Latest Snapshot Key]
+RETURN CALCULATE ( COUNTROWS ( FactInventorySnapshot ), FactInventorySnapshot[SnapshotDateKey] = _k )
+
+// 0 (not BLANK) when there is stock but none of it is aged; BLANK only when there is no stock.
+Aged Inventory Units =
+VAR _k = [Latest Snapshot Key]
+VAR _aged = CALCULATE ( COUNTROWS ( FactInventorySnapshot ), FactInventorySnapshot[SnapshotDateKey] = _k,
+                        FactInventorySnapshot[IsAged] = TRUE () )
+RETURN IF ( NOT ISBLANK ( [Current Inventory Units] ), _aged + 0 )
+
+// Format: 0.0%
+Aged Inventory % = DIVIDE ( [Aged Inventory Units], [Current Inventory Units] )
+
+// Share of current stock in the age bucket(s) in context (use with AgeingBucket on an axis).  Format: 0.0%
+Inventory Ageing % =
+DIVIDE ( [Current Inventory Units], CALCULATE ( [Current Inventory Units], REMOVEFILTERS ( FactInventorySnapshot[AgeingBucket] ) ) )
+
+// Format: 0.0
+Average Stock Age (Days) =
+VAR _k = [Latest Snapshot Key]
+RETURN CALCULATE ( AVERAGE ( FactInventorySnapshot[AgeDays] ), FactInventorySnapshot[SnapshotDateKey] = _k )
+
+// Format: "₹"#,0
+Current Inventory Cost =
+VAR _k = [Latest Snapshot Key]
+RETURN CALCULATE ( SUM ( FactInventorySnapshot[PurchaseCostINR] ), FactInventorySnapshot[SnapshotDateKey] = _k )
+
+// Stock-flow measures for the selected date range (FactVehicleInventory is not related to DimDate;
+// the range is read from DimDate).  Format: #,0
+Opening Stock Units =
+VAR _start = MIN ( DimDate[CalendarDate] )
+RETURN
+    COUNTROWS (
+        FILTER (
+            FactVehicleInventory,
+            FactVehicleInventory[ReceiptDate] < _start
+                && ( ISBLANK ( FactVehicleInventory[DeliveryDate] ) || FactVehicleInventory[DeliveryDate] >= _start )
+        )
+    )
+
+Receipts Units =
+VAR _start = MIN ( DimDate[CalendarDate] )
+VAR _end = MAX ( DimDate[CalendarDate] )
+RETURN
+    COUNTROWS ( FILTER ( FactVehicleInventory,
+        FactVehicleInventory[ReceiptDate] >= _start && FactVehicleInventory[ReceiptDate] <= _end ) )
+
+// Deliveries / (opening stock + receipts).  Format: 0.0%
+Sell-Through % =
+DIVIDE ( [Deliveries (Delivery Date)], [Opening Stock Units] + [Receipts Units] )
+
+// Cost of vehicles delivered / average month-end stock cost, annualised with 30.4-day months
+// (same convention as python/dealership_kpi_simulation.py).  Format: 0.00
+Inventory Turnover (Annualised) =
+VAR _avgStockCost =
+    AVERAGEX ( VALUES ( FactInventorySnapshot[SnapshotDateKey] ),
+               CALCULATE ( SUM ( FactInventorySnapshot[PurchaseCostINR] ) ) )
+VAR _days = COUNTROWS ( DimDate )
+RETURN DIVIDE ( SUM ( FactVehicleDelivery[PurchaseCostINR] ), _avgStockCost ) * DIVIDE ( 12 * 30.4, _days )
+
+// Closing stock / average daily deliveries in the 30 days up to the latest snapshot.  Format: 0.0
+Days of Supply =
+VAR _k = [Latest Snapshot Key]
+VAR _snapDate = DATE ( INT ( _k / 10000 ), INT ( MOD ( _k, 10000 ) / 100 ), MOD ( _k, 100 ) )
+VAR _last30 =
+    CALCULATE ( COUNTROWS ( FactVehicleDelivery ), REMOVEFILTERS ( DimDate ),
+                FactVehicleDelivery[DeliveryDate] > _snapDate - 30, FactVehicleDelivery[DeliveryDate] <= _snapDate )
+RETURN DIVIDE ( [Current Inventory Units], DIVIDE ( _last30, 30 ) )
+
+// ---------------------------------------------------------------- Management actions  [Folder: 7 Actions]  SIMULATED
+// FactActionTrigger is loaded from reports/dealership/tables/action_triggers.csv by the SQL pipeline.  Format: #,0
+Actions Triggered = CALCULATE ( COUNTROWS ( FactActionTrigger ), FactActionTrigger[Breached] = TRUE () )
+Rule Checks = COUNTROWS ( FactActionTrigger )
+
+// ---------------------------------------------------------------- Report helpers  [Folder: 8 Report Helpers]  OFFICIAL
+// Mirror the Python rules: OEM shares are shown only when FADA lists the OEM in every month of both
+// periods; growth only from a prior base of >= 1,000 units. Rankings exclude the residual 'Others' rows.
+// Format: 0
+Period Months =
+VAR _s = [Current Period Start Key]
+VAR _e = [Current Period End Key]
+RETURN
+    DATEDIFF (
+        DATE ( INT ( _s / 10000 ), MOD ( INT ( _s / 100 ), 100 ), 1 ),
+        DATE ( INT ( _e / 10000 ), MOD ( INT ( _e / 100 ), 100 ), 1 ),
+        MONTH
+    ) + 1
+
+OEM Months Reported CP =
+VAR _s = [Current Period Start Key]
+VAR _e = [Current Period End Key]
+RETURN CALCULATE ( DISTINCTCOUNT ( FactMarketRegistrations[MonthDateKey] ), REMOVEFILTERS ( DimDate ),
+                   DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+OEM Months Reported PP =
+VAR _s = [Prior Period Start Key]
+VAR _e = [Prior Period End Key]
+RETURN CALCULATE ( DISTINCTCOUNT ( FactMarketRegistrations[MonthDateKey] ), REMOVEFILTERS ( DimDate ),
+                   DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+// 1 when exactly one OEM row (including FADA's residual 'Others') is in context and it is listed in
+// every month of both periods. Ranking visuals additionally filter out the residual rows.
+Is Coverage Complete =
+IF (
+    HASONEVALUE ( DimOEM[OEMKey] )
+        && [OEM Months Reported CP] = [Period Months]
+        && [OEM Months Reported PP] = [Period Months],
+    1,
+    0
+)
+
+// Format: 0.00%
+Market Share CP % (Complete Coverage) = IF ( [Is Coverage Complete] = 1, [Market Share CP %] )
+Market Share PP % (Complete Coverage) = IF ( [Is Coverage Complete] = 1, [Market Share PP %] )
+
+// Format: +0 "bps";-0 "bps"
+Share Change bps (Complete Coverage) = IF ( [Is Coverage Complete] = 1, [Share Change bps] )
+
+// Split by sign so a stacked bar can colour gains and losses differently (each OEM has one of the two).
+Share Gain bps (Complete Coverage) =
+VAR _bps = [Share Change bps (Complete Coverage)]
+RETURN IF ( NOT ISBLANK ( _bps ) && _bps >= 0, _bps )
+
+Share Loss bps (Complete Coverage) =
+VAR _bps = [Share Change bps (Complete Coverage)]
+RETURN IF ( NOT ISBLANK ( _bps ) && _bps < 0, _bps )
+
+// Format: +0.0%;-0.0%;0.0%
+YoY Growth % (Complete Coverage) =
+IF ( [Is Coverage Complete] = 1 && [Registrations PP] >= 1000, [YoY Growth % (Period)] )
+
+// EV volumes over the configured periods (derived).  Format: #,0
+EV Registrations CP (Est.) =
+VAR _s = [Current Period Start Key]
+VAR _e = [Current Period End Key]
+RETURN CALCULATE ( [EV Registrations (Est.)], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+EV Registrations PP (Est.) =
+VAR _s = [Prior Period Start Key]
+VAR _e = [Prior Period End Key]
+RETURN CALCULATE ( [EV Registrations (Est.)], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+
+// Format: +0.0%;-0.0%;0.0%
+EV Registrations Growth % (Est.) =
+VAR _ratio = DIVIDE ( [EV Registrations CP (Est.)], [EV Registrations PP (Est.)] )
+RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+
+// ---------------------------------------------------------------- Labels  [Folder: 9 Labels]
+Simulated Data Banner = "SIMULATED DATA - illustrative dealership operations, not actual performance"
+Official Data Banner = "Source: FADA monthly vehicle retail data (official). Shares use each OEM's own segment."

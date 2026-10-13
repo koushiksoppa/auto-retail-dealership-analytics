@@ -1,0 +1,74 @@
+/// SIMULATED: SIMULATED management action rule checks (illustrative thresholds).
+table FactActionTrigger
+
+	column DealershipId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipId
+
+	column Kpi
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Kpi
+
+	column ActualValue
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: ActualValue
+
+	column Comparator
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Comparator
+
+	column Threshold
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: Threshold
+
+	column Breached
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: Breached
+
+	column TriggerStatus
+		dataType: string
+		summarizeBy: none
+		sourceColumn: TriggerStatus
+
+	column ResponsibleRole
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ResponsibleRole
+
+	column ReviewCadence
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ReviewCadence
+
+	column RecommendedAction
+		dataType: string
+		summarizeBy: none
+		sourceColumn: RecommendedAction
+
+	column ThresholdBasis
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ThresholdBasis
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition FactActionTrigger = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="FactActionTrigger"]}[Data]
+				in
+				    Data
+

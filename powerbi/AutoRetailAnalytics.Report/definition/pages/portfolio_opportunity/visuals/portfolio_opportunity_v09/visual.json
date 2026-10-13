@@ -1,0 +1,342 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "portfolio_opportunity_v09",
+  "position": {
+    "x": 20,
+    "y": 194,
+    "z": 9000,
+    "width": 1240,
+    "height": 214,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimOEM"
+                    }
+                  },
+                  "Property": "PortfolioBrand"
+                }
+              },
+              "queryRef": "DimOEM.PortfolioBrand",
+              "nativeQueryRef": "PortfolioBrand",
+              "displayName": "Brand"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimVehicleSegment"
+                    }
+                  },
+                  "Property": "SegmentCode"
+                }
+              },
+              "queryRef": "DimVehicleSegment.SegmentCode",
+              "nativeQueryRef": "SegmentCode",
+              "displayName": "Segment"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Registrations PP"
+                }
+              },
+              "queryRef": "_Measures.Registrations PP",
+              "nativeQueryRef": "Registrations PP",
+              "displayName": "Feb-Sep 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Registrations CP"
+                }
+              },
+              "queryRef": "_Measures.Registrations CP",
+              "nativeQueryRef": "Registrations CP",
+              "displayName": "Feb-Sep 2026"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "YoY Growth % (Period)"
+                }
+              },
+              "queryRef": "_Measures.YoY Growth % (Period)",
+              "nativeQueryRef": "YoY Growth % (Period)",
+              "displayName": "Growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Segment YoY Growth % (Period)"
+                }
+              },
+              "queryRef": "_Measures.Segment YoY Growth % (Period)",
+              "nativeQueryRef": "Segment YoY Growth % (Period)",
+              "displayName": "Segment growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Growth Gap vs Segment pp"
+                }
+              },
+              "queryRef": "_Measures.Growth Gap vs Segment pp",
+              "nativeQueryRef": "Growth Gap vs Segment pp",
+              "displayName": "Gap (pp)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Market Share PP %"
+                }
+              },
+              "queryRef": "_Measures.Market Share PP %",
+              "nativeQueryRef": "Market Share PP %",
+              "displayName": "Share Feb-Sep 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Market Share CP %"
+                }
+              },
+              "queryRef": "_Measures.Market Share CP %",
+              "nativeQueryRef": "Market Share CP %",
+              "displayName": "Share Feb-Sep 2026"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Share Change bps"
+                }
+              },
+              "queryRef": "_Measures.Share Change bps",
+              "nativeQueryRef": "Share Change bps",
+              "displayName": "Change (bps)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Constant-Share Registrations"
+                }
+              },
+              "queryRef": "_Measures.Constant-Share Registrations",
+              "nativeQueryRef": "Constant-Share Registrations",
+              "displayName": "Constant-share units"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Registration Gap"
+                }
+              },
+              "queryRef": "_Measures.Registration Gap",
+              "nativeQueryRef": "Registration Gap",
+              "displayName": "Registration gap"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Registrations CP"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Portfolio brands against their own segment (Ather vs two-wheelers; car brands vs PV)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "portfolio_opportunity_v09_f0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimOEM"
+              }
+            },
+            "Property": "IsPortfolioBrand"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "DimOEM",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "IsPortfolioBrand"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "true"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

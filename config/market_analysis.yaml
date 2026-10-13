@@ -1,0 +1,58 @@
+# Configuration for python/auto_retail_analysis.py (Layer A: real FADA market data).
+# Periods are inclusive calendar months (YYYY-MM). Both periods must have the same
+# number of months and be exactly 12 months apart so that YoY is like-for-like.
+current_period:
+  start: "2026-02"
+  end: "2026-09"
+  label: "Feb-Sep 2026"
+prior_period:
+  start: "2025-02"
+  end: "2025-09"
+  label: "Feb-Sep 2025"
+
+# Segment codes used in the FADA extract. Each OEM is only ever compared with the
+# total of its own segment; PV and 2W are never combined in one denominator.
+segments:
+  PV: "Passenger vehicles (cars and UVs)"
+  2W: "Two-wheelers"
+
+# Portfolio brand -> segment. Brand membership of raw FADA rows is defined in
+# config/oem_mapping.csv (column portfolio_brand).
+portfolio_brands:
+  Toyota: PV
+  Honda Cars: PV
+  JSW MG Motor: PV
+  Mercedes-Benz: PV
+  Ather: 2W
+
+# Brands that sell only battery-electric vehicles. Used for the illustrative
+# "share of segment EV retail" metric. This is an analyst assumption, not a FADA field.
+ev_only_brands: [Ather]
+
+# OEM growth % is suppressed (left blank) when the prior-period base is smaller than this,
+# e.g. a new entrant growing from single-digit registrations.
+min_base_units_for_growth: 1000
+
+# Illustrative management-attention rules (NOT industry benchmarks).
+attention_rules:
+  growth_gap_pp_warning: -5.0       # brand growth minus segment growth, percentage points
+  share_change_bps_warning: -10.0   # period share change, basis points
+  registration_gap_units_warning: 1000  # constant-share registrations minus actual
+
+# Rounding applied only when presenting results; all calculations use full precision.
+presentation_decimals:
+  pct: 2
+  bps: 1
+
+# Figures quoted in the project brief. They are re-derived from source data and
+# compared in the executive report; they are never used as inputs.
+brief_figures:
+  - {id: pv_market_growth_pct, label: "Car market growth", claimed: "+22.1%", value: 22.1, tolerance: 0.05}
+  - {id: portfolio_car_growth_pct, label: "Portfolio car-brand growth", claimed: "+7.4%", value: 7.4, tolerance: 0.05}
+  - {id: portfolio_share_prior_pct, label: "Portfolio market share (prior)", claimed: "11.02%", value: 11.02, tolerance: 0.005}
+  - {id: portfolio_share_current_pct, label: "Portfolio market share (current)", claimed: "9.70%", value: 9.70, tolerance: 0.005}
+  - {id: toyota_share_change_bps, label: "Toyota share change", claimed: "-87 bps", value: -87, tolerance: 0.5}
+  - {id: ather_growth_pct, label: "Ather growth", claimed: "+82.0%", value: 82.0, tolerance: 0.05}
+  - {id: tw_market_growth_pct, label: "Two-wheeler market growth", claimed: "+21.5%", value: 21.5, tolerance: 0.05}
+  - {id: pv_ev_share_prior_pct, label: "Car EV retail share (prior)", claimed: "3.48%", value: 3.48, tolerance: 0.005}
+  - {id: pv_ev_share_current_pct, label: "Car EV retail share (current)", claimed: "8.45%", value: 8.45, tolerance: 0.005}

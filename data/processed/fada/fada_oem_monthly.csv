@@ -1,0 +1,757 @@
+release_month,period_month,value_role,segment,oem_raw,row_level,parent_oem_raw,units,reported_as_dash,published_share_pct,source_file,source_page
+2026-02,2026-02,current,2W,HERO MOTOCORP LTD,top,,457826,False,26.92,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,HERO MOTOCORP LTD,top,,386703,False,28.43,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,431253,False,25.36,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,329857,False,24.25,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,TVS MOTOR COMPANY LTD,top,,333935,False,19.64,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,TVS MOTOR COMPANY LTD,top,,254599,False,18.72,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,BAJAJ AUTO GROUP,top,,180846,False,10.63,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,BAJAJ AUTO GROUP,top,,154205,False,11.34,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,180846,False,10.63,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,154205,False,11.34,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,94398,False,5.55,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,77292,False,5.68,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,91216,False,5.36,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,71974,False,5.29,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,60967,False,3.59,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,46327,False,3.41,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,ATHER ENERGY LTD,top,,20584,False,1.21,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,ATHER ENERGY LTD,top,,11978,False,0.88,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,GREAVES ELECTRIC MOBILITY PVT LTD,top,,4724,False,0.28,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,GREAVES ELECTRIC MOBILITY PVT LTD,top,,3704,False,0.27,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,CLASSIC LEGENDS PVT LTD,top,,4468,False,0.26,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,2350,False,0.17,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,3968,False,0.23,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,8675,False,0.64,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,PIAGGIO VEHICLES PVT LTD,top,,2867,False,0.17,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2358,False,0.17,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,2411,False,0.14,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,1219,False,0.09,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,RIVER MOBILITY PVT LTD,top,,2255,False,0.13,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,RIVER MOBILITY PVT LTD,top,,613,False,0.05,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,Others Including EV,others,,8787,False,0.52,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,Others Including EV,others,,8301,False,0.61,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,2W,Total,total,,1700505,False,100.0,fada_retail_2026-02.pdf,9
+2026-02,2025-02,prior_year,2W,Total,total,,1360155,False,100.0,fada_retail_2026-02.pdf,9
+2026-02,2026-02,current,PV,MARUTI SUZUKI INDIA LTD,top,,154095,False,39.03,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,120010,False,38.34,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,TATA MOTORS LTD,top,,56447,False,14.3,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,TATA MOTORS LTD,top,,39502,False,12.62,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,53281,False,13.5,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,42414,False,13.55,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,HYUNDAI MOTOR INDIA LTD,top,,45615,False,11.55,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,39368,False,12.58,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,26392,False,6.69,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,23283,False,7.44,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,KIA INDIA PRIVATE LIMITED,top,,25031,False,6.34,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,19479,False,6.22,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,7615,False,1.93,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,6777,False,2.17,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,7566,False,1.92,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,6750,False,2.16,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,32,False,0.01,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,2,False,0.0,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,10,False,0.0,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,23,False,0.01,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,7,False,0.0,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,2,False,0.0,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,HONDA CARS INDIA LTD,top,,4774,False,1.21,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,HONDA CARS INDIA LTD,top,,5354,False,1.71,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,4548,False,1.15,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,4846,False,1.55,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,RENAULT INDIA PVT LTD,top,,3248,False,0.82,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,RENAULT INDIA PVT LTD,top,,2547,False,0.81,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,1622,False,0.41,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1747,False,0.56,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,FORCE MOTORS LIMITED,top,,1415,False,0.36,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,FORCE MOTORS LIMITED,top,,565,False,0.18,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,MERCEDES -BENZ GROUP,top,,1371,False,0.35,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,MERCEDES -BENZ GROUP,top,,1306,False,0.42,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1275,False,0.32,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1188,False,0.38,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,95,False,0.02,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,117,False,0.04,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,1,False,0.0,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,1,False,0.0,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,BMW INDIA PVT LTD,top,,1216,False,0.31,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,BMW INDIA PVT LTD,top,,1208,False,0.39,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,STELLANTIS GROUP,top,,1009,False,0.26,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,STELLANTIS GROUP,top,,764,False,0.24,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,805,False,0.2,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,427,False,0.14,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,204,False,0.05,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,337,False,0.11,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,478,False,0.12,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,515,False,0.16,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,VINFAST AUTO INDIA PVT LTD,top,,384,False,0.1,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,0,True,0.0,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,BYD INDIA PRIVATE LIMITED,top,,306,False,0.08,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,278,False,0.09,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,Others,others,,5921,False,1.5,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,Others,others,,3052,False,0.98,fada_retail_2026-02.pdf,13
+2026-02,2026-02,current,PV,Total,total,,394768,False,100.0,fada_retail_2026-02.pdf,13
+2026-02,2025-02,prior_year,PV,Total,total,,313015,False,100.0,fada_retail_2026-02.pdf,13
+2026-03,2026-03,current,2W,HERO MOTOCORP LTD,top,,541857,False,27.77,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,HERO MOTOCORP LTD,top,,436598,False,28.8,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,475313,False,24.36,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,357548,False,23.58,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,TVS MOTOR COMPANY LTD,top,,374602,False,19.2,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,TVS MOTOR COMPANY LTD,top,,276276,False,18.22,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,BAJAJ AUTO GROUP,top,,216253,False,11.08,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,BAJAJ AUTO GROUP,top,,171866,False,11.34,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,216253,False,11.08,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,171866,False,11.34,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,98412,False,5.04,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,84955,False,5.6,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,96510,False,4.95,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,77560,False,5.12,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,65705,False,3.37,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,48320,False,3.19,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,ATHER ENERGY LTD,top,,35736,False,1.83,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,ATHER ENERGY LTD,top,,15650,False,1.03,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,10118,False,0.52,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,23634,False,1.56,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,GREAVES ELECTRIC MOBILITY PVT LTD,top,,7965,False,0.41,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,GREAVES ELECTRIC MOBILITY PVT LTD,top,,5648,False,0.37,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,CLASSIC LEGENDS PVT LTD,top,,4617,False,0.24,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,2324,False,0.15,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,RIVER MOBILITY PVT LTD,top,,4149,False,0.21,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,RIVER MOBILITY PVT LTD,top,,802,False,0.05,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,3680,False,0.19,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,2591,False,0.17,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,PIAGGIO VEHICLES PVT LTD,top,,3122,False,0.16,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2333,False,0.15,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,Others Including EV,others,,12967,False,0.66,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,Others Including EV,others,,10045,False,0.66,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,2W,Total,total,,1951006,False,100.0,fada_retail_2026-03.pdf,18
+2026-03,2025-03,prior_year,2W,Total,total,,1516150,False,100.0,fada_retail_2026-03.pdf,18
+2026-03,2026-03,current,PV,MARUTI SUZUKI INDIA LTD,top,,172814,False,39.26,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,134406,False,37.1,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,TATA MOTORS LTD,top,,65784,False,14.95,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,TATA MOTORS LTD,top,,49721,False,13.72,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,61029,False,13.87,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,49211,False,13.58,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,HYUNDAI MOTOR INDIA LTD,top,,48791,False,11.09,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,44007,False,12.15,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,KIA INDIA PRIVATE LIMITED,top,,28108,False,6.39,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,22833,False,6.3,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,27533,False,6.26,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,25348,False,7.0,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8765,False,1.99,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,9504,False,2.62,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8706,False,1.98,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,9458,False,2.61,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,40,False,0.01,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,23,False,0.01,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,15,False,0.0,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,21,False,0.01,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,4,False,0.0,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,2,False,0.0,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,6269,False,1.42,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,5567,False,1.54,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,HONDA CARS INDIA LTD,top,,5528,False,1.26,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,HONDA CARS INDIA LTD,top,,5146,False,1.42,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,RENAULT INDIA PVT LTD,top,,3594,False,0.82,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,RENAULT INDIA PVT LTD,top,,2652,False,0.73,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,2544,False,0.58,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1806,False,0.5,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,BMW INDIA PVT LTD,top,,1580,False,0.36,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,BMW INDIA PVT LTD,top,,1384,False,0.38,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,MERCEDES -BENZ GROUP,top,,1448,False,0.33,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,MERCEDES -BENZ GROUP,top,,1644,False,0.45,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1334,False,0.3,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1491,False,0.41,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,114,False,0.03,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,153,False,0.04,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,FORCE MOTORS LIMITED,top,,1312,False,0.3,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,FORCE MOTORS LIMITED,top,,593,False,0.16,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,STELLANTIS GROUP,top,,971,False,0.22,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,STELLANTIS GROUP,top,,663,False,0.18,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,760,False,0.17,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,336,False,0.09,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,211,False,0.05,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,327,False,0.09,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,VINFAST AUTO INDIA PVT LTD,top,,691,False,0.16,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,0,True,0.0,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,439,False,0.1,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,567,False,0.16,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,BYD INDIA PRIVATE LIMITED,top,,414,False,0.09,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,452,False,0.12,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,Others,others,,2530,False,0.57,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,Others,others,,6800,False,1.88,fada_retail_2026-03.pdf,22
+2026-03,2026-03,current,PV,Total,total,,440144,False,100.0,fada_retail_2026-03.pdf,22
+2026-03,2025-03,prior_year,PV,Total,total,,362304,False,100.0,fada_retail_2026-03.pdf,22
+2026-04,2026-04,current,2W,HERO MOTOCORP LTD,top,,552145,False,28.81,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,HERO MOTOCORP LTD,top,,512520,False,30.23,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,472289,False,24.65,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,407791,False,24.05,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,TVS MOTOR COMPANY LTD,top,,368853,False,19.25,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,TVS MOTOR COMPANY LTD,top,,310734,False,18.33,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,BAJAJ AUTO GROUP,top,,201777,False,10.53,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,BAJAJ AUTO GROUP,top,,183808,False,10.84,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,201777,False,10.53,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,183808,False,10.84,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,96798,False,5.05,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,82593,False,4.87,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,90401,False,4.72,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,92517,False,5.46,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,63433,False,3.31,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,52595,False,3.1,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,ATHER ENERGY LTD,top,,27034,False,1.41,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,ATHER ENERGY LTD,top,,13332,False,0.79,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,12171,False,0.64,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,19824,False,1.17,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,GREAVES ELECTRIC MOBILITY PVT LTD,top,,6884,False,0.36,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,GREAVES ELECTRIC MOBILITY PVT LTD,top,,4003,False,0.24,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,CLASSIC LEGENDS PVT LTD,top,,4520,False,0.24,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,2477,False,0.15,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,RIVER MOBILITY PVT LTD,top,,3199,False,0.17,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,RIVER MOBILITY PVT LTD,top,,796,False,0.05,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,3066,False,0.16,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,1313,False,0.08,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,PIAGGIO VEHICLES PVT LTD,top,,2926,False,0.15,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2629,False,0.16,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,Others Including EV,others,,10762,False,0.56,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,Others Including EV,others,,8706,False,0.51,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,2W,Total,total,,1916258,False,100.0,fada_retail_2026-04.pdf,9
+2026-04,2025-04,prior_year,2W,Total,total,,1695638,False,100.0,fada_retail_2026-04.pdf,9
+2026-04,2026-04,current,PV,MARUTI SUZUKI INDIA LTD,top,,158509,False,38.91,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,140971,False,38.83,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,TATA MOTORS LTD,top,,57688,False,14.16,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,TATA MOTORS LTD,top,,45130,False,12.43,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,55236,False,13.56,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,51574,False,14.21,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,HYUNDAI MOTOR INDIA LTD,top,,47449,False,11.65,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,45203,False,12.45,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,27006,False,6.63,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,25609,False,7.05,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,KIA INDIA PRIVATE LIMITED,top,,25226,False,6.19,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,22368,False,6.16,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8913,False,2.19,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,10070,False,2.77,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8866,False,2.18,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,10046,False,2.77,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,32,False,0.01,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,1,False,0.0,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,12,False,0.0,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,22,False,0.01,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,3,False,0.0,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,1,False,0.0,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,6064,False,1.49,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,5284,False,1.46,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,HONDA CARS INDIA LTD,top,,5346,False,1.31,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,HONDA CARS INDIA LTD,top,,5057,False,1.39,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,RENAULT INDIA PVT LTD,top,,4087,False,1.0,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,RENAULT INDIA PVT LTD,top,,2870,False,0.79,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,3047,False,0.75,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1914,False,0.53,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,BMW INDIA PVT LTD,top,,1448,False,0.36,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,BMW INDIA PVT LTD,top,,1333,False,0.37,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,MERCEDES -BENZ GROUP,top,,1330,False,0.33,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,MERCEDES -BENZ GROUP,top,,1416,False,0.39,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1161,False,0.29,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1320,False,0.36,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,169,False,0.04,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,94,False,0.03,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,2,False,0.0,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,VINFAST AUTO INDIA PVT LTD,top,,1232,False,0.3,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,0,True,0.0,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,FORCE MOTORS LIMITED,top,,1166,False,0.29,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,FORCE MOTORS LIMITED,top,,541,False,0.15,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,STELLANTIS GROUP,top,,970,False,0.24,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,STELLANTIS GROUP,top,,714,False,0.2,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,720,False,0.18,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,404,False,0.11,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,250,False,0.06,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,310,False,0.09,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,BYD INDIA PRIVATE LIMITED,top,,469,False,0.12,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,398,False,0.11,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,450,False,0.11,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,458,False,0.13,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,Others,others,,1719,False,0.42,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,Others,others,,2118,False,0.58,fada_retail_2026-04.pdf,13
+2026-04,2026-04,current,PV,Total,total,,407355,False,100.0,fada_retail_2026-04.pdf,13
+2026-04,2025-04,prior_year,PV,Total,total,,363028,False,100.0,fada_retail_2026-04.pdf,13
+2026-05,2026-05,current,2W,HERO MOTOCORP LTD,top,,517951,False,28.07,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,HERO MOTOCORP LTD,top,,507323,False,29.57,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,452420,False,24.52,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,413597,False,24.11,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,TVS MOTOR COMPANY LTD,top,,356352,False,19.32,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,TVS MOTOR COMPANY LTD,top,,319518,False,18.62,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,BAJAJ AUTO GROUP,top,,197738,False,10.72,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,BAJAJ AUTO GROUP,top,,193944,False,11.3,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,197738,False,10.72,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,BAJAJ AUTO LTD,member,BAJAJ AUTO GROUP,193944,False,11.3,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,CHETAK TECHNOLOGY LIMITED,member,BAJAJ AUTO GROUP,0,True,0.0,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,97885,False,5.31,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,93114,False,5.43,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,84480,False,4.58,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,81672,False,4.76,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,60625,False,3.29,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,52041,False,3.03,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,ATHER ENERGY LTD,top,,28240,False,1.53,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,ATHER ENERGY LTD,top,,14101,False,0.82,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,15141,False,0.82,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,18967,False,1.11,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,GREAVES ELECTRIC MOBILITY LTD,top,,7695,False,0.42,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,GREAVES ELECTRIC MOBILITY LTD,top,,4325,False,0.25,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,CLASSIC LEGENDS PVT LTD,top,,4447,False,0.24,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,2190,False,0.13,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,RIVER MOBILITY PVT LTD,top,,3720,False,0.2,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,RIVER MOBILITY PVT LTD,top,,1078,False,0.06,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,3297,False,0.18,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,1082,False,0.06,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,PIAGGIO VEHICLES PVT LTD,top,,3056,False,0.17,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2564,False,0.15,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,Others Including EV,others,,11900,False,0.65,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,Others Including EV,others,,10065,False,0.59,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,2W,Total,total,,1844947,False,100.0,fada_retail_2026-05.pdf,8
+2026-05,2025-05,prior_year,2W,Total,total,,1715581,False,100.0,fada_retail_2026-05.pdf,8
+2026-05,2026-05,current,PV,MARUTI SUZUKI INDIA LTD,top,,164925,False,40.97,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,123714,False,37.87,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,TATA MOTORS LTD,top,,55544,False,13.8,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,TATA MOTORS LTD,top,,39888,False,12.21,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,51311,False,12.75,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,46464,False,14.22,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,HYUNDAI MOTOR INDIA LTD,top,,46223,False,11.48,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,40979,False,12.55,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,26294,False,6.53,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,24726,False,7.57,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,KIA INDIA PRIVATE LIMITED,top,,24644,False,6.12,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,18450,False,5.65,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8380,False,2.08,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,9374,False,2.87,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8334,False,2.07,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,9328,False,2.86,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,39,False,0.01,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,14,False,0.0,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,4,False,0.0,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,32,False,0.01,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,3,False,0.0,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,0,True,0.0,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,5861,False,1.46,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,5966,False,1.83,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,HONDA CARS INDIA LTD,top,,4489,False,1.12,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,HONDA CARS INDIA LTD,top,,4529,False,1.39,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,RENAULT INDIA PVT LTD,top,,4217,False,1.05,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,RENAULT INDIA PVT LTD,top,,2472,False,0.76,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,2959,False,0.73,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1605,False,0.49,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,BMW INDIA PVT LTD,top,,1371,False,0.34,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,BMW INDIA PVT LTD,top,,1173,False,0.36,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,MERCEDES -BENZ GROUP,top,,1327,False,0.33,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,MERCEDES -BENZ GROUP,top,,1519,False,0.47,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1095,False,0.27,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1431,False,0.44,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,229,False,0.06,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,88,False,0.03,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,3,False,0.0,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,VINFAST AUTO INDIA PVT LTD,top,,1238,False,0.31,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,0,True,0.0,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,STELLANTIS GROUP,top,,851,False,0.21,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,STELLANTIS GROUP,top,,732,False,0.22,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,643,False,0.16,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,431,False,0.13,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,208,False,0.05,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,301,False,0.09,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,FORCE MOTORS LIMITED,top,,726,False,0.18,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,FORCE MOTORS LIMITED,top,,472,False,0.14,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,BYD INDIA PRIVATE LIMITED,top,,686,False,0.17,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,621,False,0.19,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,363,False,0.09,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,409,False,0.13,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,Others,others,,1182,False,0.29,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,Others,others,,3563,False,1.09,fada_retail_2026-05.pdf,12
+2026-05,2026-05,current,PV,Total,total,,402591,False,100.0,fada_retail_2026-05.pdf,12
+2026-05,2025-05,prior_year,PV,Total,total,,326656,False,100.0,fada_retail_2026-05.pdf,12
+2026-06,2026-06,current,2W,HERO MOTOCORP LTD,top,,472144,False,25.82,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,HERO MOTOCORP LTD,top,,401803,False,26.64,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,452754,False,24.76,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,374971,False,24.86,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,TVS MOTOR COMPANY LTD,top,,359243,False,19.65,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,TVS MOTOR COMPANY LTD,top,,292639,False,19.4,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,BAJAJ AUTO LTD,top,,188145,False,10.29,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,BAJAJ AUTO LTD,top,,165733,False,10.99,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,105057,False,5.75,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,90429,False,6.0,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,94548,False,5.17,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,75386,False,5.0,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,67696,False,3.7,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,50234,False,3.33,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,ATHER ENERGY LTD,top,,31230,False,1.71,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,ATHER ENERGY LTD,top,,16015,False,1.06,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,16150,False,0.88,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,20697,False,1.37,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,GREAVES ELECTRIC MOBILITY LTD,top,,10930,False,0.6,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,GREAVES ELECTRIC MOBILITY LTD,top,,4310,False,0.29,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,CLASSIC LEGENDS PVT LTD,top,,4515,False,0.25,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,2106,False,0.14,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,RIVER MOBILITY PVT LTD,top,,4399,False,0.24,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,RIVER MOBILITY PVT LTD,top,,1399,False,0.09,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,3917,False,0.21,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,1975,False,0.13,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,PIAGGIO VEHICLES PVT LTD,top,,3263,False,0.18,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2475,False,0.16,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,Others Including EV,others,,14467,False,0.79,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,Others Including EV,others,,8206,False,0.54,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,2W,Total,total,,1828458,False,100.0,fada_retail_2026-06.pdf,8
+2026-06,2025-06,prior_year,2W,Total,total,,1508378,False,100.0,fada_retail_2026-06.pdf,8
+2026-06,2026-06,current,PV,MARUTI SUZUKI INDIA LTD,top,,167834,False,40.85,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,122775,False,38.44,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,TATA MOTORS LTD,top,,57009,False,13.88,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,TATA MOTORS LTD,top,,37731,False,11.81,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,54099,False,13.17,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,44249,False,13.85,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,HYUNDAI MOTOR INDIA LTD,top,,44163,False,10.75,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,40743,False,12.76,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,28818,False,7.01,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,25031,False,7.84,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,KIA INDIA PRIVATE LIMITED,top,,23166,False,5.64,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,19485,False,6.1,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8098,False,1.97,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8564,False,2.68,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8042,False,1.96,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8491,False,2.66,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,40,False,0.01,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,39,False,0.01,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,12,False,0.0,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,31,False,0.01,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,4,False,0.0,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,3,False,0.0,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,6997,False,1.7,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,5768,False,1.81,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,HONDA CARS INDIA LTD,top,,4833,False,1.18,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,HONDA CARS INDIA LTD,top,,4230,False,1.32,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,RENAULT INDIA PVT LTD,top,,3858,False,0.94,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,RENAULT INDIA PVT LTD,top,,2578,False,0.81,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,2749,False,0.67,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1398,False,0.44,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,BMW INDIA PVT LTD,top,,1699,False,0.41,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,BMW INDIA PVT LTD,top,,1327,False,0.42,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,MERCEDES -BENZ GROUP,top,,1608,False,0.39,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,MERCEDES -BENZ GROUP,top,,1513,False,0.47,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1337,False,0.33,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1406,False,0.44,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,267,False,0.06,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,107,False,0.03,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,4,False,0.0,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,VINFAST AUTO INDIA PVT LTD,top,,1404,False,0.34,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,0,True,0.0,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,STELLANTIS GROUP,top,,999,False,0.24,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,STELLANTIS GROUP,top,,769,False,0.24,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,742,False,0.18,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,476,False,0.15,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,257,False,0.06,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,293,False,0.09,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,BYD INDIA PRIVATE LIMITED,top,,873,False,0.21,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,508,False,0.16,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,FORCE MOTORS LIMITED,top,,870,False,0.21,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,FORCE MOTORS LIMITED,top,,410,False,0.13,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,587,False,0.14,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,540,False,0.17,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,Others,others,,1189,False,0.29,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,Others,others,,1793,False,0.56,fada_retail_2026-06.pdf,12
+2026-06,2026-06,current,PV,Total,total,,410853,False,100.0,fada_retail_2026-06.pdf,12
+2026-06,2025-06,prior_year,PV,Total,total,,319412,False,100.0,fada_retail_2026-06.pdf,12
+2026-07,2026-07,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,469687,False,25.83,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,365395,False,25.77,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,HERO MOTOCORP LTD,top,,440662,False,24.23,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,HERO MOTOCORP LTD,top,,347398,False,24.5,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,TVS MOTOR COMPANY LTD,top,,374113,False,20.58,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,TVS MOTOR COMPANY LTD,top,,280337,False,19.77,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,BAJAJ AUTO LTD,top,,180183,False,9.91,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,BAJAJ AUTO LTD,top,,146667,False,10.34,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,102668,False,5.65,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,93984,False,6.63,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,95080,False,5.23,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,72207,False,5.09,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,67781,False,3.73,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,52486,False,3.7,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,ATHER ENERGY LTD,top,,30357,False,1.67,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,ATHER ENERGY LTD,top,,17834,False,1.26,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,14106,False,0.78,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,18450,False,1.3,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,GREAVES ELECTRIC MOBILITY LTD,top,,10125,False,0.56,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,GREAVES ELECTRIC MOBILITY LTD,top,,4266,False,0.3,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,RIVER MOBILITY PVT LTD,top,,5954,False,0.33,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,RIVER MOBILITY PVT LTD,top,,1680,False,0.12,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,5518,False,0.3,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,1763,False,0.12,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,CLASSIC LEGENDS PVT LTD,top,,4541,False,0.25,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,2465,False,0.17,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,PIAGGIO VEHICLES PVT LTD,top,,3684,False,0.2,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2754,False,0.19,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,Others Including EV,others,,13830,False,0.76,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,Others Including EV,others,,10081,False,0.71,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,2W,Total,total,,1818289,False,100.0,fada_retail_2026-07.pdf,9
+2026-07,2025-07,prior_year,2W,Total,total,,1417767,False,100.0,fada_retail_2026-07.pdf,9
+2026-07,2026-07,current,PV,MARUTI SUZUKI INDIA LTD,top,,161873,False,38.86,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,135232,False,38.67,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,TATA MOTORS LTD,top,,58774,False,14.11,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,TATA MOTORS LTD,top,,42950,False,12.28,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,56219,False,13.5,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,45451,False,13.0,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,HYUNDAI MOTOR INDIA LTD,top,,47853,False,11.49,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,45278,False,12.95,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,29443,False,7.07,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,27733,False,7.93,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,KIA INDIA PRIVATE LIMITED,top,,25551,False,6.13,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,20971,False,6.0,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8221,False,1.97,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8902,False,2.55,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8153,False,1.96,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8809,False,2.52,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,46,False,0.01,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,53,False,0.02,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,14,False,0.0,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,40,False,0.01,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8,False,0.0,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,0,True,0.0,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,7030,False,1.69,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,6927,False,1.98,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,HONDA CARS INDIA LTD,top,,5822,False,1.4,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,HONDA CARS INDIA LTD,top,,4827,False,1.38,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,RENAULT INDIA PVT LTD,top,,3505,False,0.84,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,RENAULT INDIA PVT LTD,top,,2313,False,0.66,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,2698,False,0.65,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1555,False,0.44,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,BMW INDIA PVT LTD,top,,1702,False,0.41,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,BMW INDIA PVT LTD,top,,1427,False,0.41,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,MERCEDES -BENZ GROUP,top,,1527,False,0.37,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,MERCEDES -BENZ GROUP,top,,1466,False,0.42,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1305,False,0.31,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1353,False,0.39,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,220,False,0.05,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,111,False,0.03,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,2,False,0.0,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,2,False,0.0,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,VINFAST AUTO INDIA PVT LTD,top,,1482,False,0.36,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,0,True,0.0,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,FORCE MOTORS LIMITED,top,,1193,False,0.29,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,FORCE MOTORS LIMITED,top,,581,False,0.17,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,STELLANTIS GROUP,top,,1168,False,0.28,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,STELLANTIS GROUP,top,,874,False,0.25,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,950,False,0.23,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,585,False,0.17,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,218,False,0.05,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,289,False,0.08,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,BYD INDIA PRIVATE LIMITED,top,,749,False,0.18,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,613,False,0.18,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,603,False,0.14,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,526,False,0.15,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,Others,others,,1142,False,0.27,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,Others,others,,2048,False,0.59,fada_retail_2026-07.pdf,13
+2026-07,2026-07,current,PV,Total,total,,416555,False,100.0,fada_retail_2026-07.pdf,13
+2026-07,2025-07,prior_year,PV,Total,total,,349674,False,100.0,fada_retail_2026-07.pdf,13
+2026-08,2026-08,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,447342,False,26.09,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,372867,False,26.03,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,HERO MOTOCORP LTD,top,,413996,False,24.15,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,HERO MOTOCORP LTD,top,,349039,False,24.37,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,TVS MOTOR COMPANY LTD,top,,353746,False,20.63,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,TVS MOTOR COMPANY LTD,top,,282347,False,19.71,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,BAJAJ AUTO LTD,top,,157149,False,9.17,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,BAJAJ AUTO LTD,top,,136335,False,9.52,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,104217,False,6.08,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,96184,False,6.71,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,94448,False,5.51,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,76505,False,5.34,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,62375,False,3.64,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,55172,False,3.85,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,ATHER ENERGY LTD,top,,28757,False,1.68,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,ATHER ENERGY LTD,top,,19210,False,1.34,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,13852,False,0.81,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,19464,False,1.36,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,GREAVES ELECTRIC MOBILITY LTD,top,,8613,False,0.5,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,GREAVES ELECTRIC MOBILITY LTD,top,,4567,False,0.32,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,RIVER MOBILITY PVT LTD,top,,5141,False,0.3,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,RIVER MOBILITY PVT LTD,top,,1903,False,0.13,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,4845,False,0.28,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,1729,False,0.12,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,CLASSIC LEGENDS PVT LTD,top,,4256,False,0.25,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,2649,False,0.18,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,PIAGGIO VEHICLES PVT LTD,top,,3595,False,0.21,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2900,False,0.2,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,Others Including EV,others,,12278,False,0.72,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,Others Including EV,others,,11666,False,0.81,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,2W,Total,total,,1714610,False,100.0,fada_retail_2026-08.pdf,9
+2026-08,2025-08,prior_year,2W,Total,total,,1432537,False,100.0,fada_retail_2026-08.pdf,9
+2026-08,2026-08,current,PV,MARUTI SUZUKI INDIA LTD,top,,165200,False,41.05,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,134494,False,38.82,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,TATA MOTORS LTD,top,,57841,False,14.37,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,TATA MOTORS LTD,top,,41170,False,11.88,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,50245,False,12.49,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,47220,False,13.63,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,HYUNDAI MOTOR INDIA LTD,top,,46987,False,11.68,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,44818,False,12.94,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,24856,False,6.18,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,27600,False,7.97,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,KIA INDIA PRIVATE LIMITED,top,,23371,False,5.81,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,19873,False,5.74,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,7469,False,1.86,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,9069,False,2.62,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,7415,False,1.84,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8977,False,2.59,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,30,False,0.01,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,66,False,0.02,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,11,False,0.0,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,26,False,0.01,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,13,False,0.0,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,0,True,0.0,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,5784,False,1.44,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,6649,False,1.92,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,HONDA CARS INDIA LTD,top,,4968,False,1.23,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,HONDA CARS INDIA LTD,top,,4421,False,1.28,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,RENAULT INDIA PVT LTD,top,,3275,False,0.81,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,RENAULT INDIA PVT LTD,top,,2618,False,0.76,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,2758,False,0.69,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1502,False,0.43,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,VINFAST AUTO INDIA PVT LTD,top,,2199,False,0.55,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,0,True,0.0,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,BMW INDIA PVT LTD,top,,1402,False,0.35,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,BMW INDIA PVT LTD,top,,1448,False,0.42,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,MERCEDES -BENZ GROUP,top,,1353,False,0.34,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,MERCEDES -BENZ GROUP,top,,1469,False,0.42,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1191,False,0.3,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1374,False,0.4,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,161,False,0.04,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,93,False,0.03,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,1,False,0.0,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,2,False,0.0,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,FORCE MOTORS LIMITED,top,,1111,False,0.28,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,FORCE MOTORS LIMITED,top,,585,False,0.17,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,STELLANTIS GROUP,top,,998,False,0.25,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,STELLANTIS GROUP,top,,719,False,0.21,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,812,False,0.2,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,459,False,0.13,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,186,False,0.05,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,260,False,0.08,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,563,False,0.14,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,503,False,0.15,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,BYD INDIA PRIVATE LIMITED,top,,543,False,0.13,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,581,False,0.17,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,Others,others,,1475,False,0.37,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,Others,others,,1729,False,0.5,fada_retail_2026-08.pdf,13
+2026-08,2026-08,current,PV,Total,total,,402398,False,100.0,fada_retail_2026-08.pdf,13
+2026-08,2025-08,prior_year,PV,Total,total,,346468,False,100.0,fada_retail_2026-08.pdf,13
+2026-09,2026-09,current,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,468789,False,26.19,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,HONDA MOTORCYCLE AND SCOOTER INDIA (P) LTD,top,,339537,False,25.24,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,HERO MOTOCORP LTD,top,,434280,False,24.26,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,HERO MOTOCORP LTD,top,,330500,False,24.57,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,TVS MOTOR COMPANY LTD,top,,364640,False,20.37,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,TVS MOTOR COMPANY LTD,top,,256042,False,19.03,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,BAJAJ AUTO LTD,top,,166112,False,9.28,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,BAJAJ AUTO LTD,top,,144214,False,10.72,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,102226,False,5.71,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,ROYAL-ENFIELD (UNIT OF EICHER LTD),top,,83494,False,6.21,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,101926,False,5.69,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,SUZUKI MOTORCYCLE INDIA PVT LTD,top,,82443,False,6.13,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,INDIA YAMAHA MOTOR PVT LTD,top,,64292,False,3.59,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,INDIA YAMAHA MOTOR PVT LTD,top,,49614,False,3.69,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,ATHER ENERGY LTD,top,,30533,False,1.71,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,ATHER ENERGY LTD,top,,19620,False,1.46,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,13451,False,0.75,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,OLA ELECTRIC TECHNOLOGIES PVT LTD,top,,13862,False,1.03,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,GREAVES ELECTRIC MOBILITY LTD,top,,9316,False,0.52,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,GREAVES ELECTRIC MOBILITY LTD,top,,4352,False,0.32,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,RIVER MOBILITY PVT LTD,top,,5556,False,0.31,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,RIVER MOBILITY PVT LTD,top,,1895,False,0.14,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,BGAUSS AUTO PRIVATE LIMITED,top,,5023,False,0.28,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,BGAUSS AUTO PRIVATE LIMITED,top,,2524,False,0.19,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,CLASSIC LEGENDS PVT LTD,top,,4573,False,0.26,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,CLASSIC LEGENDS PVT LTD,top,,3192,False,0.24,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,PIAGGIO VEHICLES PVT LTD,top,,3778,False,0.21,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,PIAGGIO VEHICLES PVT LTD,top,,2751,False,0.2,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,BOUNCE ELECTRIC 1 PVT LTD,top,,3069,False,0.17,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,BOUNCE ELECTRIC 1 PVT LTD,top,,895,False,0.07,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,E-SPRINTO GREEN ENERGY PVT LTD,top,,1997,False,0.11,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,E-SPRINTO GREEN ENERGY PVT LTD,top,,957,False,0.07,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,Others Including EV,others,,10627,False,0.59,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,Others Including EV,others,,9261,False,0.69,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,2W,Total,total,,1790188,False,100.0,fada_retail_2026-09.pdf,8
+2026-09,2025-09,prior_year,2W,Total,total,,1345153,False,100.0,fada_retail_2026-09.pdf,8
+2026-09,2026-09,current,PV,MARUTI SUZUKI INDIA LTD,top,,169132,False,39.59,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,MARUTI SUZUKI INDIA LTD,top,,130049,False,40.21,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,MAHINDRA & MAHINDRA LIMITED,top,,57343,False,13.42,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,MAHINDRA & MAHINDRA LIMITED,top,,41275,False,12.76,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,TATA MOTORS LTD,top,,57254,False,13.4,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,TATA MOTORS LTD,top,,44499,False,13.76,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,HYUNDAI MOTOR INDIA LTD,top,,50201,False,11.75,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,HYUNDAI MOTOR INDIA LTD,top,,38187,False,11.81,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,28050,False,6.57,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,TOYOTA KIRLOSKAR MOTOR PVT LTD,top,,23075,False,7.14,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,KIA INDIA PRIVATE LIMITED,top,,26663,False,6.24,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,KIA INDIA PRIVATE LIMITED,top,,18274,False,5.65,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,8479,False,1.98,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,SKODA AUTO VOLKSWAGEN GROUP,top,,7470,False,2.31,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,8448,False,1.98,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,SKODA AUTO VOLKSWAGEN INDIA PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,7393,False,2.29,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,16,False,0.0,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,VOLKSWAGEN AG/INDIA PVT. LTD.,member,SKODA AUTO VOLKSWAGEN GROUP,41,False,0.01,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,11,False,0.0,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,AUDI AG,member,SKODA AUTO VOLKSWAGEN GROUP,30,False,0.01,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,4,False,0.0,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,SKODA AUTO INDIA/AS PVT LTD,member,SKODA AUTO VOLKSWAGEN GROUP,6,False,0.0,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,JSW MG MOTOR INDIA PVT LTD,top,,6475,False,1.52,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,JSW MG MOTOR INDIA PVT LTD,top,,5698,False,1.76,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,HONDA CARS INDIA LTD,top,,5283,False,1.24,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,HONDA CARS INDIA LTD,top,,3707,False,1.15,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,RENAULT INDIA PVT LTD,top,,3410,False,0.8,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,RENAULT INDIA PVT LTD,top,,2562,False,0.79,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,NISSAN MOTOR INDIA PVT LTD,top,,2967,False,0.69,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,NISSAN MOTOR INDIA PVT LTD,top,,1379,False,0.43,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,VINFAST AUTO INDIA PVT LTD,top,,2964,False,0.69,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,VINFAST AUTO INDIA PVT LTD,top,,6,False,0.0,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,BMW INDIA PVT LTD,top,,1970,False,0.46,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,BMW INDIA PVT LTD,top,,1357,False,0.42,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,MERCEDES -BENZ GROUP,top,,1768,False,0.41,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,MERCEDES -BENZ GROUP,top,,1396,False,0.43,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1543,False,0.36,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,MERCEDES-BENZ INDIA PVT LTD,member,MERCEDES -BENZ GROUP,1282,False,0.4,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,224,False,0.05,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,MERCEDES -BENZ AG,member,MERCEDES -BENZ GROUP,113,False,0.03,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,DAIMLER AG,member,MERCEDES -BENZ GROUP,0,True,0.0,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,1,False,0.0,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,MERCEDES BENZ,member,MERCEDES -BENZ GROUP,1,False,0.0,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,FORCE MOTORS LIMITED,top,,1332,False,0.31,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,FORCE MOTORS LIMITED,top,,511,False,0.16,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,STELLANTIS GROUP,top,,1076,False,0.25,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,STELLANTIS GROUP,top,,641,False,0.2,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,804,False,0.19,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,STELLANTIS AUTOMOBILES INDIA PVT LTD,member,STELLANTIS GROUP,406,False,0.13,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,272,False,0.06,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,STELLANTIS INDIA PVT LTD,member,STELLANTIS GROUP,235,False,0.07,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,BYD INDIA PRIVATE LIMITED,top,,836,False,0.2,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,BYD INDIA PRIVATE LIMITED,top,,732,False,0.23,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,581,False,0.14,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,JAGUAR LAND ROVER INDIA LIMITED,top,,551,False,0.17,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,Others,others,,1429,False,0.33,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,Others,others,,2022,False,0.63,fada_retail_2026-09.pdf,12
+2026-09,2026-09,current,PV,Total,total,,427213,False,100.0,fada_retail_2026-09.pdf,12
+2026-09,2025-09,prior_year,PV,Total,total,,323391,False,100.0,fada_retail_2026-09.pdf,12

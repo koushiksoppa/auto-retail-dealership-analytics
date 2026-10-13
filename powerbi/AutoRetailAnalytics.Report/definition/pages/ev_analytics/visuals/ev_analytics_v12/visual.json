@@ -1,0 +1,207 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "ev_analytics_v12",
+  "position": {
+    "x": 20,
+    "y": 506,
+    "z": 12000,
+    "width": 1240,
+    "height": 150,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimVehicleSegment"
+                    }
+                  },
+                  "Property": "SegmentName"
+                }
+              },
+              "queryRef": "DimVehicleSegment.SegmentName",
+              "nativeQueryRef": "SegmentName",
+              "displayName": "Segment"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "EV Registrations PP (Est.)"
+                }
+              },
+              "queryRef": "_Measures.EV Registrations PP (Est.)",
+              "nativeQueryRef": "EV Registrations PP (Est.)",
+              "displayName": "EV units Feb-Sep 2025 (est.)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "EV Registrations CP (Est.)"
+                }
+              },
+              "queryRef": "_Measures.EV Registrations CP (Est.)",
+              "nativeQueryRef": "EV Registrations CP (Est.)",
+              "displayName": "EV units Feb-Sep 2026 (est.)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "EV Registrations Growth % (Est.)"
+                }
+              },
+              "queryRef": "_Measures.EV Registrations Growth % (Est.)",
+              "nativeQueryRef": "EV Registrations Growth % (Est.)",
+              "displayName": "EV growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Market YoY Growth % (Period)"
+                }
+              },
+              "queryRef": "_Measures.Market YoY Growth % (Period)",
+              "nativeQueryRef": "Market YoY Growth % (Period)",
+              "displayName": "Segment growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "EV Share PP %"
+                }
+              },
+              "queryRef": "_Measures.EV Share PP %",
+              "nativeQueryRef": "EV Share PP %",
+              "displayName": "EV share Feb-Sep 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "EV Share CP %"
+                }
+              },
+              "queryRef": "_Measures.EV Share CP %",
+              "nativeQueryRef": "EV Share CP %",
+              "displayName": "EV share Feb-Sep 2026"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "EV Share Change bps"
+                }
+              },
+              "queryRef": "_Measures.EV Share Change bps",
+              "nativeQueryRef": "EV Share Change bps",
+              "displayName": "Change (bps)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'EV volume by segment (estimated)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

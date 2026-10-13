@@ -1,0 +1,7 @@
+lead_source,leads,qualified,test_drives,bookings,deliveries,lost,open_leads,booked_awaiting,lead_to_qualified_pct,qualified_to_test_drive_pct,test_drive_to_booking_pct,booking_to_delivery_pct,lead_to_booking_pct,lead_to_delivery_pct
+Online marketplace,1093,497,322,146,137,892,59,5,45.4712,64.7887,45.3416,93.8356,13.3577,12.5343
+Phone enquiry,1685,982,613,204,179,1403,88,15,58.2789,62.4236,33.2790,87.7451,12.1068,10.6231
+Referral,1090,818,538,189,172,858,52,8,75.0459,65.7702,35.1301,91.0053,17.3394,15.7798
+Social media,1381,507,321,135,122,1187,63,9,36.7125,63.3136,42.0561,90.3704,9.7755,8.8342
+Walk-in,3208,2392,1500,599,539,2488,148,33,74.5636,62.7090,39.9333,89.9833,18.6721,16.8017
+Website,2479,1271,816,304,273,2052,133,21,51.2707,64.2014,37.2549,89.8026,12.2630,11.0125

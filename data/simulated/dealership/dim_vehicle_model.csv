@@ -1,0 +1,18 @@
+model_id,brand,model_name,vehicle_category,powertrain,segment,ex_showroom_price_inr,data_classification
+MDL01,Toyota,Toyota Compact SUV,Compact SUV,Hybrid,PV,1450000,SIMULATED
+MDL02,Toyota,Toyota Mid SUV,Mid SUV,ICE,PV,2600000,SIMULATED
+MDL03,Toyota,Toyota MPV,MPV,Hybrid,PV,2300000,SIMULATED
+MDL04,Toyota,Toyota Premium Sedan,Premium Sedan,Hybrid,PV,4600000,SIMULATED
+MDL05,Toyota,Toyota Hatchback,Hatchback,ICE,PV,800000,SIMULATED
+MDL06,Honda Cars,Honda Compact Sedan,Compact Sedan,ICE,PV,900000,SIMULATED
+MDL07,Honda Cars,Honda Mid Sedan,Mid Sedan,Hybrid,PV,1600000,SIMULATED
+MDL08,Honda Cars,Honda Compact SUV,Compact SUV,ICE,PV,1300000,SIMULATED
+MDL09,JSW MG Motor,MG Small EV,Small Car,EV,PV,800000,SIMULATED
+MDL10,JSW MG Motor,MG Compact SUV EV,Compact SUV,EV,PV,1600000,SIMULATED
+MDL11,JSW MG Motor,MG Mid SUV,Mid SUV,ICE,PV,2000000,SIMULATED
+MDL12,JSW MG Motor,MG Premium SUV,Premium SUV,ICE,PV,4000000,SIMULATED
+MDL13,Mercedes-Benz,Mercedes Luxury Sedan,Luxury Sedan,ICE,PV,7500000,SIMULATED
+MDL14,Mercedes-Benz,Mercedes Luxury SUV,Luxury SUV,ICE,PV,9500000,SIMULATED
+MDL15,Mercedes-Benz,Mercedes Luxury EV,Luxury SUV,EV,PV,13000000,SIMULATED
+MDL16,Ather,Ather Family Scooter,Electric Scooter - Family,EV,2W,130000,SIMULATED
+MDL17,Ather,Ather Performance Scooter,Electric Scooter - Performance,EV,2W,170000,SIMULATED

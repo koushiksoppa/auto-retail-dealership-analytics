@@ -1,0 +1,8 @@
+dealership_id,dealership_name,brand,segment,leads,qualified,test_drives,bookings,deliveries,lost,open_leads,booked_awaiting,lead_to_qualified_pct,qualified_to_test_drive_pct,test_drive_to_booking_pct,booking_to_delivery_pct,lead_to_booking_pct,lead_to_delivery_pct
+DLR01,Synthetic Toyota Dealership 1,Toyota,PV,2107,1216,740,277,250,1740,98,19,57.7124,60.8553,37.4324,90.2527,13.1467,11.8652
+DLR02,Synthetic Toyota Dealership 2,Toyota,PV,2127,1266,807,314,274,1712,115,26,59.5205,63.7441,38.9095,87.2611,14.7626,12.8820
+DLR03,Synthetic Honda Cars Dealership 1,Honda Cars,PV,1423,831,504,149,132,1217,66,8,58.3978,60.6498,29.5635,88.5906,10.4708,9.2762
+DLR04,Synthetic JSW MG Motor Dealership 1,JSW MG Motor,PV,1374,817,441,117,101,1192,72,9,59.4614,53.9780,26.5306,86.3248,8.5153,7.3508
+DLR05,Synthetic Mercedes-Benz Dealership 1,Mercedes-Benz,PV,457,274,181,52,39,383,23,12,59.9562,66.0584,28.7293,75.0000,11.3786,8.5339
+DLR06,Synthetic Ather Dealership 1,Ather,2W,3448,2063,1437,668,626,2636,169,17,59.8318,69.6558,46.4857,93.7126,19.3735,18.1555
+ALL,All dealerships,All,All,10936,6467,4110,1577,1422,8880,543,91,59.1350,63.5534,38.3698,90.1712,14.4203,13.0029

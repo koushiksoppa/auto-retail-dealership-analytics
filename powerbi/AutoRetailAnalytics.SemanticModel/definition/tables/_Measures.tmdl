@@ -1,0 +1,516 @@
+table _Measures
+
+	measure 'Current Period Start Key' = LOOKUPVALUE ( AnalysisPeriod[StartDateKey], AnalysisPeriod[PeriodName], "current" )
+		formatString: 0
+		displayFolder: 0 Period
+
+	measure 'Current Period End Key' = LOOKUPVALUE ( AnalysisPeriod[EndDateKey],   AnalysisPeriod[PeriodName], "current" )
+		formatString: 0
+		displayFolder: 0 Period
+
+	measure 'Prior Period Start Key' = LOOKUPVALUE ( AnalysisPeriod[StartDateKey], AnalysisPeriod[PeriodName], "prior" )
+		formatString: 0
+		displayFolder: 0 Period
+
+	measure 'Prior Period End Key' = LOOKUPVALUE ( AnalysisPeriod[EndDateKey],   AnalysisPeriod[PeriodName], "prior" )
+		formatString: 0
+		displayFolder: 0 Period
+
+	measure 'Current Period Label' = LOOKUPVALUE ( AnalysisPeriod[PeriodLabel],  AnalysisPeriod[PeriodName], "current" )
+		displayFolder: 0 Period
+
+	measure 'Prior Period Label' = LOOKUPVALUE ( AnalysisPeriod[PeriodLabel],  AnalysisPeriod[PeriodName], "prior" )
+		displayFolder: 0 Period
+
+	measure 'Registrations' = SUM ( FactMarketRegistrations[Units] )
+		formatString: #,0
+		displayFolder: 1 Market
+
+	measure 'Segment Registrations' =
+			VAR _segments = VALUES ( FactMarketRegistrations[SegmentKey] )
+			RETURN
+			    IF (
+			        COUNTROWS ( _segments ) = 1,
+			        CALCULATE (
+			            SUM ( FactMarketSegmentMonth[PublishedTotalUnits] ),
+			            TREATAS ( _segments, DimVehicleSegment[SegmentKey] )
+			        )
+			    )
+		formatString: #,0
+		displayFolder: 1 Market
+
+	measure 'Market Registrations' = IF ( HASONEVALUE ( DimVehicleSegment[SegmentCode] ), SUM ( FactMarketSegmentMonth[PublishedTotalUnits] ) )
+		formatString: #,0
+		displayFolder: 1 Market
+
+	measure 'Market Share %' = DIVIDE ( [Registrations], [Segment Registrations] )
+		formatString: 0.00%
+		displayFolder: 1 Market
+
+	measure 'Registrations PY' = CALCULATE ( [Registrations], SAMEPERIODLASTYEAR ( DimDate[CalendarDate] ) )
+		formatString: #,0
+		displayFolder: 1 Market
+
+	measure 'Market Registrations PY' = CALCULATE ( [Market Registrations], SAMEPERIODLASTYEAR ( DimDate[CalendarDate] ) )
+		formatString: #,0
+		displayFolder: 1 Market
+
+	measure 'YoY Growth % (Monthly)' =
+			VAR _ratio = DIVIDE ( [Registrations], [Registrations PY] )
+			RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 1 Market
+
+	measure 'Market YoY Growth % (Monthly)' =
+			VAR _ratio = DIVIDE ( [Market Registrations], [Market Registrations PY] )
+			RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 1 Market
+
+	measure 'Registrations CP' =
+			VAR _s = [Current Period Start Key]
+			VAR _e = [Current Period End Key]
+			RETURN CALCULATE ( [Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 2 Market Periods
+
+	measure 'Registrations PP' =
+			VAR _s = [Prior Period Start Key]
+			VAR _e = [Prior Period End Key]
+			RETURN CALCULATE ( [Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 2 Market Periods
+
+	measure 'Segment Registrations CP' =
+			VAR _s = [Current Period Start Key]
+			VAR _e = [Current Period End Key]
+			RETURN CALCULATE ( [Segment Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 2 Market Periods
+
+	measure 'Segment Registrations PP' =
+			VAR _s = [Prior Period Start Key]
+			VAR _e = [Prior Period End Key]
+			RETURN CALCULATE ( [Segment Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 2 Market Periods
+
+	measure 'Market Registrations CP' =
+			VAR _s = [Current Period Start Key]
+			VAR _e = [Current Period End Key]
+			RETURN CALCULATE ( [Market Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 2 Market Periods
+
+	measure 'Market Registrations PP' =
+			VAR _s = [Prior Period Start Key]
+			VAR _e = [Prior Period End Key]
+			RETURN CALCULATE ( [Market Registrations], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 2 Market Periods
+
+	measure 'YoY Growth % (Period)' =
+			VAR _ratio = DIVIDE ( [Registrations CP], [Registrations PP] )
+			RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 2 Market Periods
+
+	measure 'Segment YoY Growth % (Period)' =
+			VAR _ratio = DIVIDE ( [Segment Registrations CP], [Segment Registrations PP] )
+			RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 2 Market Periods
+
+	measure 'Market YoY Growth % (Period)' =
+			VAR _ratio = DIVIDE ( [Market Registrations CP], [Market Registrations PP] )
+			RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 2 Market Periods
+
+	measure 'Market Share CP %' = DIVIDE ( [Registrations CP], [Segment Registrations CP] )
+		formatString: 0.00%
+		displayFolder: 2 Market Periods
+
+	measure 'Market Share PP %' = DIVIDE ( [Registrations PP], [Segment Registrations PP] )
+		formatString: 0.00%
+		displayFolder: 2 Market Periods
+
+	measure 'Share Change pp' =
+			IF (
+			    NOT ISBLANK ( [Market Share CP %] ) && NOT ISBLANK ( [Market Share PP %] ),
+			    ( [Market Share CP %] - [Market Share PP %] ) * 100
+			)
+		formatString: +0.00;-0.00;0.00
+		displayFolder: 2 Market Periods
+
+	measure 'Share Change bps' =
+			IF (
+			    NOT ISBLANK ( [Market Share CP %] ) && NOT ISBLANK ( [Market Share PP %] ),
+			    ( [Market Share CP %] - [Market Share PP %] ) * 10000
+			)
+		formatString: +#,0;-#,0;0
+		displayFolder: 2 Market Periods
+
+	measure 'Growth Gap vs Segment pp' =
+			IF (
+			    NOT ISBLANK ( [YoY Growth % (Period)] ) && NOT ISBLANK ( [Segment YoY Growth % (Period)] ),
+			    ( [YoY Growth % (Period)] - [Segment YoY Growth % (Period)] ) * 100
+			)
+		formatString: +0.00;-0.00;0.00
+		displayFolder: 2 Market Periods
+
+	measure 'Constant-Share Registrations' = [Segment Registrations CP] * [Market Share PP %]
+		formatString: #,0
+		displayFolder: 2 Market Periods
+
+	measure 'Registration Gap' = IF ( NOT ISBLANK ( [Constant-Share Registrations] ), [Constant-Share Registrations] - [Registrations CP] )
+		formatString: +#,0;-#,0;0
+		displayFolder: 2 Market Periods
+
+	measure 'Portfolio Car Registrations CP' = CALCULATE ( [Registrations CP], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: #,0
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car Registrations PP' = CALCULATE ( [Registrations PP], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: #,0
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car Share CP %' = CALCULATE ( [Market Share CP %], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: 0.00%
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car Share PP %' = CALCULATE ( [Market Share PP %], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: 0.00%
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car Share Change bps' = CALCULATE ( [Share Change bps], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: +#,0;-#,0;0
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car YoY Growth %' = CALCULATE ( [YoY Growth % (Period)], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car Growth Gap vs PV pp' = CALCULATE ( [Growth Gap vs Segment pp], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: +0.00;-0.00;0.00
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car Constant-Share Registrations' = CALCULATE ( [Constant-Share Registrations], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: #,0
+		displayFolder: 3 Portfolio
+
+	measure 'Portfolio Car Registration Gap' = CALCULATE ( [Registration Gap], DimOEM[IsPortfolioBrand] = TRUE (), DimVehicleSegment[SegmentCode] = "PV" )
+		formatString: +#,0;-#,0;0
+		displayFolder: 3 Portfolio
+
+	measure 'EV Registrations (Est.)' =
+			IF (
+			    HASONEVALUE ( DimVehicleSegment[SegmentCode] )
+			        && CALCULATE ( COUNTROWS ( FactMarketSegmentMonth ), ISBLANK ( FactMarketSegmentMonth[EVSharePct] ) ) = 0,
+			    SUM ( FactMarketSegmentMonth[EVUnitsEstimated] )
+			)
+		formatString: #,0
+		displayFolder: 4 EV
+
+	measure 'EV Share %' = DIVIDE ( [EV Registrations (Est.)], [Market Registrations] )
+		formatString: 0.00%
+		displayFolder: 4 EV
+
+	measure 'EV Share CP %' =
+			VAR _s = [Current Period Start Key]
+			VAR _e = [Current Period End Key]
+			RETURN CALCULATE ( [EV Share %], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: 0.00%
+		displayFolder: 4 EV
+
+	measure 'EV Share PP %' =
+			VAR _s = [Prior Period Start Key]
+			VAR _e = [Prior Period End Key]
+			RETURN CALCULATE ( [EV Share %], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: 0.00%
+		displayFolder: 4 EV
+
+	measure 'EV Share Change bps' = IF ( NOT ISBLANK ( [EV Share CP %] ) && NOT ISBLANK ( [EV Share PP %] ), ( [EV Share CP %] - [EV Share PP %] ) * 10000 )
+		formatString: +#,0;-#,0;0
+		displayFolder: 4 EV
+
+	measure 'Leads' = COUNTROWS ( FactLeadFunnel )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Qualified Leads' = CALCULATE ( [Leads], FactLeadFunnel[IsQualified] = TRUE () )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Test Drives' = CALCULATE ( [Leads], FactLeadFunnel[IsTestDrive] = TRUE () )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Bookings' = CALCULATE ( [Leads], FactLeadFunnel[IsBooked] = TRUE () )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Deliveries (Lead Cohort)' = CALCULATE ( [Leads], FactLeadFunnel[IsDelivered] = TRUE () )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Lost Leads' = CALCULATE ( [Leads], FactLeadFunnel[LeadStatus] = "Lost" )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Open Leads' = CALCULATE ( [Leads], FactLeadFunnel[LeadStatus] = "Open" )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Deliveries (Delivery Date)' = COUNTROWS ( FactVehicleDelivery )
+		formatString: #,0
+		displayFolder: 5 Funnel
+
+	measure 'Lead to Qualified %' = DIVIDE ( [Qualified Leads], [Leads] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Qualified to Test Drive %' = DIVIDE ( [Test Drives], [Qualified Leads] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Test Drive to Booking %' = DIVIDE ( [Bookings], [Test Drives] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Booking to Delivery %' = DIVIDE ( [Deliveries (Lead Cohort)], [Bookings] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Lead to Booking %' = DIVIDE ( [Bookings], [Leads] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Lead to Delivery %' = DIVIDE ( [Deliveries (Lead Cohort)], [Leads] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Lost Lead Share %' = DIVIDE ( [Lost Leads], [Leads] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'First Contact SLA %' = DIVIDE ( CALCULATE ( [Leads], FactLeadFunnel[FirstContactWithinSLA] = TRUE () ), [Leads] )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Median First Contact Hours' = MEDIAN ( FactLeadFunnel[FirstContactHours] )
+		formatString: 0.0
+		displayFolder: 5 Funnel
+
+	measure 'Invoiced Revenue' = SUM ( FactVehicleDelivery[InvoiceAmountINR] )
+		formatString: """₹""#,0"
+		displayFolder: 5 Funnel
+
+	measure 'Average Discount %' = DIVIDE ( AVERAGE ( FactVehicleDelivery[DiscountPct] ), 100 )
+		formatString: 0.00%
+		displayFolder: 5 Funnel
+
+	measure 'Latest Snapshot Key' =
+			CALCULATE (
+			    MAX ( FactInventorySnapshot[SnapshotDateKey] ),
+			    REMOVEFILTERS ( FactInventorySnapshot ),
+			    REMOVEFILTERS ( DimDealership ),
+			    REMOVEFILTERS ( DimVehicleModel )
+			)
+		formatString: 0
+		displayFolder: 6 Inventory
+
+	measure 'Current Inventory Units' =
+			VAR _k = [Latest Snapshot Key]
+			RETURN CALCULATE ( COUNTROWS ( FactInventorySnapshot ), FactInventorySnapshot[SnapshotDateKey] = _k )
+		formatString: #,0
+		displayFolder: 6 Inventory
+
+	measure 'Aged Inventory Units' =
+			VAR _k = [Latest Snapshot Key]
+			VAR _aged = CALCULATE ( COUNTROWS ( FactInventorySnapshot ), FactInventorySnapshot[SnapshotDateKey] = _k,
+			                        FactInventorySnapshot[IsAged] = TRUE () )
+			RETURN IF ( NOT ISBLANK ( [Current Inventory Units] ), _aged + 0 )
+		formatString: #,0
+		displayFolder: 6 Inventory
+
+	measure 'Aged Inventory %' = DIVIDE ( [Aged Inventory Units], [Current Inventory Units] )
+		formatString: 0.00%
+		displayFolder: 6 Inventory
+
+	measure 'Inventory Ageing %' = DIVIDE ( [Current Inventory Units], CALCULATE ( [Current Inventory Units], REMOVEFILTERS ( FactInventorySnapshot[AgeingBucket] ) ) )
+		formatString: 0.00%
+		displayFolder: 6 Inventory
+
+	measure 'Average Stock Age (Days)' =
+			VAR _k = [Latest Snapshot Key]
+			RETURN CALCULATE ( AVERAGE ( FactInventorySnapshot[AgeDays] ), FactInventorySnapshot[SnapshotDateKey] = _k )
+		formatString: 0.0
+		displayFolder: 6 Inventory
+
+	measure 'Current Inventory Cost' =
+			VAR _k = [Latest Snapshot Key]
+			RETURN CALCULATE ( SUM ( FactInventorySnapshot[PurchaseCostINR] ), FactInventorySnapshot[SnapshotDateKey] = _k )
+		formatString: """₹""#,0"
+		displayFolder: 6 Inventory
+
+	measure 'Opening Stock Units' =
+			VAR _start = MIN ( DimDate[CalendarDate] )
+			RETURN
+			    COUNTROWS (
+			        FILTER (
+			            FactVehicleInventory,
+			            FactVehicleInventory[ReceiptDate] < _start
+			                && ( ISBLANK ( FactVehicleInventory[DeliveryDate] ) || FactVehicleInventory[DeliveryDate] >= _start )
+			        )
+			    )
+		formatString: #,0
+		displayFolder: 6 Inventory
+
+	measure 'Receipts Units' =
+			VAR _start = MIN ( DimDate[CalendarDate] )
+			VAR _end = MAX ( DimDate[CalendarDate] )
+			RETURN
+			    COUNTROWS ( FILTER ( FactVehicleInventory,
+			        FactVehicleInventory[ReceiptDate] >= _start && FactVehicleInventory[ReceiptDate] <= _end ) )
+		formatString: #,0
+		displayFolder: 6 Inventory
+
+	measure 'Sell-Through %' = DIVIDE ( [Deliveries (Delivery Date)], [Opening Stock Units] + [Receipts Units] )
+		formatString: 0.00%
+		displayFolder: 6 Inventory
+
+	measure 'Inventory Turnover (Annualised)' =
+			VAR _avgStockCost =
+			    AVERAGEX ( VALUES ( FactInventorySnapshot[SnapshotDateKey] ),
+			               CALCULATE ( SUM ( FactInventorySnapshot[PurchaseCostINR] ) ) )
+			VAR _days = COUNTROWS ( DimDate )
+			RETURN DIVIDE ( SUM ( FactVehicleDelivery[PurchaseCostINR] ), _avgStockCost ) * DIVIDE ( 12 * 30.4, _days )
+		formatString: 0.0
+		displayFolder: 6 Inventory
+
+	measure 'Days of Supply' =
+			VAR _k = [Latest Snapshot Key]
+			VAR _snapDate = DATE ( INT ( _k / 10000 ), INT ( MOD ( _k, 10000 ) / 100 ), MOD ( _k, 100 ) )
+			VAR _last30 =
+			    CALCULATE ( COUNTROWS ( FactVehicleDelivery ), REMOVEFILTERS ( DimDate ),
+			                FactVehicleDelivery[DeliveryDate] > _snapDate - 30, FactVehicleDelivery[DeliveryDate] <= _snapDate )
+			RETURN DIVIDE ( [Current Inventory Units], DIVIDE ( _last30, 30 ) )
+		formatString: 0.0
+		displayFolder: 6 Inventory
+
+	measure 'Actions Triggered' = CALCULATE ( COUNTROWS ( FactActionTrigger ), FactActionTrigger[Breached] = TRUE () )
+		formatString: #,0
+		displayFolder: 7 Actions
+
+	measure 'Rule Checks' = COUNTROWS ( FactActionTrigger )
+		formatString: #,0
+		displayFolder: 7 Actions
+
+	measure 'Period Months' =
+			VAR _s = [Current Period Start Key]
+			VAR _e = [Current Period End Key]
+			RETURN
+			    DATEDIFF (
+			        DATE ( INT ( _s / 10000 ), MOD ( INT ( _s / 100 ), 100 ), 1 ),
+			        DATE ( INT ( _e / 10000 ), MOD ( INT ( _e / 100 ), 100 ), 1 ),
+			        MONTH
+			    ) + 1
+		formatString: 0
+		displayFolder: 8 Report Helpers
+
+	measure 'OEM Months Reported CP' =
+			VAR _s = [Current Period Start Key]
+			VAR _e = [Current Period End Key]
+			RETURN CALCULATE ( DISTINCTCOUNT ( FactMarketRegistrations[MonthDateKey] ), REMOVEFILTERS ( DimDate ),
+			                   DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: 0
+		displayFolder: 8 Report Helpers
+
+	measure 'OEM Months Reported PP' =
+			VAR _s = [Prior Period Start Key]
+			VAR _e = [Prior Period End Key]
+			RETURN CALCULATE ( DISTINCTCOUNT ( FactMarketRegistrations[MonthDateKey] ), REMOVEFILTERS ( DimDate ),
+			                   DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: 0
+		displayFolder: 8 Report Helpers
+
+	measure 'Is Coverage Complete' =
+			IF (
+			    HASONEVALUE ( DimOEM[OEMKey] )
+			        && [OEM Months Reported CP] = [Period Months]
+			        && [OEM Months Reported PP] = [Period Months],
+			    1,
+			    0
+			)
+		formatString: 0
+		displayFolder: 8 Report Helpers
+
+	measure 'Market Share CP % (Complete Coverage)' = IF ( [Is Coverage Complete] = 1, [Market Share CP %] )
+		formatString: 0.00%
+		displayFolder: 8 Report Helpers
+
+	measure 'Market Share PP % (Complete Coverage)' = IF ( [Is Coverage Complete] = 1, [Market Share PP %] )
+		formatString: 0.00%
+		displayFolder: 8 Report Helpers
+
+	measure 'Share Change bps (Complete Coverage)' = IF ( [Is Coverage Complete] = 1, [Share Change bps] )
+		formatString: +#,0;-#,0;0
+		displayFolder: 8 Report Helpers
+
+	measure 'Share Gain bps (Complete Coverage)' =
+			VAR _bps = [Share Change bps (Complete Coverage)]
+			RETURN IF ( NOT ISBLANK ( _bps ) && _bps >= 0, _bps )
+		formatString: +#,0;-#,0;0
+		displayFolder: 8 Report Helpers
+
+	measure 'Share Loss bps (Complete Coverage)' =
+			VAR _bps = [Share Change bps (Complete Coverage)]
+			RETURN IF ( NOT ISBLANK ( _bps ) && _bps < 0, _bps )
+		formatString: +#,0;-#,0;0
+		displayFolder: 8 Report Helpers
+
+	measure 'YoY Growth % (Complete Coverage)' = IF ( [Is Coverage Complete] = 1 && [Registrations PP] >= 1000, [YoY Growth % (Period)] )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 8 Report Helpers
+
+	measure 'EV Registrations CP (Est.)' =
+			VAR _s = [Current Period Start Key]
+			VAR _e = [Current Period End Key]
+			RETURN CALCULATE ( [EV Registrations (Est.)], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 8 Report Helpers
+
+	measure 'EV Registrations PP (Est.)' =
+			VAR _s = [Prior Period Start Key]
+			VAR _e = [Prior Period End Key]
+			RETURN CALCULATE ( [EV Registrations (Est.)], REMOVEFILTERS ( DimDate ), DimDate[DateKey] >= _s, DimDate[DateKey] <= _e )
+		formatString: #,0
+		displayFolder: 8 Report Helpers
+
+	measure 'EV Registrations Growth % (Est.)' =
+			VAR _ratio = DIVIDE ( [EV Registrations CP (Est.)], [EV Registrations PP (Est.)] )
+			RETURN IF ( NOT ISBLANK ( _ratio ), _ratio - 1 )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 8 Report Helpers
+
+	measure 'Simulated Data Banner' = "SIMULATED DATA - illustrative dealership operations, not actual performance"
+		displayFolder: 9 Labels
+
+	measure 'Official Data Banner' = "Source: FADA monthly vehicle retail data (official). Shares use each OEM's own segment."
+		displayFolder: 9 Labels
+
+	column Placeholder
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: Placeholder
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = #table(type table [Placeholder = text], {})
+				in
+				    Source
+

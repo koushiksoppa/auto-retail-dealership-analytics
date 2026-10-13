@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Local configuration / secrets
+.env
+*.env
+config/local*.yaml
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Power BI local caches (commit the .pbix only intentionally)
+*.pbix.bak
+powerbi/**/.pbi/cache.abf
+powerbi/**/localSettings.json
+
+# SQL Server local artefacts
+*.mdf
+*.ldf
+*.bak
+
+# FADA source PDFs: FADA grants no redistribution licence ("All rights reserved").
+# They stay local; re-download and checksum-verify with: python python/fetch_fada_sources.py
+data/external/fada/raw/*.pdf
+
+# Power BI per-user editor state (pending Power Query edits)
+powerbi/**/.pbi/unappliedChanges.json

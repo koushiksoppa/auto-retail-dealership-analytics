@@ -1,0 +1,84 @@
+/// SHARED: Calendar (day grain); marked as the date table.
+table DimDate
+	dataCategory: Time
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column CalendarDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		isKey
+		summarizeBy: none
+		sourceColumn: CalendarDate
+
+	column YearNumber
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: YearNumber
+
+	column QuarterNumber
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: QuarterNumber
+
+	column MonthNumber
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: MonthNumber
+
+	column MonthName
+		dataType: string
+		sortByColumn: MonthNumber
+		summarizeBy: none
+		sourceColumn: MonthName
+
+	column MonthShortName
+		dataType: string
+		sortByColumn: MonthNumber
+		summarizeBy: none
+		sourceColumn: MonthShortName
+
+	column YearMonth
+		dataType: string
+		summarizeBy: none
+		sourceColumn: YearMonth
+
+	column MonthStartDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: MonthStartDate
+
+	column MonthEndDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: MonthEndDate
+
+	column IsMonthEnd
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsMonthEnd
+
+	column IndianFiscalYear
+		dataType: string
+		summarizeBy: none
+		sourceColumn: IndianFiscalYear
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="DimDate"]}[Data]
+				in
+				    Data
+

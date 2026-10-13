@@ -1,0 +1,61 @@
+/// OFFICIAL: FADA published segment total and EV share, month x segment.
+table FactMarketSegmentMonth
+
+	column MonthDateKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: MonthDateKey
+
+	column SegmentKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column PublishedTotalUnits
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: PublishedTotalUnits
+
+	column EVSharePct
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: EVSharePct
+
+	column EVUnitsEstimated
+		dataType: double
+		formatString: #,0.00
+		isHidden
+		summarizeBy: none
+		sourceColumn: EVUnitsEstimated
+
+	column ReleaseMonth
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ReleaseMonth
+
+	column SourceFile
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SourceFile
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition FactMarketSegmentMonth = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="FactMarketSegmentMonth"]}[Data]
+				in
+				    Data
+

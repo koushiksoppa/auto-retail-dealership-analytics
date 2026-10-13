@@ -1,0 +1,69 @@
+/// SIMULATED: SIMULATED month-end stock snapshots.
+table FactInventorySnapshot
+
+	column SnapshotDateKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: SnapshotDateKey
+
+	column Vin
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Vin
+
+	column DealershipId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipId
+
+	column ModelId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ModelId
+
+	column PurchaseCostINR
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: PurchaseCostINR
+
+	column AgeDays
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: AgeDays
+
+	column AgeingBucket
+		dataType: string
+		sortByColumn: AgeingBucketOrder
+		summarizeBy: none
+		sourceColumn: AgeingBucket
+
+	column IsAged
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsAged
+
+	column AgeingBucketOrder
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: AgeingBucketOrder
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition FactInventorySnapshot = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="FactInventorySnapshot"]}[Data]
+				in
+				    Data
+

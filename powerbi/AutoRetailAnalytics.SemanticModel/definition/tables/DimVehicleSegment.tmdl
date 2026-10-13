@@ -1,0 +1,29 @@
+/// OFFICIAL: FADA segments used: PV and 2W.
+table DimVehicleSegment
+
+	column SegmentKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column SegmentCode
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SegmentCode
+
+	column SegmentName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SegmentName
+
+	partition DimVehicleSegment = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="DimVehicleSegment"]}[Data]
+				in
+				    Data
+

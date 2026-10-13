@@ -1,0 +1,7 @@
+dealership_id,dealership_name,brand,segment,opening_stock_units,receipts_units,deliveries_units,closing_stock_units,closing_stock_cost_inr,stock_0-30_days,stock_31-60_days,stock_61-90_days,stock_>90_days,aged_units,aged_inventory_share_pct,avg_stock_age_days,sell_through_pct,inventory_turnover_annualised,avg_days_in_inventory_delivered,deliveries_last_30_days,days_of_supply,top_model_id,top_model_stock_share_pct,stock_hhi
+DLR01,Synthetic Toyota Dealership 1,Toyota,PV,38,289,250,77,150148500,32,29,14,2,16,20.7792,39.7403,76.4526,4.9995,59.5640,27,85.5556,MDL03,31.1688,2420.3070
+DLR02,Synthetic Toyota Dealership 2,Toyota,PV,43,309,274,78,159216000,30,27,11,10,21,26.9231,47.0897,77.8409,5.7883,57.7591,44,53.1818,MDL01,30.7692,2587.1137
+DLR03,Synthetic Honda Cars Dealership 1,Honda Cars,PV,26,129,132,23,23622000,13,10,0,0,0,0.0000,27.4783,85.1613,5.8130,63.5000,20,34.5000,MDL06,52.1739,4631.3800
+DLR04,Synthetic JSW MG Motor Dealership 1,JSW MG Motor,PV,21,114,101,34,70680000,17,11,3,3,6,17.6471,40.4706,74.8148,3.6212,76.6040,13,78.4615,MDL10,35.2941,2733.5640
+DLR05,Synthetic Mercedes-Benz Dealership 1,Mercedes-Benz,PV,13,49,39,23,226920000,4,6,6,7,13,56.5217,70.9565,62.9032,2.5855,97.1282,8,86.2500,MDL15,56.5217,5085.0662
+DLR06,Synthetic Ather Dealership 1,Ather,2W,66,673,626,113,15744900,94,19,0,0,0,0.0000,18.4867,84.7091,10.1332,35.4089,71,47.7465,MDL16,50.4425,5000.3916

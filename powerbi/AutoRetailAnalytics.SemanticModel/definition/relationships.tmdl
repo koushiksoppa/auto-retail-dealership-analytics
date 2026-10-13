@@ -1,0 +1,75 @@
+relationship 9f66b6c0-a5de-58f7-9a20-7605203041d7
+	fromColumn: FactMarketRegistrations.MonthDateKey
+	toColumn: DimDate.DateKey
+
+relationship a51115bd-a15f-5935-905d-97af2ef1268f
+	fromColumn: FactMarketRegistrations.OEMKey
+	toColumn: DimOEM.OEMKey
+
+relationship 503f34cb-f4ac-5f63-aecb-0a3141857a2e
+	fromColumn: FactMarketRegistrations.SegmentKey
+	toColumn: DimVehicleSegment.SegmentKey
+
+relationship 41dc453c-b8b8-5346-af6f-c9179d1b1fe1
+	fromColumn: FactMarketSegmentMonth.MonthDateKey
+	toColumn: DimDate.DateKey
+
+relationship b84cdb20-cd57-5915-9410-c29d79662392
+	fromColumn: FactMarketSegmentMonth.SegmentKey
+	toColumn: DimVehicleSegment.SegmentKey
+
+relationship c8dc3c8d-3978-5206-8a66-aa767039ae11
+	fromColumn: FactLeadFunnel.LeadDateKey
+	toColumn: DimDate.DateKey
+
+relationship 1d14c689-e0fc-5a5f-92b5-0e1593dbe6fa
+	fromColumn: FactLeadFunnel.DealershipId
+	toColumn: DimDealership.DealershipId
+
+relationship 935fbde1-f68a-5db5-87bd-64bd2984400a
+	fromColumn: FactLeadFunnel.SalespersonId
+	toColumn: DimSalesperson.SalespersonId
+
+relationship ab11744a-b8c5-5dae-947d-413b7ab18b0d
+	fromColumn: FactLeadFunnel.ModelId
+	toColumn: DimVehicleModel.ModelId
+
+relationship 9efb23c1-4530-5cab-ae30-77f427a0eb00
+	fromColumn: FactVehicleDelivery.DeliveryDateKey
+	toColumn: DimDate.DateKey
+
+relationship a6f66bcb-ed22-57f2-8d5a-38a1a49d5280
+	fromColumn: FactVehicleDelivery.DealershipId
+	toColumn: DimDealership.DealershipId
+
+relationship cd991f0e-29c8-5290-b200-a185abf7e803
+	fromColumn: FactVehicleDelivery.ModelId
+	toColumn: DimVehicleModel.ModelId
+
+relationship 6f0782e8-7fdc-54b7-acec-24ab9f3051ae
+	fromColumn: FactVehicleDelivery.SalespersonId
+	toColumn: DimSalesperson.SalespersonId
+
+relationship 8f9c4042-d9c2-5769-a34e-a773c199ec93
+	fromColumn: FactInventorySnapshot.SnapshotDateKey
+	toColumn: DimDate.DateKey
+
+relationship 30830e3e-8477-54ca-a673-f7fd7cb4f154
+	fromColumn: FactInventorySnapshot.DealershipId
+	toColumn: DimDealership.DealershipId
+
+relationship 6d8a3fcd-a057-52b5-af6d-aec6aeac5af4
+	fromColumn: FactInventorySnapshot.ModelId
+	toColumn: DimVehicleModel.ModelId
+
+relationship 4f2133ca-b5a2-5cc7-a70b-c3199a0bfca6
+	fromColumn: FactVehicleInventory.DealershipId
+	toColumn: DimDealership.DealershipId
+
+relationship 6eb985a4-27e4-5b37-95e8-29f3c3ba4feb
+	fromColumn: FactVehicleInventory.ModelId
+	toColumn: DimVehicleModel.ModelId
+
+relationship 828e4861-a0ea-5559-9f1e-30a4ee8fa63e
+	fromColumn: FactActionTrigger.DealershipId
+	toColumn: DimDealership.DealershipId

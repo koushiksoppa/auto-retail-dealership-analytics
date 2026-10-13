@@ -1,0 +1,7 @@
+dealership_id,dealership_name,brand,segment,region,city,data_classification
+DLR01,Synthetic Toyota Dealership 1,Toyota,PV,North,City A,SIMULATED
+DLR02,Synthetic Toyota Dealership 2,Toyota,PV,South,City B,SIMULATED
+DLR03,Synthetic Honda Cars Dealership 1,Honda Cars,PV,West,City C,SIMULATED
+DLR04,Synthetic JSW MG Motor Dealership 1,JSW MG Motor,PV,East,City D,SIMULATED
+DLR05,Synthetic Mercedes-Benz Dealership 1,Mercedes-Benz,PV,North,City E,SIMULATED
+DLR06,Synthetic Ather Dealership 1,Ather,2W,South,City F,SIMULATED

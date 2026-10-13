@@ -1,0 +1,34 @@
+/// OFFICIAL: Configured comparison periods (disconnected).
+table AnalysisPeriod
+
+	column PeriodName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: PeriodName
+
+	column StartDateKey
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: StartDateKey
+
+	column EndDateKey
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: EndDateKey
+
+	column PeriodLabel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: PeriodLabel
+
+	partition AnalysisPeriod = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="AnalysisPeriod"]}[Data]
+				in
+				    Data
+

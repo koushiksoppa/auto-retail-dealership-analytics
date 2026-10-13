@@ -1,0 +1,225 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "oem_market_share_v10",
+  "position": {
+    "x": 20,
+    "y": 496,
+    "z": 10000,
+    "width": 1240,
+    "height": 212,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimOEM"
+                    }
+                  },
+                  "Property": "OEMName"
+                }
+              },
+              "queryRef": "DimOEM.OEMName",
+              "nativeQueryRef": "OEMName",
+              "displayName": "OEM"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimVehicleSegment"
+                    }
+                  },
+                  "Property": "SegmentCode"
+                }
+              },
+              "queryRef": "DimVehicleSegment.SegmentCode",
+              "nativeQueryRef": "SegmentCode",
+              "displayName": "Segment"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Registrations PP"
+                }
+              },
+              "queryRef": "_Measures.Registrations PP",
+              "nativeQueryRef": "Registrations PP",
+              "displayName": "Feb-Sep 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Registrations CP"
+                }
+              },
+              "queryRef": "_Measures.Registrations CP",
+              "nativeQueryRef": "Registrations CP",
+              "displayName": "Feb-Sep 2026"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "YoY Growth % (Complete Coverage)"
+                }
+              },
+              "queryRef": "_Measures.YoY Growth % (Complete Coverage)",
+              "nativeQueryRef": "YoY Growth % (Complete Coverage)",
+              "displayName": "YoY growth"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Market Share PP % (Complete Coverage)"
+                }
+              },
+              "queryRef": "_Measures.Market Share PP % (Complete Coverage)",
+              "nativeQueryRef": "Market Share PP % (Complete Coverage)",
+              "displayName": "Share Feb-Sep 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Market Share CP % (Complete Coverage)"
+                }
+              },
+              "queryRef": "_Measures.Market Share CP % (Complete Coverage)",
+              "nativeQueryRef": "Market Share CP % (Complete Coverage)",
+              "displayName": "Share Feb-Sep 2026"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Share Change bps (Complete Coverage)"
+                }
+              },
+              "queryRef": "_Measures.Share Change bps (Complete Coverage)",
+              "nativeQueryRef": "Share Change bps (Complete Coverage)",
+              "displayName": "Change (bps)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Registrations CP"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'OEM registrations and share (blank = not listed by FADA in every month)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

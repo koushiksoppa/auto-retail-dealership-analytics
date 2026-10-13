@@ -1,0 +1,46 @@
+/// OFFICIAL: Canonical OEM within a segment (from config/oem_mapping.csv).
+table DimOEM
+
+	column OEMKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: OEMKey
+
+	column SegmentKey
+		dataType: int64
+		formatString: 0
+		isHidden
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column OEMName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: OEMName
+
+	column PortfolioBrand
+		dataType: string
+		summarizeBy: none
+		sourceColumn: PortfolioBrand
+
+	column IsPortfolioBrand
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsPortfolioBrand
+
+	column IsResidual
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: IsResidual
+
+	partition DimOEM = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="DimOEM"]}[Data]
+				in
+				    Data
+

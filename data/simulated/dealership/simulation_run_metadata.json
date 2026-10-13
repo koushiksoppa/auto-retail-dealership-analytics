@@ -1,0 +1,19 @@
+{
+  "data_classification": "SIMULATED",
+  "seed": 20260930,
+  "start_date": "2026-02-01",
+  "end_date": "2026-09-30",
+  "scale": 1.0,
+  "config_sha256_16": "892e7dca9bbfc7d5",
+  "generator": "python/dealership_kpi_simulation.py",
+  "row_counts": {
+    "dim_dealership": 6,
+    "dim_salesperson": 35,
+    "dim_vehicle_model": 17,
+    "fact_lead_funnel": 10936,
+    "fact_vehicle_inventory": 1770,
+    "fact_vehicle_delivery": 1422,
+    "fact_inventory_snapshot": 2640,
+    "simulation_latent_parameters": 35
+  }
+}

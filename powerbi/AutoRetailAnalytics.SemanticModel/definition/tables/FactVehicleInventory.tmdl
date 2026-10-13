@@ -1,0 +1,61 @@
+/// SIMULATED: SIMULATED stocked vehicles.
+table FactVehicleInventory
+
+	column Vin
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Vin
+
+	column DealershipId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipId
+
+	column ModelId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ModelId
+
+	column ReceiptDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: ReceiptDate
+
+	column PurchaseCostINR
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: PurchaseCostINR
+
+	column DeliveryDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: DeliveryDate
+
+	column StockStatus
+		dataType: string
+		summarizeBy: none
+		sourceColumn: StockStatus
+
+	column DaysInInventory
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: DaysInInventory
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition FactVehicleInventory = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="FactVehicleInventory"]}[Data]
+				in
+				    Data
+

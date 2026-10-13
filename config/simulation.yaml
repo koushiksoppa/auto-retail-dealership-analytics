@@ -1,0 +1,165 @@
+# ASSUMPTIONS for python/dealership_kpi_simulation.py (Layer B: SIMULATED dealership data).
+# Every value here is an illustrative modelling assumption. Nothing in this file or in the
+# generated data describes the actual performance of any real dealership or brand.
+#
+# Change the seed, period or size here or on the command line:
+#   python python/dealership_kpi_simulation.py --seed 7 --start 2026-02-01 --end 2026-09-30 --scale 0.5
+
+seed: 20260930
+start_date: "2026-02-01"
+end_date: "2026-09-30"        # also the inventory snapshot date
+scale: 1.0                     # multiplies every dealership's lead volume
+
+lead_sources:                  # source: [share of leads, qualification probability]
+  Walk-in: [0.30, 0.78]
+  Website: [0.22, 0.52]
+  Phone enquiry: [0.15, 0.60]
+  Referral: [0.10, 0.80]
+  Social media: [0.13, 0.38]
+  Online marketplace: [0.10, 0.45]
+
+first_contact:
+  sla_hours: 4                 # illustrative internal follow-up standard
+  qualify_penalty_if_late: 0.85
+
+lost_reasons:
+  lead: [Not reachable, Budget mismatch, Only researching, Duplicate enquiry]
+  qualified: [No test drive slot accepted, Bought competitor brand, Purchase postponed, Finance not approved]
+  test_drive: [Price / discount expectation, Bought competitor brand, Product fit concerns, Finance not approved, Purchase postponed]
+  booking: [Booking cancelled - delivery wait, Booking cancelled - finance, Booking cancelled - changed mind]
+
+brands:
+  Toyota:
+    segment: PV
+    dealerships: 2
+    salespeople_per_dealership: 7
+    leads_per_month: 260
+    p_test_drive: 0.62          # given qualified
+    p_booking: 0.36             # given test drive
+    p_cancel: 0.05              # given booking
+    delivery_lead_days: [7, 35]
+    opening_stock_months: 1.1
+    models:                     # name: [category, powertrain, ex-showroom price INR, demand weight, stocking factor]
+      Toyota Compact SUV: [Compact SUV, Hybrid, 1450000, 0.34, 1.00]
+      Toyota Mid SUV: [Mid SUV, ICE, 2600000, 0.18, 1.05]
+      Toyota MPV: [MPV, Hybrid, 2300000, 0.30, 0.95]
+      Toyota Premium Sedan: [Premium Sedan, Hybrid, 4600000, 0.06, 1.45]
+      Toyota Hatchback: [Hatchback, ICE, 800000, 0.12, 1.10]
+  Honda Cars:
+    segment: PV
+    dealerships: 1
+    salespeople_per_dealership: 6
+    leads_per_month: 180
+    p_test_drive: 0.58
+    p_booking: 0.31
+    p_cancel: 0.06
+    delivery_lead_days: [5, 25]
+    opening_stock_months: 1.4
+    models:
+      Honda Compact Sedan: [Compact Sedan, ICE, 900000, 0.38, 1.10]
+      Honda Mid Sedan: [Mid Sedan, Hybrid, 1600000, 0.22, 1.35]
+      Honda Compact SUV: [Compact SUV, ICE, 1300000, 0.40, 1.00]
+  JSW MG Motor:
+    segment: PV
+    dealerships: 1
+    salespeople_per_dealership: 6
+    leads_per_month: 170
+    p_test_drive: 0.60
+    p_booking: 0.30
+    p_cancel: 0.07
+    delivery_lead_days: [7, 30]
+    opening_stock_months: 1.3
+    models:
+      MG Small EV: [Small Car, EV, 800000, 0.30, 1.00]
+      MG Compact SUV EV: [Compact SUV, EV, 1600000, 0.35, 1.05]
+      MG Mid SUV: [Mid SUV, ICE, 2000000, 0.20, 1.40]
+      MG Premium SUV: [Premium SUV, ICE, 4000000, 0.15, 1.30]
+  Mercedes-Benz:
+    segment: PV
+    dealerships: 1
+    salespeople_per_dealership: 4
+    leads_per_month: 60
+    p_test_drive: 0.70
+    p_booking: 0.33
+    p_cancel: 0.04
+    delivery_lead_days: [14, 45]
+    opening_stock_months: 1.8
+    models:
+      Mercedes Luxury Sedan: [Luxury Sedan, ICE, 7500000, 0.40, 1.10]
+      Mercedes Luxury SUV: [Luxury SUV, ICE, 9500000, 0.45, 1.00]
+      Mercedes Luxury EV: [Luxury SUV, EV, 13000000, 0.15, 1.50]
+  Ather:
+    segment: 2W
+    dealerships: 1
+    salespeople_per_dealership: 5
+    leads_per_month: 420
+    p_test_drive: 0.72
+    p_booking: 0.48
+    p_cancel: 0.04
+    delivery_lead_days: [2, 12]
+    opening_stock_months: 0.8
+    models:
+      Ather Family Scooter: [Electric Scooter - Family, EV, 130000, 0.60, 1.00]
+      Ather Performance Scooter: [Electric Scooter - Performance, EV, 170000, 0.40, 1.05]
+
+inventory:
+  opening_stock_max_age_days: 150   # opening vehicles were received up to this many days before start_date
+  cost_to_price_ratio: 0.93         # dealer purchase cost as share of ex-showroom price
+  allocation_prep_days: 2           # minimum days between receipt and delivery
+  ageing_buckets: [30, 60, 90]      # upper bounds (inclusive): 0-30, 31-60, 61-90, >90
+  aged_threshold_days: 60           # "aged inventory" = age in days strictly greater than this
+  aged_discount_pct: [2.0, 6.0]     # extra discount range for vehicles older than aged_threshold_days
+
+# Management action triggers. Thresholds are ILLUSTRATIVE business rules unless `basis`
+# names a published source. Comparator: breach when actual <op> threshold.
+action_rules:
+  - kpi: aged_inventory_share_pct
+    op: ">"
+    threshold: 15.0
+    responsible_role: Inventory Manager
+    review_cadence: Weekly
+    recommended_action: List aged VINs, set model-specific retail support, pause replenishment orders for affected models.
+    basis: Illustrative business rule
+  - kpi: days_of_supply
+    op: ">"
+    threshold: 21
+    segments: [PV]                  # the FADA benchmark is stated for passenger vehicles only
+    responsible_role: Dealer Principal
+    review_cadence: Weekly
+    recommended_action: Align OEM dispatch plan to retail run-rate; escalate excess allocation with the OEM zonal office.
+    basis: "FADA recommends a 21-day PV inventory level (FADA Sep'26 release); applied here to simulated stock"
+  - kpi: first_contact_sla_pct
+    op: "<"
+    threshold: 80.0
+    responsible_role: CRM Manager
+    review_cadence: Daily
+    recommended_action: Re-route unassigned leads, enforce call-back queue, review salesperson lead load.
+    basis: Illustrative business rule
+  - kpi: test_drive_to_booking_pct
+    op: "<"
+    threshold: 30.0
+    responsible_role: Sales Manager
+    review_cadence: Weekly
+    recommended_action: Review test-drive feedback and offer structure; coach salespeople below team median.
+    basis: Illustrative business rule
+  - kpi: lead_to_delivery_pct
+    op: "<"
+    threshold: 9.0
+    responsible_role: General Manager - Sales
+    review_cadence: Monthly
+    recommended_action: Audit lead-source quality and spend; rebalance marketing budget toward converting sources.
+    basis: Illustrative business rule
+  - kpi: top_model_stock_share_pct
+    op: ">"
+    threshold: 45.0
+    responsible_role: Dealer Principal
+    review_cadence: Monthly
+    recommended_action: Rebalance order mix; agree transfer of excess units with sister dealerships.
+    basis: Illustrative business rule
+  - kpi: awaiting_allocation_bookings
+    op: ">"
+    threshold: 15
+    responsible_role: Sales Operations Manager
+    review_cadence: Weekly
+    recommended_action: Expedite allocation for oldest bookings; communicate revised delivery dates to customers.
+    basis: Illustrative business rule

@@ -1,0 +1,48 @@
+/// SIMULATED: SIMULATED synthetic dealerships.
+table DimDealership
+
+	column DealershipId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipId
+
+	column DealershipName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipName
+
+	column Brand
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Brand
+
+	column SegmentKey
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column Region
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Region
+
+	column City
+		dataType: string
+		summarizeBy: none
+		sourceColumn: City
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition DimDealership = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="DimDealership"]}[Data]
+				in
+				    Data
+

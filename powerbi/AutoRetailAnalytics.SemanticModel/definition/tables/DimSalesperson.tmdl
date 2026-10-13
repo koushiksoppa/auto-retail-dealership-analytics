@@ -1,0 +1,32 @@
+/// SIMULATED: SIMULATED synthetic salespeople.
+table DimSalesperson
+
+	column SalespersonId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SalespersonId
+
+	column DealershipId
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DealershipId
+
+	column SalespersonName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SalespersonName
+
+	column DataClassification
+		dataType: string
+		summarizeBy: none
+		sourceColumn: DataClassification
+
+	partition DimSalesperson = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(SqlServer, SqlDatabase),
+				    Data = Source{[Schema="dw", Item="DimSalesperson"]}[Data]
+				in
+				    Data
+
