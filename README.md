@@ -152,7 +152,7 @@ See [SQL Server setup](docs/SQL_SERVER_SETUP.md).
   - the project opens;
   - a full refresh from SQL Server succeeds;
   - **574 of 574 engine checks pass** (`python/validate_powerbi.py`). They cover model structure, data separation, and every KPI against the Python and SQL outputs.
-- **Defects the engine run caught.** It found four defects that static checks had missed, all now fixed; see the [build guide](powerbi/POWERBI_BUILD_GUIDE.md#5-automated-runtime-validation). One of them corrects an earlier count: the measure file had 79 measures, not the 89 previously reported.
+- **Defects the engine run caught.** It found four defects that static checks had missed, all now fixed; see the [build guide](powerbi/POWERBI_BUILD_GUIDE.md#5-automated-runtime-validation).
 - **Screenshots** of each page, captured from Power BI Desktop, are shown under [Report preview](#report-preview) and stored in [`powerbi/screenshots/`](powerbi/screenshots/).
 - **Accessibility:** all 49 data visuals have alt text saying what they show and whether the data is official or simulated.
 
