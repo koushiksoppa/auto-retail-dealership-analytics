@@ -246,6 +246,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SIMULATED data. Table of breached management rules with KPI, actual value, threshold, owner, review cadence, recommended action and threshold basis.'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true

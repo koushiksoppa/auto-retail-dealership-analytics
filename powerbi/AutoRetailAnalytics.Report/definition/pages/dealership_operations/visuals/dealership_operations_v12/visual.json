@@ -220,6 +220,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SIMULATED data. Bar chart of the sales funnel for the lead cohort: leads, qualified leads, test drives, bookings and deliveries.'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true

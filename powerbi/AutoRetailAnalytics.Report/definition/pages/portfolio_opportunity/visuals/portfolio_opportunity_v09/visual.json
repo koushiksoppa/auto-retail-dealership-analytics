@@ -278,6 +278,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Table of each portfolio brand against its own segment: registrations, growth, growth gap, market share, share change, constant-share units and registration gap. Official FADA data.'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true

@@ -126,6 +126,29 @@ def test_simulated_data_is_labelled_wherever_it_is_shown():
     assert "SIMULATED DEALERSHIP DATA" in exec_page
 
 
+def test_every_data_visual_has_alt_text():
+    """Alt text lives at visual.visualContainerObjects.general[0].properties.altText (PBIR visualContainer schema)."""
+    missing, too_long, unlabelled = [], [], []
+    for v in VISUALS:
+        data = json.loads(v.read_text(encoding="utf-8"))
+        visual = data["visual"]
+        if visual["visualType"] == "textbox":          # screen readers read text boxes directly
+            continue
+        alt = (visual.get("visualContainerObjects", {}).get("general", [{}])[0]
+               .get("properties", {}).get("altText", {}).get("expr", {}).get("Literal", {}).get("Value"))
+        if not alt:
+            missing.append(v.parent.name)
+            continue
+        text = alt[1:-1].replace("''", "'")
+        if len(text) > bpp.ALT_TEXT_MAX:
+            too_long.append(v.parent.name)
+        if v.parents[2].name == "dealership_operations" and "simulated" not in text.lower():
+            unlabelled.append(v.parent.name)
+    assert not missing, f"visuals without alt text: {missing}"
+    assert not too_long, f"alt text over {bpp.ALT_TEXT_MAX} characters: {too_long}"
+    assert not unlabelled, f"simulated visuals whose alt text doesn't say so: {unlabelled}"
+
+
 def test_official_pages_do_not_use_simulated_fields():
     sim_measures = {m["name"] for m in bpp.parse_measures() if m["folder"] in ("5 Funnel", "6 Inventory", "7 Actions")}
     for v in VISUALS:

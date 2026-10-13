@@ -120,7 +120,8 @@ These match the Python report and the SQL views.
 ## 9. Known limitations
 
 - **Report source.** The `.pbix` must be saved manually (section 6). The PBIP is the version-controlled source.
-- **Visual checks.** Visual layout was checked by eye from screenshots of each page, captured by `validate_powerbi.py --screenshots`. The script opens a separate copy of the project per page and captures only that Power BI window once two consecutive captures are identical, so don't interact with those windows while it runs. There is no automated pixel or accessibility test. Alt text for visuals is not yet set; add it in Desktop (Format > General > Alt text) before publishing.
+- **Visual checks.** Visual layout was checked by eye from screenshots of each page, captured by `validate_powerbi.py --screenshots`. The script opens a separate copy of the project per page and captures only that Power BI window once two consecutive captures are identical, so don't interact with those windows while it runs. There is no automated pixel test.
+- **Alt text.** Every chart, card, table and the slicer (49 visuals) has alt text, set by the generator and checked by `tests/test_powerbi_project.py`. It describes what the visual shows and whether the data is official or SIMULATED, in at most 250 characters, Power BI's limit. It contains no numbers, so it can't go stale. Screen-reader users get the values through *Show as a table* (Alt+Shift+F11). Text boxes have no alt text because screen readers read their text directly.
 - **Slicer default.** The page 5 dealership slicer starts with nothing selected, which means all simulated dealerships.
 - **Period changes.** Page subtitles take the period labels from `config/market_analysis.yaml` at generation time. Regenerate after changing the periods.
 - **Publishing.** The report hasn't been published to the Power BI Service. Publishing would need a gateway for the on-premises SQL Server.

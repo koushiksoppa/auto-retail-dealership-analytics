@@ -293,6 +293,8 @@ NOT_RESIDUAL = ("DimOEM", "IsResidual", "false")
 BREACHED = ("FactActionTrigger", "Breached", "true")
 
 AMBER_BG, AMBER_TEXT, BLUE_BG, BLUE_TEXT = "#FFF4E0", "#8A5A00", "#E8F1FB", "#1C5CAB"
+ALT_TEXT_MAX = 250  # Power BI's limit for visual alt text
+SEGMENT_NAMES = {"'PV'": "passenger vehicles", "'2W'": "two-wheelers"}
 
 
 class Page:
@@ -301,7 +303,7 @@ class Page:
 
     def add(self, visual_type: str, x, y, w, h, *, title: str | None = None, query: dict | None = None,
             objects: dict | None = None, filters: list[tuple] | None = None, sort: tuple | None = None,
-            background: str | None = None, subtitle: str | None = None):
+            background: str | None = None, subtitle: str | None = None, alt_text: str | None = None):
         n = len(self.visuals) + 1
         vname = f"{self.name}_v{n:02d}"
         visual: dict = {"visualType": visual_type}
@@ -320,6 +322,10 @@ class Page:
         if background:
             vco["background"] = [{"properties": {"show": lit("true"), "color": {"solid": {"color": s(background)}},
                                                  "transparency": lit("0D")}}]
+        if alt_text:
+            if len(alt_text) > ALT_TEXT_MAX:
+                raise ValueError(f"alt text longer than {ALT_TEXT_MAX} characters: {alt_text[:60]}...")
+            vco["general"] = [{"properties": {"altText": s(alt_text)}}]
         if vco:
             visual["visualContainerObjects"] = vco
         visual["drillFilterOtherVisuals"] = True
@@ -345,15 +351,20 @@ class Page:
                   background=AMBER_BG if simulated else BLUE_BG)
 
     def card(self, x, y, w, h, measure: str, label: str, filters=None, simulated=False):
+        segment = next((SEGMENT_NAMES[v] for _, prop, v in filters or [] if prop == "SegmentCode"), None)
+        alt = (f"SIMULATED dealership data. Card showing {label}." if simulated else
+               f"Card showing {label}{' for ' + segment if segment and segment not in label.lower() else ''}. "
+               "Official FADA data.")
         self.add("card", x, y, w, h, query={"Values": {"projections": [proj(mea(measure), label)]}},
+                 alt_text=alt,
                  objects={"labels": [{"properties": {"fontSize": lit("20D"), "labelDisplayUnits": lit("1D")}}],
                           "categoryLabels": [{"properties": {"show": lit("true"), "fontSize": lit("9D")}}]},
                  filters=filters, background=AMBER_BG if simulated else None,
                  title="SIMULATED" if simulated else None)
 
-    def table(self, x, y, w, h, title, fields: list[tuple[dict, str | None]], filters=None, sort=None,
+    def table(self, x, y, w, h, title, fields: list[tuple[dict, str | None]], *, alt_text: str, filters=None, sort=None,
               background=None, subtitle=None):
-        self.add("tableEx", x, y, w, h, title=title, subtitle=subtitle,
+        self.add("tableEx", x, y, w, h, title=title, subtitle=subtitle, alt_text=alt_text,
                  query={"Values": {"projections": [proj(f, d) for f, d in fields]}},
                  objects={"total": [{"properties": {"totals": lit("false")}}],
                           "values": [{"properties": {"wordWrap": lit("true")}}],
@@ -362,7 +373,7 @@ class Page:
 
     def chart(self, vtype, x, y, w, h, title, category=None, values=(), series=None, tooltips=(), filters=None,
               sort=None, colors: dict | None = None, labels=True, background=None, subtitle=None,
-              series_colors: dict | None = None):
+              series_colors: dict | None = None, *, alt_text: str):
         qs: dict = {}
         if category is not None:
             qs["Category"] = {"projections": [proj(category)]}
@@ -388,7 +399,7 @@ class Page:
                                                                    "Right": {"Literal": {"Value": "'" + v + "'"}}}}}]}}
                 for v, c in series_colors.items())
         self.add(vtype, x, y, w, h, title=title, subtitle=subtitle, query=qs, objects=objects, filters=filters,
-                 sort=sort, background=background)
+                 sort=sort, background=background, alt_text=alt_text)
 
     def files(self, base: Path) -> dict[Path, str]:
         out = {base / self.name / "page.json": json.dumps(
@@ -421,12 +432,15 @@ def build_pages(cfg: dict) -> list[Page]:
         p.card(20 + i * 208, 86, 200, 96, m, label, flt)
     p.chart("lineChart", 20, 194, 620, 330, "PV retail registrations by month", category=month_axis,
             values=[(mea("Market Registrations"), "PV registrations")], series=year_series, filters=[PV], sort=month_sort,
-            labels=False)
+            labels=False, alt_text="Line chart of passenger-vehicle retail registrations by month, February to September, "
+                                   "one line per year. Official FADA data.")
     p.chart("clusteredBarChart", 652, 194, 608, 330, "Brand growth vs own-segment growth (period YoY)",
             category=col("DimOEM", "PortfolioBrand"),
             values=[(mea("YoY Growth % (Period)"), "Brand growth"), (mea("Segment YoY Growth % (Period)"), "Own-segment growth")],
             filters=[PORTFOLIO], colors={f"{MEASURE_TABLE}.YoY Growth % (Period)": blue,
-                                         f"{MEASURE_TABLE}.Segment YoY Growth % (Period)": grey})
+                                         f"{MEASURE_TABLE}.Segment YoY Growth % (Period)": grey},
+            alt_text="Bar chart comparing each portfolio brand's period growth with its own segment's growth: car brands "
+                     "against passenger vehicles, Ather against two-wheelers. Official FADA data.")
     p.text(20, 536, 1240, 30, [("SIMULATED DEALERSHIP DATA - synthetic dealerships for illustration; not actual "
                                 "performance and not part of FADA totals", {"fontWeight": "bold", "fontSize": "10pt",
                                                                              "color": AMBER_TEXT})], background=AMBER_BG)
@@ -452,7 +466,9 @@ def build_pages(cfg: dict) -> list[Page]:
                 values=[(mea("Share Gain bps (Complete Coverage)"), "Gain"), (mea("Share Loss bps (Complete Coverage)"), "Loss")],
                 tooltips=[bps], filters=[flt, NOT_RESIDUAL], sort=(bps, "Descending"),
                 colors={f"{MEASURE_TABLE}.Share Gain bps (Complete Coverage)": blue,
-                        f"{MEASURE_TABLE}.Share Loss bps (Complete Coverage)": red})
+                        f"{MEASURE_TABLE}.Share Loss bps (Complete Coverage)": red},
+                alt_text=f"Bar chart ranking {seg.lower()} OEMs by change in market share in basis points, gains in blue "
+                         "and losses in red. Only OEMs listed by FADA in every month are shown. Official FADA data.")
     p.table(20, 496, 1240, 212, "OEM registrations and share (blank = not listed by FADA in every month)",
             [(col("DimOEM", "OEMName"), "OEM"), (col("DimVehicleSegment", "SegmentCode"), "Segment"),
              (mea("Registrations PP"), pri), (mea("Registrations CP"), cur),
@@ -460,7 +476,9 @@ def build_pages(cfg: dict) -> list[Page]:
              (mea("Market Share PP % (Complete Coverage)"), "Share " + pri),
              (mea("Market Share CP % (Complete Coverage)"), "Share " + cur),
              (mea("Share Change bps (Complete Coverage)"), "Change (bps)")],
-            sort=(mea("Registrations CP"), "Descending"))
+            sort=(mea("Registrations CP"), "Descending"),
+            alt_text="Table of OEM registrations, growth and market share for both periods, sorted by current "
+                     "registrations. Blank shares mean FADA did not list the OEM every month. Official FADA data.")
     pages.append(p)
 
     # 3 ---------------------------------------------------------------- EV Analytics
@@ -476,7 +494,9 @@ def build_pages(cfg: dict) -> list[Page]:
         p.card(20 + i * 208, 86, 200, 96, m, label, flt)
     for x, w, flt, seg in ((20, 620, PV, "Passenger vehicles"), (652, 608, TW, "Two-wheelers")):
         p.chart("lineChart", x, 194, w, 300, f"{seg}: EV share of retail by month", category=month_axis,
-                values=[(mea("EV Share %"), "EV share")], series=year_series, filters=[flt], sort=month_sort)
+                values=[(mea("EV Share %"), "EV share")], series=year_series, filters=[flt], sort=month_sort,
+                alt_text=f"Line chart of the EV share of {seg.lower()} retail by month, February to September, "
+                         "one line per year. Official FADA data.")
     p.table(20, 506, 1240, 150, "EV volume by segment (estimated)",
             [(col("DimVehicleSegment", "SegmentName"), "Segment"),
              (mea("EV Registrations PP (Est.)"), f"EV units {pri} (est.)"),
@@ -484,7 +504,9 @@ def build_pages(cfg: dict) -> list[Page]:
              (mea("EV Registrations Growth % (Est.)"), "EV growth"),
              (mea("Market YoY Growth % (Period)"), "Segment growth"),
              (mea("EV Share PP %"), "EV share " + pri), (mea("EV Share CP %"), "EV share " + cur),
-             (mea("EV Share Change bps"), "Change (bps)")])
+             (mea("EV Share Change bps"), "Change (bps)")],
+            alt_text="Table of estimated EV units, EV growth, segment growth and EV share for each segment in both "
+                     "periods. EV units are derived from FADA's published EV share.")
     p.text(20, 664, 1240, 44, [("EV units are derived: FADA publishes each segment's EV share to two decimals; "
                                 "EV units = EV share x published segment total. Months without a published EV share "
                                 "would make the period share blank rather than understated.",
@@ -508,16 +530,24 @@ def build_pages(cfg: dict) -> list[Page]:
              (mea("Growth Gap vs Segment pp"), "Gap (pp)"), (mea("Market Share PP %"), "Share " + pri),
              (mea("Market Share CP %"), "Share " + cur), (mea("Share Change bps"), "Change (bps)"),
              (mea("Constant-Share Registrations"), "Constant-share units"), (mea("Registration Gap"), "Registration gap")],
-            filters=[PORTFOLIO], sort=(mea("Registrations CP"), "Descending"))
+            filters=[PORTFOLIO], sort=(mea("Registrations CP"), "Descending"),
+            alt_text="Table of each portfolio brand against its own segment: registrations, growth, growth gap, market "
+                     "share, share change, constant-share units and registration gap. Official FADA data.")
     p.chart("clusteredColumnChart", 20, 420, 400, 288, "Registration gap by brand (positive = forgone)",
             category=col("DimOEM", "PortfolioBrand"), values=[(mea("Registration Gap"), "Registration gap")],
-            filters=[PORTFOLIO], sort=(mea("Registration Gap"), "Descending"))
+            filters=[PORTFOLIO], sort=(mea("Registration Gap"), "Descending"),
+            alt_text="Column chart of registrations each portfolio brand forgone (positive) or gained (negative) "
+                     "compared with holding its prior-period share. Official FADA data.")
     p.chart("lineChart", 432, 420, 420, 288, "Car portfolio share of PV retail by month", category=month_axis,
             values=[(mea("Market Share %"), "Portfolio share")], series=year_series, filters=[PV, PORTFOLIO],
-            sort=month_sort, labels=False)
+            sort=month_sort, labels=False,
+            alt_text="Line chart of the car portfolio's combined share of passenger-vehicle retail by month, one line "
+                     "per year. Official FADA data.")
     p.table(864, 420, 396, 288, "Attention flags (illustrative rules)",
             [(col("MarketAttention", "Brand"), "Brand"), (col("MarketAttention", "AttentionStatus"), "Status"),
-             (col("MarketAttention", "Triggers"), "Triggers")])
+             (col("MarketAttention", "Triggers"), "Triggers")],
+            alt_text="Table of attention status and the rules that triggered it for each portfolio brand. Thresholds "
+                     "are illustrative and are applied to official FADA data.")
     pages.append(p)
 
     # 5 ---------------------------------------------------------------- Dealership Operations (SIMULATED)
@@ -531,19 +561,26 @@ def build_pages(cfg: dict) -> list[Page]:
         p.card(20 + i * 154, 86, 148, 90, m, label, simulated=True)
     p.add("slicer", 1100, 86, 160, 90, title="Dealership (simulated)",
           query={"Values": {"projections": [proj(col("DimDealership", "DealershipName"))]}},
+          alt_text="Dropdown that filters this page to one simulated dealership.",
           objects={"data": [{"properties": {"mode": s("Dropdown")}}],
                    "header": [{"properties": {"show": lit("false")}}]}, background=AMBER_BG)
     p.chart("clusteredBarChart", 20, 188, 400, 260, "Sales funnel (SIMULATED)",
             values=[(mea("Leads"), "Leads"), (mea("Qualified Leads"), "Qualified"), (mea("Test Drives"), "Test drives"),
-                    (mea("Bookings"), "Bookings"), (mea("Deliveries (Lead Cohort)"), "Deliveries")], background=AMBER_BG)
+                    (mea("Bookings"), "Bookings"), (mea("Deliveries (Lead Cohort)"), "Deliveries")], background=AMBER_BG,
+            alt_text="SIMULATED data. Bar chart of the sales funnel for the lead cohort: leads, qualified leads, test "
+                     "drives, bookings and deliveries.")
     p.chart("barChart", 432, 188, 420, 260, "Current stock by age bucket (SIMULATED)",
             category=col("DimDealership", "DealershipId"), values=[(mea("Current Inventory Units"), "Units")],
             series=col("FactInventorySnapshot", "AgeingBucket"), background=AMBER_BG,
-            series_colors={"0-30": "#B7D3F6", "31-60": "#6DA7EC", "61-90": "#2A78D6", ">90": "#104281"})
+            series_colors={"0-30": "#B7D3F6", "31-60": "#6DA7EC", "61-90": "#2A78D6", ">90": "#104281"},
+            alt_text="SIMULATED data. Stacked bar chart of current stock per dealership, split into age buckets of "
+                     "0-30, 31-60, 61-90 and over 90 days.")
     p.table(864, 188, 396, 260, "Dealership KPIs (SIMULATED)",
             [(col("DimDealership", "DealershipId"), "Dealer"), (col("DimDealership", "Brand"), "Brand"),
              (mea("Lead to Delivery %"), "Lead-to-delivery"), (mea("First Contact SLA %"), "SLA"),
-             (mea("Aged Inventory %"), "Aged stock"), (mea("Days of Supply"), "Days of supply")], background=AMBER_BG)
+             (mea("Aged Inventory %"), "Aged stock"), (mea("Days of Supply"), "Days of supply")], background=AMBER_BG,
+            alt_text="SIMULATED data. Table of lead-to-delivery conversion, first-contact SLA, aged stock share and "
+                     "days of supply for each dealership.")
     p.table(20, 460, 1240, 248, "Management actions triggered (SIMULATED; thresholds illustrative unless a basis is cited)",
             [(col("FactActionTrigger", "DealershipId"), "Dealer"), (col("FactActionTrigger", "Kpi"), "KPI"),
              (col("FactActionTrigger", "ActualValue"), "Actual"), (col("FactActionTrigger", "Comparator"), "Rule"),
@@ -551,7 +588,9 @@ def build_pages(cfg: dict) -> list[Page]:
              (col("FactActionTrigger", "ReviewCadence"), "Cadence"),
              (col("FactActionTrigger", "RecommendedAction"), "Recommended action"),
              (col("FactActionTrigger", "ThresholdBasis"), "Threshold basis")],
-            filters=[BREACHED], background=AMBER_BG)
+            filters=[BREACHED], background=AMBER_BG,
+            alt_text="SIMULATED data. Table of breached management rules with KPI, actual value, threshold, owner, "
+                     "review cadence, recommended action and threshold basis.")
     pages.append(p)
     return pages
 

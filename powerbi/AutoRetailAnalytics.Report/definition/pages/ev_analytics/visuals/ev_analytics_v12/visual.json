@@ -200,6 +200,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Table of estimated EV units, EV growth, segment growth and EV share for each segment in both periods. EV units are derived from FADA''s published EV share.'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true

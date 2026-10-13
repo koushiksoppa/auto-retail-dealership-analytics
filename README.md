@@ -138,6 +138,7 @@ See [SQL Server setup](docs/SQL_SERVER_SETUP.md).
   - **574 of 574 engine checks pass** (`python/validate_powerbi.py`). They cover model structure, data separation, and every KPI against the Python and SQL outputs.
 - **Defects the engine run caught.** It found four defects that static checks had missed, all now fixed; see the [build guide](powerbi/POWERBI_BUILD_GUIDE.md#5-automated-runtime-validation). One of them corrects an earlier count: the measure file had 79 measures, not the 89 previously reported.
 - **Screenshots** of each page, captured from Power BI Desktop, are in [`powerbi/screenshots/`](powerbi/screenshots/).
+- **Accessibility:** all 49 data visuals have alt text saying what they show and whether the data is official or simulated.
 
 > **Remaining manual step:** saving a `.pbix` needs Power BI Desktop's *File > Save as* dialog, which can't be automated with the tooling available here. Open the `.pbip`, refresh, and save as `powerbi\AutoRetailAnalytics.pbix` ([build guide, section 6](powerbi/POWERBI_BUILD_GUIDE.md#6-remaining-manual-step-save-as-pbix)).
 
@@ -178,5 +179,5 @@ Tests that need SQL Server, the source PDFs or the optional app dependency are *
 - OEM-level comparisons exclude OEMs below FADA's listing threshold in some months.
 - EV units are estimates (published EV % × total). Ather's share of 2W EV retail assumes Ather sells only EVs.
 - Layer B is synthetic. Its patterns come from configured assumptions, and none of it is evidence about real dealerships.
-- The `.pbix` must be saved manually from the validated `.pbip`. Visual alt text is not yet set, and the report hasn't been published to the Power BI Service.
+- The `.pbix` must be saved manually from the validated `.pbip`, and the report hasn't been published to the Power BI Service.
 - Licensing: FADA grants no licence to redistribute its PDFs, so they are not included. They're downloaded and checksum-verified locally, and the repository publishes only provenance and the extracted figures, attributed to FADA. See [Data sources](docs/DATA_SOURCES.md#redistribution).

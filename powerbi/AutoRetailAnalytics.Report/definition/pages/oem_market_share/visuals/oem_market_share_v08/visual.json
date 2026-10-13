@@ -236,6 +236,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bar chart ranking passenger vehicles OEMs by change in market share in basis points, gains in blue and losses in red. Only OEMs listed by FADA in every month are shown. Official FADA data.'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true

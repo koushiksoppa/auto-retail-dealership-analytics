@@ -362,6 +362,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SIMULATED data. Stacked bar chart of current stock per dealership, split into age buckets of 0-30, 31-60, 61-90 and over 90 days.'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
