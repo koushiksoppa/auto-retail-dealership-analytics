@@ -753,11 +753,12 @@ def write_report(r: dict, cfg: dict, path: Path) -> None:
                                      "share_change_bps": "share chg bps", "registration_gap_units": "registration gap"}),
                  {"growth %": "+.2f", "segment growth %": "+.2f", "share chg bps": "+.1f", "registration gap": "+,.0f"}),
         "",
-        "## 7. Verification of figures quoted in the project brief",
+        "## 7. Cross-check of previously quoted figures",
         "",
-        "Figures from the brief were treated as claims and re-derived from source data.",
+        "Figures quoted for this project before the analysis was built were treated as claims and re-derived "
+        "from source data.",
         "",
-        md_table(r["brief_check"], {"reproduced": ".2f"}),
+        md_table(r["brief_check"].rename(columns={"brief_value": "quoted value"}), {"reproduced": ".2f"}),
         "",
         "## 8. Data quality and reconciliation",
         "",
@@ -876,7 +877,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Portfolio car growth      {h['portfolio_car_growth_pct']:+.2f}%")
     print(f"Portfolio PV share        {h['portfolio_share_prior_pct']:.2f}% -> {h['portfolio_share_current_pct']:.2f}%")
     print(f"Registration gap (cars)   {h['portfolio_registration_gap_units']:,.0f}")
-    print(f"Brief figures reproduced  {(r['brief_check'].status == 'Reproduced').sum()} of {len(r['brief_check'])}")
+    print(f"Quoted figures reproduced {(r['brief_check'].status == 'Reproduced').sum()} of {len(r['brief_check'])}")
     print(f"Wrote {len(written)} files under {MARKET_REPORT_DIR}")
     return 0
 

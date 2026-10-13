@@ -127,11 +127,11 @@ Rules (illustrative thresholds in `config/market_analysis.yaml`, not industry be
 | Ather | 2W | On track / outperforming | none | +81.99 | +21.46 | +53.1 | -77,323 |
 | Portfolio car brands | PV | Attention | growth -14.7 pp vs segment; share -133 bps; 43,837 registrations below constant share | +7.41 | +22.11 | -132.8 | +43,837 |
 
-## 7. Verification of figures quoted in the project brief
+## 7. Cross-check of previously quoted figures
 
-Figures from the brief were treated as claims and re-derived from source data.
+Figures quoted for this project before the analysis was built were treated as claims and re-derived from source data.
 
-| figure | brief_value | reproduced | status | note |
+| figure | quoted value | reproduced | status | note |
 |---|---|---|---|---|
 | Car market growth | +22.1% | 22.11 | Reproduced |  |
 | Portfolio car-brand growth | +7.4% | 7.41 | Reproduced |  |

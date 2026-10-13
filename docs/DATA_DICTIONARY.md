@@ -37,7 +37,7 @@ Grain: release × segment (2W, PV) × fuel × period month × role. `share_pct` 
 | File | Content |
 |---|---|
 | `oem_mapping.csv` | `segment`, `oem_raw` → `oem_canonical`, `portfolio_brand` (empty if not a portfolio brand), `mapping_note` |
-| `market_analysis.yaml` | Periods, segment names, portfolio brands, EV-only brand assumption, minimum base for growth, attention thresholds, brief figures to verify |
+| `market_analysis.yaml` | Periods, segment names, portfolio brands, EV-only brand assumption, minimum base for growth, attention thresholds, previously quoted figures to cross-check |
 | `simulation.yaml` | All simulation assumptions and management-action rules |
 
 ## Market outputs: `reports/auto_retail/tables/` (DERIVED)

@@ -44,7 +44,7 @@ presentation_decimals:
   pct: 2
   bps: 1
 
-# Figures quoted in the project brief. They are re-derived from source data and
+# Figures quoted for this project before the analysis was built. They are re-derived from source data and
 # compared in the executive report; they are never used as inputs.
 brief_figures:
   - {id: pv_market_growth_pct, label: "Car market growth", claimed: "+22.1%", value: 22.1, tolerance: 0.05}

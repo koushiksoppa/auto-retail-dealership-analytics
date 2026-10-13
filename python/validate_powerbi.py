@@ -294,6 +294,34 @@ def bpp_aggregate_name() -> str:
 
 
 # ----------------------------------------------------------------------------- screenshots
+PAGE_BACKGROUND = (245, 245, 243)   # page background colour set by powerbi/theme/auto_retail_theme.json
+
+
+def crop_to_report_page(path: Path, margin: int = 2) -> bool:
+    """Crop a Power BI Desktop window capture to the report page (drops the ribbon and side panes).
+
+    The page is located as the bounding box of the theme's page-background colour inside the canvas
+    (left of the Filters/Visualizations panes). Returns False and leaves the file untouched when no
+    plausible page is found, e.g. for a minimised window."""
+    from PIL import Image
+    im = Image.open(path).convert("RGB")
+    w, h = im.size
+    canvas = (0, int(h * 0.2), int(w * 0.62), int(h * 0.95))
+    region = im.crop(canvas)
+    px, rw, rh = region.load(), region.size[0], region.size[1]
+    xs = [x for y in range(0, rh, 2) for x in range(rw) if px[x, y] == PAGE_BACKGROUND]
+    ys = [y for y in range(rh) for x in range(0, rw, 4) if px[x, y] == PAGE_BACKGROUND]
+    if not xs or not ys:
+        return False
+    box = (max(min(xs) - margin, 0) + canvas[0], max(min(ys) - margin, 0) + canvas[1],
+           min(max(xs) + 1 + margin, rw) + canvas[0], min(max(ys) + 1 + margin, rh) + canvas[1])
+    bw, bh = box[2] - box[0], box[3] - box[1]
+    if bw < w * 0.3 or bh < h * 0.3 or not 1.4 <= bw / bh <= 2.1:   # not a 16:9-ish report page
+        return False
+    im.crop(box).save(path, format="PNG")
+    return True
+
+
 def screenshots(pages: list[str], only: list[str] | None = None) -> list[Path]:
     """Open a temporary copy of the project per page (activePageName set), refresh, capture, close."""
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
@@ -321,6 +349,8 @@ def screenshots(pages: list[str], only: list[str] | None = None) -> list[Path]:
                     previous = current
                 else:
                     print(f"[screenshot] WARNING: {page} did not settle; last capture kept", file=sys.stderr)
+                if not crop_to_report_page(target):
+                    print(f"[screenshot] WARNING: report page not found in {target.name}; kept full window", file=sys.stderr)
                 out.append(target)
             finally:
                 ps("Close", ProcessId=info["pid"])

@@ -174,3 +174,28 @@ def test_recorded_engine_validation_passed():
     assert len(r) > 500 and r.passed.all(), r[~r.passed]
     for area in ["model", "separation", "portfolio brands", "OEM share", "segment growth & EV", "SIMULATED inventory"]:
         assert area in set(r.area)
+
+
+def test_screenshot_crop_keeps_only_the_report_page(tmp_path):
+    from PIL import Image
+    import validate_powerbi as vp
+    window = Image.new("RGB", (1382, 744), (243, 242, 241))                     # Desktop chrome
+    window.paste(vp.PAGE_BACKGROUND, (49, 198, 811, 646))                        # report page
+    window.paste((255, 255, 255), (60, 220, 400, 400))                            # a visual on the page
+    window.paste((255, 255, 255), (812, 170, 1382, 700))                          # side panes
+    shot = tmp_path / "page.png"
+    window.save(shot)
+    assert vp.crop_to_report_page(shot)
+    assert Image.open(shot).size == (762 + 4, 448 + 4)                            # page plus 2 px margin
+
+    minimised = tmp_path / "min.png"
+    Image.new("RGB", (160, 28), (0, 0, 0)).save(minimised)
+    before = minimised.read_bytes()
+    assert not vp.crop_to_report_page(minimised) and minimised.read_bytes() == before
+
+
+def test_committed_screenshots_are_cropped_to_the_report_page():
+    from PIL import Image
+    for f in sorted((ROOT / "powerbi" / "screenshots").glob("*.png")):
+        w, h = Image.open(f).size
+        assert w < 1000 and 1.4 <= w / h <= 2.1, f"{f.name} still shows the full Desktop window ({w}x{h})"

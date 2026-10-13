@@ -238,6 +238,6 @@ def test_report_contains_required_sections(processed_dir, cfg, tmp_path):
     report = (out / "executive_report.md").read_text(encoding="utf-8")
     for heading in ["## 1. Headline answers", "## 2. Segment growth", "## 3. Portfolio brand performance",
                     "## 4. OEM market share", "## 5. EV adoption", "## 6. Management attention",
-                    "## 7. Verification", "## 8. Data quality", "## 9. Method notes"]:
+                    "## 7. Cross-check", "## 8. Data quality", "## 9. Method notes"]:
         assert heading in report
     assert (out / "tables" / "portfolio_brand_performance.csv") in written
